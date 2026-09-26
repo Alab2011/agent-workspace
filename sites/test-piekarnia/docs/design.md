@@ -847,20 +847,30 @@ Pas ze zdjęciem tła na całą szerokość (wzorzec R3), wys. 280 px desktop / 
 | kont-faq-8-q | FAQ | pytanie | 12 słów: obsługa firm | 6.5 |
 | kont-faq-8-a | FAQ | odpowiedź | 40 słów, fakt z intake: kawiarnie, restauracje, sklepy, codzienne poranne dostawy, kontakt przez formularz. Bez warunków | 6.5 |
 
+### 7. Polityka prywatności (5 id, P5a)
+| id | Sekcja | Typ | Maks. długość | Podsekcja briefu |
+|----|--------|-----|---------------|------------------|
+| pp-page-title | head | meta title | 60 znaków | P5a (poza briefem) |
+| pp-meta | head | meta description | 155 znaków | P5a |
+| pp-title | Nagłówek | h1 | 3 słowa („Polityka prywatności”) | P5a |
+| pp-updated | Nagłówek | data aktualizacji | format „DD miesiąc RRRR” | P5a |
+| pp-body | Treść | treść prawna (h2 + akapity) | 600 słów. **OTWARTE:** dane administratora i okres przechowywania danych muszą przyjść od użytkownika, nie wolno ich wymyślać | P5a |
+
 ### Podsumowanie liczby id
 | Grupa | Liczba id |
 |---|---|
-| 0. Wspólne | 48 |
+| 0. Wspólne (w tym link do polityki prywatności) | 49 |
 | 1. Start | 66 |
 | 2. Oferta (33 w tabeli ogólnej + 71 w tabeli produktów) | 104 |
-| 3. Zamówienia | 52 |
+| 3. Zamówienia (w tym zdjęcie chleba i klauzula RODO) | 54 |
 | 4. O nas (w tym 6 id Wyróżników) | 42 |
 | 5. Aktualności | 42 |
 | 5.2 Szablon wpisu | 19 |
-| 6. Kontakt | 57 |
-| **Razem** | **430** |
+| 6. Kontakt (w tym klauzula RODO) | 59 |
+| 7. Polityka prywatności | 5 |
+| **Razem** | **440** |
 
-`page-title` i `meta-description` są dla każdej podstrony (6 × 2) oraz dla każdego z 5 wpisów (5 × 2).
+`page-title` i `meta-description` są dla każdej z 6 podstron (6 × 2), dla każdego z 5 wpisów (5 × 2) i dla polityki prywatności (1 × 2).
 
 ---
 
