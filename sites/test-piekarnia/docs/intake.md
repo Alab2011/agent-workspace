@@ -1,5 +1,5 @@
 # Intake: test-piekarnia
-**Status: QUESTIONS**
+**Status: READY**
 
 ## Opis od użytkownika (dosłownie)
 "zróbmy stronę lokalnej piekarni"
@@ -37,7 +37,7 @@
     - 7: Breaking Bread (https://breakingbread.dodla.pl/)
     - Co konkretnie się podoba (dosłownie): „generalnie przykazdej sam overall - uklad strony - fajne zdjecia w tle przy dobrym ukladzie i czcione tekstu”
       - ~~brak odpowiedzi~~ (zastąpione powyższą odpowiedzią)
-    - Załącznik niedostarczony: użytkownik próbował dołączyć obrazek, ale dotarła tylko nazwa pliku „1790438297104_image.png”, bez zawartości (patrz pytanie otwarte 3)
+    - Załącznik niedostarczony: „1790438297104_image.png” (dotarła tylko nazwa pliku, bez zawartości). Użytkownik: „obr4azek olej”, czyli pomijamy, obowiązuje opis słowny
   - **„Taka sobie”** (określenie użytkownika; nie wskazał żadnej strony jako niepodobającej się):
     - 2: Putka (https://www.putka.pl/)
     - 4: Grzybki (https://piekarniagrzybki.pl/)
@@ -148,7 +148,7 @@ b) + c) + d) Odbiór osobisty zamówień w piekarni. Dostawa w promieniu 10 km (
 #### Godziny dowozu dla klientów indywidualnych (uzupełnienie, dosłownie)
 „Dostawy realizujemy od wtorku do soboty w dwóch oknach: poranne 8:00–11:00 i popołudniowe 15:00–18:00. Klient wybiera okno przy zamówieniu (do godz. 14:00 dnia poprzedniego). W niedziele i poniedziałki nie dowozimy.”
 
-(Popołudniowe okno w sobotę, 15:00–18:00, zaczyna się o godzinie zamknięcia piekarni w sobotę, 15:00: patrz pytanie otwarte 1.)
+Potwierdzenie użytkownika („wsyztko inne tak”): sobotnie okno 15:00–18:00 zostaje, a dowozy działają niezależnie od godzin otwarcia piekarni (sobota do 15:00).
 
 #### Warunki B2B (uzupełnienie, dosłownie)
 - Dostawy codziennie (pon.–sob.) między 5:30 a 7:30.
@@ -181,20 +181,6 @@ Z odpowiedzi 29 (dosłownie): a) + b) Codziennie publikujemy „wypiek dnia". Se
 2. Nowość: chleb z żurawiną i orzechami Od tego tygodnia w każdą środę jako wypiek dnia. Uwaga dla alergików: zawiera orzechy włoskie.
 3. Rogale świętomarcińskie na 11 listopada Zamówienia przyjmujemy do 8 listopada. Cena: 9 zł za sztukę.
 
-(Wpisy 1 i 3 podają inne terminy niż ogólne zasady: patrz pytanie otwarte 2.)
+Potwierdzenie użytkownika („tak to ywjatki”): terminy we wpisach 1 i 3 (otwarcie o 5:30 w tłusty czwartek, zamówienia do wtorku, rogale do 8 listopada) to celowe wyjątki na te okazje. Ogólne godziny otwarcia i zasady zamówień na stronie się nie zmieniają.
 
-## Otwarte pytania (tylko przy statusie QUESTIONS)
-
-1. **Sobotnie popołudniowe okno dowozu.** Dowozy są od wtorku do soboty, także w oknie 15:00–18:00. W sobotę piekarnia jest otwarta 6:30–15:00, czyli popołudniowe okno zaczyna się dokładnie o godzinie zamknięcia.
-   a) tak ma być: dowozy działają niezależnie od godzin otwarcia sklepu, sobotnie okno 15:00–18:00 zostaje
-   b) w sobotę jest tylko okno poranne (8:00–11:00)
-   c) inaczej (napisz, jak)
-2. **Terminy w przykładowych wpisach a ogólne zasady.**
-   - Wpis 1: „W czwartek otwieramy o 5:30”, a od poniedziałku do piątku piekarnia jest otwarta od 6:00. Zamówienia na tłusty czwartek są przyjmowane „do wtorku do 14:00”, a ogólna zasada to „najpóźniej dzień wcześniej do 14:00”.
-   - Wpis 3: zamówienia na rogale na 11 listopada są przyjmowane „do 8 listopada”, a ogólna zasada to „dzień wcześniej”.
-   a) to celowe wyjątki na te okazje: zostawiamy tak, jak we wpisach, a ogólne zasady na stronie się nie zmieniają
-   b) wpisy trzeba dopasować do ogólnych zasad (czwartek od 6:00, zamówienia dzień wcześniej do 14:00)
-   c) inaczej (napisz, co zmienić)
-3. **Obrazek, który nie dotarł.** Dotarła tylko nazwa pliku „1790438297104_image.png”, bez zawartości.
-   a) wyślę go jeszcze raz
-   b) pomińcie go, opis słowny wystarczy
+Odpowiedź użytkownika na ostatnie 3 pytania (dosłownie): „obr4azek olej, wsyztko inne tak to ywjatki”
