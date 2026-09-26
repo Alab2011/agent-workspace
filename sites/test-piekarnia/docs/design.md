@@ -458,7 +458,7 @@ Pas ze zdjęciem tła na całą szerokość (wzorzec R3), wys. 280 px desktop / 
 | g-new-tab-sr | Linki zewnętrzne | sr | 5 słów (np. informacja o nowej karcie) | 0.2 / 6.1 / 6.3 |
 | g-days | Logika dni | lista 7 nazw dni tygodnia | 7 słów (pełne polskie nazwy, pon.–niedz.) | 1.3 / 6.2 |
 
-### 1. Start (72 id)
+### 1. Start (66 id)
 | id | Sekcja | Typ | Maks. długość | Podsekcja briefu |
 |----|--------|-----|---------------|------------------|
 | start-page-title | head | meta title | 60 znaków (nazwa + Serock + chleb na zakwasie) | 1 |
@@ -649,13 +649,19 @@ Pas ze zdjęciem tła na całą szerokość (wzorzec R3), wys. 280 px desktop / 
 | zam-phone-number | Telefon | link tel | fakt z intake: +48 512 345 678 | 3.5 |
 | zam-phone-aria | Telefon | aria | 5 słów + numer | 3.5 |
 
-### 4. O nas (36 id)
+### 4. O nas (42 id)
 | id | Sekcja | Typ | Maks. długość | Podsekcja briefu |
 |----|--------|-----|---------------|------------------|
 | onas-page-title | head | meta title | 60 znaków | 4 |
 | onas-meta | head | meta description | 155 znaków | 4 |
 | onas-title | Nagłówek | h1 | 5 słów | 4 |
 | onas-lead | Nagłówek | lead | 25 słów | 4 |
+| onas-usp-title | Wyróżniki | h2 (może być sr) | 5 słów | Wyróżniki (dotąd 1.2) |
+| onas-usp-1 | Wyróżniki | hasło | 6 słów, fakt z briefu: od 1987 r. (ta sama receptura chleba żytniego) | Wyróżniki |
+| onas-usp-2 | Wyróżniki | hasło | 6 słów, fakt: 18 h fermentacji zakwasu | Wyróżniki |
+| onas-usp-3 | Wyróżniki | hasło | 4 słowa, fakt: bez polepszaczy | Wyróżniki |
+| onas-usp-4 | Wyróżniki | hasło | 5 słów, fakt: osobna strefa bezglutenowa | Wyróżniki |
+| onas-usp-5 | Wyróżniki | hasło | 8 słów, fakt: dostawa gratis od 80 zł (w promieniu 10 km) | Wyróżniki |
 | onas-hist-title | Historia | h2 | 6 słów | 4.1 |
 | onas-hist-1-year | Historia | liczba dekoracyjna | fakt z intake: „1987” | 4.1 |
 | onas-hist-1-title | Historia | h3 | 6 słów | 4.1 |
@@ -823,10 +829,10 @@ Pas ze zdjęciem tła na całą szerokość (wzorzec R3), wys. 280 px desktop / 
 | Grupa | Liczba id |
 |---|---|
 | 0. Wspólne | 48 |
-| 1. Start | 72 |
+| 1. Start | 66 |
 | 2. Oferta (33 w tabeli ogólnej + 71 w tabeli produktów) | 104 |
 | 3. Zamówienia | 51 |
-| 4. O nas | 36 |
+| 4. O nas (w tym 6 id Wyróżników) | 42 |
 | 5. Aktualności | 42 |
 | 5.2 Szablon wpisu | 19 |
 | 6. Kontakt | 57 |
