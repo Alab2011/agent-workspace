@@ -2,7 +2,7 @@
 **Status: READY**
 
 > Przebieg 3. Wszystkie pytania są rozstrzygnięte. Odpowiedzi: 1b, 2a, 4a, 5a, A = a (podział na podstrony zatwierdzony w całości), B = x („a” we wszystkich trzech podpunktach pytania 3).
-> Aktualizacja po porównaniu z researchem: użytkownik dodał sekcję „Wyróżniki” z priorytetem NICE („dodajemy do nice”). Umiejscowienie (Start, zaraz pod hero) zaproponował interpreter.
+> Aktualizacja po porównaniu z researchem: użytkownik dodał sekcję „Wyróżniki” z priorytetem NICE („dodajemy do nice”) i umieścił ją na podstronie O nas („na podstronie o nas”).
 
 ## Interpretacja
 - **Cel strony** (intake B): (1) zbierać zamówienia, np. torty, pieczywo na imprezy, większe zamówienia; (2) budować wizerunek marki: historia, tradycja, jakość. Rodzaj: wizytówka + blog / aktualności, **w formie kilku podstron** (odp. 1b, podział zatwierdzony w odp. A).
@@ -58,21 +58,11 @@ Strona ma **6 podstron**: Start, Oferta, Zamówienia, O nas, Aktualności, Konta
 
 ### 1. Start [MUST]
 1.1 **Hero** [MUST]: kim jesteście (rzemieślnicza, zakwas, długa fermentacja), dwa CTA, adres i godziny (albo godziny na dziś), zdjęcie zastępcze. Źródło: wejście.
-1.2 **Wyróżniki** [NICE] (dodane przez użytkownika po porównaniu z researchem. **Umiejscowienie to propozycja interpretera**: Start, zaraz pod hero, bo to krótkie podsumowanie „dlaczego my”, zanim ktoś przewinie do oferty).
-   - Forma: 3–5 krótkich haseł z ikonami. Ikony i układ wybiera designer.
-   - Dozwolone hasła, **wyłącznie** z intake:
-     - od 1987 r. (ta sama receptura chleba żytniego),
-     - 18 h fermentacji zakwasu,
-     - bez polepszaczy,
-     - osobna strefa bezglutenowa,
-     - dostawa gratis od 80 zł (w promieniu 10 km).
-   - Źródło: wejście (fakty + dozwolone deklaracje, odp. uzup. 5).
-   - **Nie dodajemy innych haseł.** Nie wolno pisać np. „ekologiczne”, „najlepsze w okolicy”, „lokalna mąka”, „naturalne składniki”, „ręcznie robione z miłością”, ani żadnych innych nowych deklaracji jakości.
-1.3 **Wypiek dnia** [SHOULD]: dzisiejszy wypiek z ceną i alergenami, harmonogram tygodnia, druga dostawa ok. 12:00. Źródło: wejście.
-1.4 **Zajawka oferty / specjalności** [SHOULD]: chleb żytni na zakwasie, pączki z różą, chałka z kruszonką, link do Oferty. Źródło: wejście.
-1.5 **Zajawka historii** [SHOULD]: od 1987 r., link do O nas. Źródło: wejście.
-1.6 **Dla firm (B2B)** [SHOULD]: codzienne poranne dostawy dla kawiarni, restauracji i sklepów, przycisk kontaktu (do formularza „Napisz do nas”). Warunki współpracy: brak, nie wymyślamy. Źródło: wejście, odp. 2a + A.
-1.7 **Najnowsze aktualności** [SHOULD]: 2–3 ostatnie wpisy, link do Aktualności. Źródło: wejście (tematy), treść zastępcza.
+1.2 **Wypiek dnia** [SHOULD]: dzisiejszy wypiek z ceną i alergenami, harmonogram tygodnia, druga dostawa ok. 12:00. Źródło: wejście.
+1.3 **Zajawka oferty / specjalności** [SHOULD]: chleb żytni na zakwasie, pączki z różą, chałka z kruszonką, link do Oferty. Źródło: wejście.
+1.4 **Zajawka historii** [SHOULD]: od 1987 r., link do O nas. Źródło: wejście.
+1.5 **Dla firm (B2B)** [SHOULD]: codzienne poranne dostawy dla kawiarni, restauracji i sklepów, przycisk kontaktu (do formularza „Napisz do nas”). Warunki współpracy: brak, nie wymyślamy. Źródło: wejście, odp. 2a + A.
+1.6 **Najnowsze aktualności** [SHOULD]: 2–3 ostatnie wpisy, link do Aktualności. Źródło: wejście (tematy), treść zastępcza.
 
 ### 2. Oferta [MUST]
 2.1 **Cennik w kategoriach** [MUST], w kolejności: Pieczywo, Słodkie wypieki, Wypieki dnia, Sezonowe (z okresem: grudzień, Wielkanoc), Torty i ciasta na zamówienie („od 120 zł” za tort 1,5 kg), Kanapki i przekąski. Przypisanie produktów jest w „Fakty z wejścia”. Źródło: wejście + odp. B = x.
@@ -92,7 +82,17 @@ Strona ma **6 podstron**: Start, Oferta, Zamówienia, O nas, Aktualności, Konta
 ### 4. O nas [MUST]
 4.1 **Historia** [MUST]: 1987 r., pan Józef Kowalczyk, przepisy z rodzinnej wsi, dziś syn i wnuczka. Źródło: wejście.
 4.2 **Jak pieczemy** [MUST]: ręcznie, tradycyjnie, naturalny zakwas, 18 h fermentacji, bez polepszaczy, ta sama receptura od 1987 r. Bez zakazanych deklaracji. Źródło: wejście.
-4.3 **Galeria zdjęć** [SHOULD]: wypieki, wnętrze, praca przy piecu (zdjęcia zastępcze). Źródło: funkcja z wejścia, umiejscowienie wg odp. A.
+4.3 **Wyróżniki** [NICE] (dodane przez użytkownika po porównaniu z researchem. Podstronę O nas wybrał użytkownik. Miejsce zaraz po „Jak pieczemy” zasugerował manager).
+   - Forma: 3–5 krótkich haseł z ikonami. Ikony i układ wybiera designer.
+   - Dozwolone hasła, **wyłącznie** z intake:
+     - od 1987 r. (ta sama receptura chleba żytniego),
+     - 18 h fermentacji zakwasu,
+     - bez polepszaczy,
+     - osobna strefa bezglutenowa,
+     - dostawa gratis od 80 zł (w promieniu 10 km).
+   - Źródło: wejście (fakty + dozwolone deklaracje, odp. uzup. 5).
+   - **Nie dodajemy innych haseł.** Nie wolno pisać np. „ekologiczne”, „najlepsze w okolicy”, „lokalna mąka”, „naturalne składniki”, „ręcznie robione z miłością”, ani żadnych innych nowych deklaracji jakości.
+4.4 **Galeria zdjęć** [SHOULD]: wypieki, wnętrze, praca przy piecu (zdjęcia zastępcze). Źródło: funkcja z wejścia, umiejscowienie wg odp. A.
 
 ### 5. Aktualności [MUST]
 5.1 **Lista wpisów** [MUST]: wypiek dnia i akcje sezonowe. Źródło: wejście (tematy), treści zastępcze.
@@ -118,4 +118,4 @@ Brak otwartych pytań.
 - „Bez laktozy” oznaczamy tylko przy produktach z tą frazą w nazwie (odp. 4a).
 - Płatność przy odbiorze lub przy dostawie, bez płatności online (odp. 5a).
 - Brak zakazanych kolorów (informacja od użytkownika).
-- Sekcja „Wyróżniki” z priorytetem NICE („dodajemy do nice”). Umiejscowienie na Starcie pod hero to propozycja interpretera, niezatwierdzona osobno.
+- Sekcja „Wyróżniki” z priorytetem NICE („dodajemy do nice”). **Umiejscowienie na podstronie O nas zatwierdził użytkownik** („na podstronie o nas”). Kolejność w obrębie podstrony (po „Jak pieczemy”, przed galerią) wynika z sugestii managera.
