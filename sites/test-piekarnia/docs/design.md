@@ -611,7 +611,7 @@ Pas ze zdjęciem tła na całą szerokość (wzorzec R3), wys. 280 px desktop / 
 | Kanapki i przekąski | oferta-p-kanapka-jajeczna-name | oferta-p-kanapka-jajeczna-price | oferta-p-kanapka-jajeczna-alg | (alergeny obejmują „gorczyca”) |
 | Kanapki i przekąski | oferta-p-zapiekanka-name | oferta-p-zapiekanka-price | oferta-p-zapiekanka-alg | |
 
-### 3. Zamówienia (52 id)
+### 3. Zamówienia (54 id)
 | id | Sekcja | Typ | Maks. długość | Podsekcja briefu |
 |----|--------|-----|---------------|------------------|
 | zam-page-title | head | meta title | 60 znaków | 3 |
@@ -648,17 +648,19 @@ Pas ze zdjęciem tła na całą szerokość (wzorzec R3), wys. 280 px desktop / 
 | zam-f-delivery-cost-hint | Krok 2 | podpowiedź | 20 słów, fakt z intake: gratis od 80 zł, poniżej 10 zł, promień 10 km | 3.4 / 3.2 |
 | zam-f-name-label | Krok 3 | etykieta pola | 3 słowa | 3.4 |
 | zam-f-phone-label | Krok 3 | etykieta pola | 1 słowo | 3.4 |
-| zam-f-email-label | Krok 3 | etykieta pola | 3 słowa (z oznaczeniem „opcjonalnie”, P7) | 3.4 |
+| zam-f-email-label | Krok 3 | etykieta pola | 3 słowa (z oznaczeniem „opcjonalnie”, decyzja P7a) | 3.4 |
 | zam-f-notes-label | Krok 3 | etykieta pola | 2 słowa | 3.4 |
 | zam-f-notes-hint | Krok 3 | podpowiedź | 15 słów (np. do tortu) | 3.4 |
 | zam-f-required-note | Formularz | p krótki | 8 słów | 3.4 |
 | zam-f-pay-note | Formularz | p krótki | 15 słów, fakt z briefu: płatność przy odbiorze / dostawie, bez płatności online | 3.4 / 3.3 |
+| zam-f-privacy-note | Formularz | p krótki (klauzula RODO) | 35 słów; dane administratora OTWARTE (brak w intake) | 3.4 + P5a |
+| zam-f-privacy-link | Formularz | link → polityka-prywatnosci.html | 3 słowa | 3.4 + P5a |
 | zam-f-submit | Formularz | przycisk | 3 słowa | 3.4 |
 | zam-f-success | Formularz | komunikat | 30 słów (nie obiecywać terminu odpowiedzi, bo nie ma go w intake) | 3.4 |
 | zam-f-error-generic | Formularz | komunikat | 20 słów | 3.4 |
 | zam-f-err-required | Formularz | błąd pola | 6 słów | 3.4 |
 | zam-f-err-date | Formularz | błąd pola | 20 słów, fakt: dzień wcześniej do 14:00 | 3.4 |
-| zam-f-err-date-tort | Formularz | błąd pola | 20 słów, fakt: torty min. 3 dni | 3.4 |
+| zam-f-err-date-tort | Formularz | błąd pola | 20 słów, fakt: torty min. 3 dni (czy działa też próg 14:00: OTWARTE, P6) | 3.4 |
 | zam-f-err-phone | Formularz | błąd pola | 10 słów | 3.4 |
 | zam-f-err-address | Formularz | błąd pola | 10 słów | 3.4 |
 | zam-phone-title | Telefon | h2/h3 | 6 słów | 3.5 |
@@ -722,7 +724,7 @@ Pas ze zdjęciem tła na całą szerokość (wzorzec R3), wys. 280 px desktop / 
 | akt-lead | Nagłówek | lead | 25 słów | 5 |
 | akt-cal-title | Kalendarz | h2 | 5 słów | 5.3 |
 | akt-cal-1-when | Kalendarz | etykieta | fakt z intake: „tłusty czwartek” | 5.3 |
-| akt-cal-1-what | Kalendarz | p krótki | **OTWARTE (P4)**: intake nie wskazuje produktu | 5.3 |
+| akt-cal-1-what | Kalendarz | p krótki | fakt od użytkownika (P4a, informator dopisze do intake): pączki | 5.3 |
 | akt-cal-2-when | Kalendarz | etykieta | fakt z intake: „11 listopada” | 5.3 |
 | akt-cal-2-what | Kalendarz | p krótki | fakt z intake: rogale | 5.3 |
 | akt-cal-3-when | Kalendarz | etykieta | fakt z intake: „grudzień” | 5.3 |
@@ -771,7 +773,7 @@ Pas ze zdjęciem tła na całą szerokość (wzorzec R3), wys. 280 px desktop / 
 | wpis-1-body | Wpis 1 | treść (akapity) | 250 słów, tylko fakty z intake (harmonogram wypieku dnia) | 5.2 |
 | wpis-2-page-title | Wpis 2 | meta title | 60 znaków | 5.2 |
 | wpis-2-meta | Wpis 2 | meta description | 155 znaków | 5.2 |
-| wpis-2-body | Wpis 2 | treść | 200 słów (P4: bez przypisywania produktu do czasu odpowiedzi) | 5.2 |
+| wpis-2-body | Wpis 2 | treść | 200 słów: tłusty czwartek z pączkami (P4a). Można przywołać pączka z różą z oferty (4,50 zł, alergeny z intake) | 5.2 |
 | wpis-3-page-title | Wpis 3 | meta title | 60 znaków | 5.2 |
 | wpis-3-meta | Wpis 3 | meta description | 155 znaków | 5.2 |
 | wpis-3-body | Wpis 3 | treść | 200 słów (cena i alergeny rogala z intake) | 5.2 |
@@ -782,7 +784,7 @@ Pas ze zdjęciem tła na całą szerokość (wzorzec R3), wys. 280 px desktop / 
 | wpis-5-meta | Wpis 5 | meta description | 155 znaków | 5.2 |
 | wpis-5-body | Wpis 5 | treść | 200 słów (mazurek kajmakowy: 45 zł, alergeny z intake) | 5.2 |
 
-### 6. Kontakt (57 id)
+### 6. Kontakt (59 id)
 | id | Sekcja | Typ | Maks. długość | Podsekcja briefu |
 |----|--------|-----|---------------|------------------|
 | kont-page-title | head | meta title | 60 znaków | 6 |
@@ -820,6 +822,8 @@ Pas ze zdjęciem tła na całą szerokość (wzorzec R3), wys. 280 px desktop / 
 | kont-f-message-label | Formularz | etykieta pola | 1 słowo | 6.4 |
 | kont-f-message-hint | Formularz | podpowiedź | 15 słów (może wspomnieć o firmach B2B) | 6.4 / 1.6 |
 | kont-f-required-note | Formularz | p krótki | 8 słów | 6.4 |
+| kont-f-privacy-note | Formularz | p krótki (klauzula RODO) | 35 słów; dane administratora OTWARTE (brak w intake) | 6.4 + P5a |
+| kont-f-privacy-link | Formularz | link → polityka-prywatnosci.html | 3 słowa | 6.4 + P5a |
 | kont-f-submit | Formularz | przycisk | 3 słowa | 6.4 |
 | kont-f-success | Formularz | komunikat | 25 słów (bez obietnicy czasu odpowiedzi) | 6.4 |
 | kont-f-error-generic | Formularz | komunikat | 20 słów | 6.4 |
