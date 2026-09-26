@@ -1,5 +1,5 @@
 # Intake: test-piekarnia
-**Status: QUESTIONS**
+**Status: READY**
 
 ## Opis od użytkownika (dosłownie)
 "zróbmy stronę lokalnej piekarni"
@@ -8,7 +8,8 @@
 - Branża: piekarnia, lokalna (z opisu)
 - Nazwa: **„Piekarynka nad Zegrzem”** (odpowiedź uzupełniająca 1: „a) „Piekarynka nad Zegrzem" (poprawna forma gramatyczna).”)
   - ~~„Piekarynka nad zegrza”~~ (zastąpione odpowiedzią uzupełniającą 1)
-- Typ: c) piekarnia rzemieślnicza (chleb na zakwasie, długa fermentacja, mąki ekologiczne). Uwaga: w opisie tej opcji było „mąki ekologiczne”, a użytkownik zakazał słowa „ekologiczne”, patrz pytanie otwarte 2
+- Typ: **piekarnia rzemieślnicza. Piszemy o zakwasie i długiej fermentacji, a o mąkach ekologicznych nie piszemy wcale** (runda 3, odpowiedź 2: „a) Wersja rzemieślnicza: piszemy o zakwasie i długiej fermentacji, a o mąkach ekologicznych nie piszemy wcale. Zakaz słowa „ekologiczne" obowiązuje.”)
+  - ~~c) piekarnia rzemieślnicza (chleb na zakwasie, długa fermentacja, mąki ekologiczne)~~ (doprecyzowane: bez „mąk ekologicznych”)
 - Lokalizacja: **jedna piekarnia, Serock, ul. Rynek 12, 05-140 Serock** (odpowiedź uzupełniająca 2: „a) Jedna piekarnia, w Serocku, ul. Rynek 12, 05-140 Serock. Wcześniejszą odpowiedź o „kilku punktach" proszę pominąć.”)
   - ~~b) kilka punktów w jednym mieście~~ (zastąpione, użytkownik prosi o pominięcie)
 - Zasięg dostaw: promień 10 km (z odpowiedzi 25)
@@ -42,6 +43,7 @@
 - Język: a) tylko polski
 - Ton: a) ciepły i luźny, na „Ty” („Wpadnij po świeży chleb!”)
 - Czego nie pisać / obiecywać (odpowiedź uzupełniająca 5, dosłownie): „a) To, co podałem, można pisać: bez polepszaczy, 18 h fermentacji zakwasu, osobna strefa bezglutenowa, dostawa gratis od 80 zł. Proszę nie dodawać żadnych własnych deklaracji (np. „ekologiczne", „najlepsze w okolicy", „mąka z lokalnych młynów").”
+  - Potwierdzenie (runda 3, odpowiedź 2): „Zakaz słowa „ekologiczne" obowiązuje.”
   - ~~„a - nie obiecuj niczego”~~ (doprecyzowane odpowiedzią uzupełniającą 5)
 
 ## F. Funkcje
@@ -78,7 +80,17 @@ Podział na kategorie, z cenami.
 | Kanapki i przekąski | Kanapka z pastą jajeczną | 9 zł |
 | Kanapki i przekąski | Zapiekanka | 12 zł |
 
-### Alergeny (odpowiedź 27 + odpowiedź uzupełniająca 7)
+Wypieki dnia spoza powyższego cennika (runda 3, odpowiedź 1; użytkownik nie przypisał im kategorii):
+
+| Produkt | Cena | Alergeny |
+|---|---|---|
+| Bułka z ziarnami (wtorek) | 2,50 zł | gluten, sezam |
+| Chleb z żurawiną i orzechami (środa) | 15 zł | gluten, orzechy (włoskie) |
+| Ciasto drożdżowe z kruszonką (niedziela) | 6 zł / kawałek | gluten, jaja, mleko |
+
+Doprecyzowanie (dosłownie): „„drożdżowe z kruszonką" to ciasto drożdżowe na blasze, sprzedawane na kawałki (nie drożdżówka). Na stronie proszę używać nazwy „ciasto drożdżowe z kruszonką".”
+
+### Alergeny (odpowiedź 27 + odpowiedź uzupełniająca 7 + runda 3)
 Przy każdym produkcie pełna lista alergenów.
 
 | Produkt | Alergeny |
@@ -99,6 +111,9 @@ Przy każdym produkcie pełna lista alergenów.
 | Mazurek kajmakowy | gluten, jaja, mleko, orzechy |
 | Kanapka z pastą jajeczną | gluten, jaja, gorczyca |
 | Zapiekanka | gluten, mleko |
+| Bułka z ziarnami | gluten, sezam |
+| Chleb z żurawiną i orzechami | gluten, orzechy (włoskie) |
+| Ciasto drożdżowe z kruszonką | gluten, jaja, mleko |
 | Torty | zależnie od zamówienia, informacja przy składaniu |
 
 Dopisek na stronie (dosłownie): „w piekarni pracujemy z orzechami i sezamem, więc możliwe są śladowe ilości.”
@@ -123,21 +138,11 @@ a) Piekarnię założył w 1987 roku pan Józef Kowalczyk, który przez lata dos
 ### Aktualności / oferta dnia
 Z odpowiedzi 29 (dosłownie): a) + b) Codziennie publikujemy „wypiek dnia". Sezonowo: tłusty czwartek, rogale na 11 listopada, pierniki w grudniu i mazurki na Wielkanoc.
 
-„Wypiek dnia”, cały tydzień (odpowiedź uzupełniająca 8):
+„Wypiek dnia”, cały tydzień (odpowiedź uzupełniająca 8, nazwa niedzielna wg rundy 3):
 - Poniedziałek: chleb orkiszowy
 - Wtorek: bułki z ziarnami
 - Środa: chleb z żurawiną i orzechami
 - Czwartek: pączki z różą
 - Piątek: focaccia z rozmarynem
 - Sobota: chałka maślana z kruszonką
-- Niedziela: drożdżowe z kruszonką
-
-## Otwarte pytania (tylko przy statusie QUESTIONS)
-
-1. **Wypieki dnia spoza cennika i listy alergenów.** Trzy pozycje z tygodniowego „wypieku dnia” nie mają ceny ani alergenów: **bułki z ziarnami** (wtorek), **chleb z żurawiną i orzechami** (środa) i **drożdżowe z kruszonką** (niedziela). To ważne, bo miała być pełna lista alergenów przy każdym produkcie, a chleb z orzechami może dotyczyć alergików.
-   a) podam cenę i alergeny dla tych trzech wypieków (oraz napiszę, czym dokładnie jest „drożdżowe z kruszonką”, np. drożdżówka czy ciasto drożdżowe na kawałki)
-   b) podam tylko alergeny, bez cen (wypiek dnia bez ceny na stronie)
-   c) zamieńcie je na produkty, które już są w cenniku (napisz, na które)
-2. **„Mąki ekologiczne” a zakaz słowa „ekologiczne”.** W pierwszej rundzie wybrałeś typ „c) piekarnia rzemieślnicza (chleb na zakwasie, długa fermentacja, mąki ekologiczne)”, a teraz prosisz, żeby nie pisać „ekologiczne”.
-   a) piekarnia rzemieślnicza: zakwas i długa fermentacja tak, o mąkach ekologicznych nie piszemy
-   b) mąki naprawdę są ekologiczne i można to napisać
+- Niedziela: ciasto drożdżowe z kruszonką (~~„drożdżowe z kruszonką”~~, nazwa zastąpiona na prośbę użytkownika)
