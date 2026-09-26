@@ -27,7 +27,9 @@
 
 ## D. Wygląd
 - Styl: a) ciepły i domowy (drewno, kremowe kolory, swojski klimat)
-- Kolory: a) ciepłe: beże, brązy, złoto, kolor skórki chleba. Kolory zakazane: brak odpowiedzi
+- Kolory: a) ciepłe: beże, brązy, złoto, kolor skórki chleba
+- Kolory zakazane (dosłownie): „nie mam zakazanych kolorow”
+  - ~~brak odpowiedzi~~ (zastąpione odpowiedzią użytkownika)
 - Logo: b) jest tylko szyld / nazwa, bez pliku logo
 - Strony wzorcowe (ocena zrzutów 8 stron ponumerowanych 1–8, pokazanych przez managera):
   - Odpowiedź użytkownika (dosłownie): „1,3,7 sie podobaja”. Na pytanie o potwierdzenie numerów i ocenę pozostałych stron: „tak dobrze odczytales reszta taka sobie”

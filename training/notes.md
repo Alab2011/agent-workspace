@@ -21,7 +21,21 @@ Co działało dobrze:
 | I-3 | 29 pytań na start to dużo dla klienta. | Oznaczać pytania kluczowe (⭐), a resztę opisać jako „opcjonalne, jeśli wiesz”. | APPROVED |
 
 ### interpreter
-_w toku_
+Przebiegi: 4 (+1 po kontroli konfliktu). Pytania: 5 → 2 → 0 (READY).
+- ✅ Pytał tylko o luki, nie powtarzał pytań informatora.
+- ✅ Wyłapał niejednoznaczną odpowiedź „3a” na pytanie z trzema podpunktami i niczego nie rozstrzygnął sam.
+
+| # | Problem | Poprawka promptu | Status |
+|---|---------|------------------|--------|
+| P-1 | Pytanie z podpunktami (a/b/c) i odpowiedź jedną literą dały niejednoznaczność, potrzebna była dodatkowa runda. | Każdy podpunkt dostaje własny numer (3, 4, 5 zamiast 3a, 3b, 3c). Dotyczy informatora i interpretera. | PROPOSED |
 
 ### researcher
-_w toku_
+Przebiegi: 3. Dwa pierwsze nieudane (WebFetch → EGRESS_BLOCKED), trzeci w wariancie B1 (manager pobrał strony i zrobił zrzuty).
+- ✅ Za każdym razem uczciwie raportował 0 przejrzanych stron, nie zmyślał statystyk „x/N” i nie nadpisał pliku gorszą wersją.
+- ✅ W B1 przeanalizował 7/8 stron. Stronę z ekranem anty-botowym odrzucił, a braki na zrzutach uzupełniał z HTML, z oznaczeniem źródła.
+- Środowisko: patrz sekcja „Przygotowanie środowiska” w `pipeline.md`.
+
+### manager (ja)
+| # | Problem | Reguła | Status |
+|---|---------|--------|--------|
+| M-1 | Odpowiedź „nie mam zakazanych kolorów” trafiła tylko do interpretera, a do intake nie. Powstały dwa rozbieżne źródła prawdy. | Każdy fakt od użytkownika najpierw trafia przez informatora do `intake.md`, a dopiero potem do innych agentów. | APPLIED (poprawione w intake) |
