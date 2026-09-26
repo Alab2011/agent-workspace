@@ -156,7 +156,7 @@ summary{font-weight:700;min-height:44px;cursor:pointer}
 </head>
 <body>
 
-<div class="proto-note">PROTOTYP (wireframe) – 6 podstron jako osobne bloki: #page-start, #page-oferta, #page-zamowienia, #page-o-nas, #page-aktualnosci, #page-kontakt. Tekst w [nawiasach] = id z mapy tekstów w design.md (bez finalnych treści). „fakt” = wartość z intake. Tryb ciemny: automatycznie wg systemu. Zwęź okno, żeby zobaczyć wersję mobilną (&lt;768 px) i tabletową (&lt;1100 px).</div>
+<div class="proto-note">PROTOTYP (wireframe) – 6 podstron jako osobne bloki: #page-start, #page-oferta, #page-zamowienia, #page-o-nas, #page-aktualnosci, #page-kontakt (+ dodatek #page-polityka z decyzji P5a). Uwzględnione decyzje: P1a–P9a; OTWARTE zostały tylko: próg 14:00 dla tortów (P6) i dane administratora w polityce prywatności. Tekst w [nawiasach] = id z mapy tekstów w design.md (bez finalnych treści). „fakt” = wartość z intake. Tryb ciemny: automatycznie wg systemu. Zwęź okno, żeby zobaczyć wersję mobilną (&lt;768 px) i tabletową (&lt;1100 px).</div>
 
 <!-- ============================================================ -->
 <!-- PODSTRONA 1: START -->
@@ -702,6 +702,29 @@ summary{font-weight:700;min-height:44px;cursor:pointer}
 
   <footer class="footer"><div class="wrap"><p><b>[0.2 STOPKA – identyczna jak na Starcie]</b> [g-footer-name] · [g-footer-address] · [g-footer-phone] · [g-footer-hours] · FB/IG · [g-footer-allergen-note] · <a href="#">[g-footer-allergen-link]</a></p><p class="copy">[g-footer-copy] · <a href="#page-polityka">[g-footer-privacy-link]</a></p></div></footer>
   <nav class="sticky-demo"><a href="#">☎<span>[g-sticky-call]</span></a><a class="o" href="#">[g-sticky-order]</a><a class="w" href="#">[g-sticky-write] → #napisz</a></nav>
+</section>
+
+<!-- ============================================================ -->
+<!-- DODATEK: POLITYKA PRYWATNOŚCI (decyzja P5a, poza briefem – do dopisania przez interpretera; poza menu głównym) -->
+<!-- ============================================================ -->
+<section id="page-polityka" class="page" aria-label="Podstrona Polityka prywatności">
+  <p class="page-label">DODATEK (P5a): POLITYKA PRYWATNOŚCI (polityka-prywatnosci.html) – poza menu głównym, link w stopce i przy formularzach</p>
+  <header>
+    <div class="mainbar"><div class="wrap">
+      <a class="wordmark" href="#">[g-wordmark: Piekarynka]<small>[nad Zegrzem]</small></a>
+      <span class="muted">[nagłówek wspólny jak na pozostałych podstronach – żaden link menu nie jest aktywny]</span>
+    </div></div>
+  </header>
+  <div class="sec alt" style="padding:48px 0"><div class="wrap" style="max-width:760px">
+    <h1>[pp-title: h1, maks. 3 słowa]</h1>
+    <p class="muted">[pp-updated: data aktualizacji]</p>
+  </div></div>
+  <div class="sec"><div class="wrap" style="max-width:760px">
+    <h2 style="font-size:1.5rem">[pp-body: h2 punktu]</h2>
+    <p>[pp-body: treść, maks. 600 słów, bez zdjęć i bez CTA]</p>
+    <p class="err">OTWARTE: dane administratora (pełna nazwa firmy, adres rejestrowy, NIP, kontakt w sprawach danych) i okres przechowywania – brak w intake, nie wymyślać.</p>
+  </div></div>
+  <footer class="footer"><div class="wrap"><p><b>[0.2 STOPKA – identyczna jak na Starcie]</b></p><p class="copy">[g-footer-copy] · <a href="#page-polityka">[g-footer-privacy-link]</a></p></div></footer>
 </section>
 
 </body>
