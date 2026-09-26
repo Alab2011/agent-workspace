@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>[PROTOTYP / WIREFRAME] Piekarynka nad Zegrzem – 6 podstron</title>
+<!-- Wireframe: układ i hierarchia. Teksty = id z mapy tekstów (design.md). Szare prostokąty = zdjęcia zastępcze. Bez JS. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,700;1,400;1,700&family=Mulish:wght@400;600;700&display=swap&subset=latin-ext" rel="stylesheet">
+<style>
+:root{
+  color-scheme: light dark;
+  --bg:#FBF6EE; --surface:#FFFDF9; --surface-alt:#F3E8D7;
+  --text:#3B2A1E; --text-muted:#6B5443;
+  --primary:#8A4B22; --primary-hover:#6F3A18; --on-primary:#FFFFFF;
+  --accent:#C8962E; --accent-hover:#DDB054; --on-accent:#3B2A1E;
+  --band:#3B2A1E; --band-text:#F5EBDD;
+  --border:#E3D3BC; --border-input:#8C7359;
+  --diet-bg:#E4EFDF; --diet-text:#2F6B3A; --error:#A12A1F; --focus:#3B2A1E;
+  --scrim:rgba(31,21,16,.70); --scrim-text:#F5EBDD;
+  --link:var(--primary);
+  --radius-sm:6px; --radius-md:10px; --radius-lg:16px;
+  --shadow-1:0 1px 2px rgba(59,42,30,.08),0 4px 12px rgba(59,42,30,.08);
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#1F1510; --surface:#2B1E16; --surface-alt:#362619;
+    --text:#F5EBDD; --text-muted:#CDBBA5;
+    --primary:#D08A52; --primary-hover:#DDA06E; --on-primary:#1F1510;
+    --accent:#E0B25A; --accent-hover:#EBC67A; --on-accent:#1F1510;
+    --band:#362619; --band-text:#F5EBDD;
+    --border:#4A3626; --diet-bg:#2A3A26; --diet-text:#CFE6C8; --error:#F08A7E; --focus:#E0B25A;
+    --link:var(--accent);
+    --shadow-1:none;
+  }
+}
+*{box-sizing:border-box}
+body{margin:0;background:#8a8580;font:400 1.125rem/1.6 Mulish,system-ui,sans-serif;color:var(--text)}
+h1,h2,h3{font-family:Alegreya,Georgia,serif;font-weight:700;margin:0 0 .5rem;line-height:1.2}
+h1{font-size:clamp(2rem,1.5rem + 2vw,3rem)} h2{font-size:clamp(1.75rem,1.4rem + 1.4vw,2.5rem)} h3{font-size:clamp(1.25rem,1.1rem + .6vw,1.5rem)}
+p{margin:0 0 .75rem}
+a{color:var(--link)}
+.proto-note{background:#222;color:#fff;font:600 14px/1.4 monospace;padding:10px 16px}
+.page{background:var(--bg);margin:0 auto 64px;max-width:1440px;outline:4px solid #222}
+.page-label{background:#222;color:#fff;font:700 18px/1.3 monospace;padding:14px 24px;margin:0}
+.wrap{max-width:1200px;margin:0 auto;padding:0 32px}
+.sec{padding:72px 0} .sec.alt{background:var(--surface-alt)} .sec.band{background:var(--band);color:var(--band-text)}
+.sec-tag{display:inline-block;font:700 12px/1 monospace;background:#222;color:#fff;padding:4px 8px;border-radius:4px;margin-bottom:10px}
+.h2-line::after{content:"";display:block;width:64px;height:3px;background:var(--accent);margin-top:10px}
+.muted{color:var(--text-muted);font-size:1rem}
+.t{font-style:italic}
+.fact{font-style:normal;border-bottom:2px dotted var(--primary)}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:14px 24px;border-radius:var(--radius-md);font:700 1.0625rem/1 Mulish,sans-serif;text-decoration:none;border:0}
+.btn-order{background:var(--primary);color:var(--on-primary)} .btn-write{background:var(--accent);color:var(--on-accent)}
+.btn-row{display:flex;gap:12px;flex-wrap:wrap}
+.link-more{font-weight:600;text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:4px}
+.grid{display:grid;gap:32px} .g2{grid-template-columns:1fr 1fr} .g3{grid-template-columns:repeat(3,1fr)} .g4{grid-template-columns:repeat(4,1fr)} .g5{grid-template-columns:repeat(5,1fr)} .g57{grid-template-columns:5fr 7fr} .g84{grid-template-columns:8fr 4fr}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);padding:24px;box-shadow:var(--shadow-1)}
+.ph{background:repeating-linear-gradient(45deg,#cfc6ba,#cfc6ba 12px,#c2b8aa 12px,#c2b8aa 24px);color:#3B2A1E;display:flex;align-items:center;justify-content:center;text-align:center;font:600 14px/1.3 monospace;padding:8px;border-radius:var(--radius-lg);min-height:180px}
+.ph.flat{border-radius:0}
+.badge{display:inline-block;background:var(--surface-alt);color:var(--text);border:1px solid var(--border);border-radius:var(--radius-sm);font:600 .9375rem/1.2 Mulish,sans-serif;padding:3px 8px;margin:2px}
+.badge.diet{background:var(--diet-bg);color:var(--diet-text);border-color:transparent}
+.badge.today{background:var(--accent);color:var(--on-accent);border-color:transparent}
+.icon{width:40px;height:40px;border-radius:50%;border:2px solid var(--primary);display:inline-flex;align-items:center;justify-content:center;font:700 12px monospace;color:var(--primary)}
+.bignum{font:700 clamp(3rem,2rem + 4vw,5.5rem)/1 Alegreya,serif;color:var(--primary)}
+/* HEADER */
+.topbar{background:var(--surface-alt);font-size:1rem}
+.topbar .wrap{display:flex;justify-content:space-between;align-items:center;min-height:40px;gap:16px}
+.topbar .phone{font-size:1.25rem;font-weight:700;color:var(--primary)}
+.mainbar{background:var(--bg);border-bottom:1px solid var(--border)}
+.mainbar .wrap{display:flex;align-items:center;justify-content:space-between;min-height:80px;gap:24px}
+.wordmark{font:700 italic 1.6rem/1 Alegreya,serif;color:var(--text);text-decoration:none}
+.wordmark small{display:block;font:700 .75rem/1.4 Mulish,sans-serif;letter-spacing:.08em;text-transform:uppercase;font-style:normal}
+.nav{display:flex;gap:22px;font-weight:600;font-size:1.0625rem}
+.nav a{color:var(--text);text-decoration:none;padding:6px 0}
+.nav a.current{border-bottom:3px solid var(--accent)}
+.menu-btn,.phone-btn{display:none}
+/* HERO / photo bands */
+.photo{position:relative;overflow:hidden;color:var(--scrim-text)}
+.photo .ph{position:absolute;inset:0;border-radius:0;min-height:0;align-items:flex-start;justify-content:flex-end;padding:16px}
+.photo .scrim-l{position:absolute;inset:0;background:linear-gradient(90deg,rgba(31,21,16,.70) 0%,rgba(31,21,16,.70) 50%,rgba(31,21,16,.15) 100%)}
+.photo .scrim-r{position:absolute;inset:0;background:linear-gradient(270deg,rgba(31,21,16,.70) 0%,rgba(31,21,16,.70) 50%,rgba(31,21,16,.15) 100%)}
+.photo .scrim-full{position:absolute;inset:0;background:var(--scrim)}
+.photo .inner{position:relative;max-width:1200px;margin:0 auto;padding:0 32px}
+.hero{min-height:680px;display:flex;align-items:center}
+.hero .inner{width:100%}
+.hero .txt{max-width:600px}
+.hero-info{margin-top:20px;font-size:1rem}
+.pagehead{min-height:280px;display:flex;align-items:flex-end;padding-bottom:40px}
+.pagehead .inner{width:100%}
+.story{min-height:480px;display:flex;align-items:center}
+.story .txt{max-width:520px;margin-left:auto}
+.overlap{margin-top:-48px;position:relative}
+/* TABLES */
+table{width:100%;border-collapse:collapse}
+th,td{text-align:left;padding:14px 8px;border-bottom:1px solid var(--border);vertical-align:top}
+th{font-size:1rem;color:var(--text-muted)}
+td.price{text-align:right;font-weight:700;white-space:nowrap}
+.catnav{display:flex;gap:10px;flex-wrap:wrap}
+.chip{display:inline-flex;align-items:center;min-height:44px;padding:8px 16px;border:2px solid var(--border-input);border-radius:999px;font-weight:600;background:var(--surface);color:var(--text);text-decoration:none}
+.note{background:var(--surface-alt);border-left:4px solid var(--accent);padding:16px 20px;border-radius:var(--radius-md)}
+/* FORMS */
+fieldset{border:1px solid var(--border);border-radius:var(--radius-lg);padding:20px;margin:0 0 20px}
+legend{font:700 1.25rem Alegreya,serif;padding:0 8px}
+.step{display:inline-flex;width:32px;height:32px;border-radius:50%;background:var(--primary);color:var(--on-primary);align-items:center;justify-content:center;font:700 16px Mulish;margin-right:8px}
+label{display:block;font-weight:600;margin:12px 0 6px}
+.field{display:block;width:100%;min-height:52px;border:2px solid var(--border-input);border-radius:var(--radius-md);background:var(--surface);padding:12px;font:1.125rem Mulish;color:var(--text-muted)}
+textarea.field{min-height:140px}
+.row3{display:grid;grid-template-columns:3fr 1fr;gap:12px}
+.err{color:var(--error);font-size:1rem}
+details{border-bottom:1px solid var(--border);padding:16px 0}
+summary{font-weight:700;min-height:44px;cursor:pointer}
+/* timeline */
+.tl{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;margin-bottom:48px}
+.polaroid{background:#fff;padding:12px 12px 36px;transform:rotate(-1.5deg);box-shadow:var(--shadow-1)}
+.polaroid .ph{border-radius:0}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.gallery .big{grid-column:span 2;grid-row:span 2}
+.gallery .ph{min-height:160px;border-radius:8px}
+/* FOOTER */
+.footer{background:var(--band);color:var(--band-text);padding:56px 0 24px;font-size:1rem}
+.footer a{color:var(--accent)}
+.footer .grid{grid-template-columns:repeat(4,1fr)}
+.footer .copy{border-top:1px solid rgba(245,235,221,.2);margin-top:32px;padding-top:16px}
+.sticky-demo{display:none}
+/* RESPONSIVE */
+@media (max-width:1099px){
+  .nav{display:none}.menu-btn{display:inline-flex}
+  .g5{grid-template-columns:repeat(3,1fr)} .g4{grid-template-columns:1fr 1fr} .footer .grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:767px){
+  .wrap,.photo .inner{padding:0 16px}
+  .sec{padding:48px 0}
+  .topbar,.mainbar .btn-row{display:none}
+  .phone-btn{display:inline-flex}
+  .mainbar .wrap{min-height:64px}
+  .g2,.g3,.g4,.g5,.g57,.g84,.tl,.footer .grid{grid-template-columns:1fr}
+  .g5.usp{gap:8px} .g5.usp>div{display:flex;gap:12px;align-items:center;text-align:left!important}
+  .hero{min-height:560px;align-items:flex-end;padding-bottom:32px}
+  .photo .scrim-l,.photo .scrim-r{background:linear-gradient(0deg,rgba(31,21,16,.70) 0%,rgba(31,21,16,.70) 65%,rgba(31,21,16,.15) 100%)}
+  .hero .btn-row .btn{width:100%}
+  .pagehead{min-height:200px;padding-bottom:24px}
+  .story .txt{margin-left:0}
+  .overlap{margin-top:0}
+  .gallery{grid-template-columns:1fr 1fr}
+  thead{position:absolute;left:-9999px}
+  tr{display:grid;grid-template-columns:1fr auto;border-bottom:1px solid var(--border);padding:10px 0}
+  td{border:0;padding:4px 0} td.alg{grid-column:1 / -1;order:3}
+  .sticky-demo{display:grid;grid-template-columns:repeat(3,1fr);background:var(--surface);border-top:1px solid var(--border);box-shadow:0 -4px 16px rgba(0,0,0,.12)}
+  .sticky-demo a{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:64px;font:700 15px Mulish;text-decoration:none;color:var(--primary)}
+  .sticky-demo a.o{background:var(--primary);color:var(--on-primary)} .sticky-demo a.w{background:var(--accent);color:var(--on-accent)}
+}
+</style>
+</head>
+<body>
+
+<div class="proto-note">PROTOTYP (wireframe) – 6 podstron jako osobne bloki: #page-start, #page-oferta, #page-zamowienia, #page-o-nas, #page-aktualnosci, #page-kontakt. Tekst w [nawiasach] = id z mapy tekstów w design.md (bez finalnych treści). „fakt” = wartość z intake. Tryb ciemny: automatycznie wg systemu. Zwęź okno, żeby zobaczyć wersję mobilną (&lt;768 px) i tabletową (&lt;1100 px).</div>
+
+<!-- ============================================================ -->
+<!-- PODSTRONA 1: START -->
+<!-- ============================================================ -->
+<section id="page-start" class="page" aria-label="Podstrona Start">
+  <p class="page-label">PODSTRONA 1 / 6: START (index.html)</p>
+
+  <!-- 0.1 NAGŁÓWEK (wspólny) -->
+  <header>
+    <div class="topbar"><div class="wrap">
+      <span>⌖ [g-topbar-address: fakt]</span>
+      <span>◷ [g-topbar-hours-label] [g-topbar-hours-today: fakt, dynamiczne]</span>
+      <a class="phone" href="#">☎ [g-topbar-phone: fakt]</a>
+    </div></div>
+    <div class="mainbar"><div class="wrap">
+      <a class="wordmark" href="#">[g-wordmark: Piekarynka]<small>[nad Zegrzem]</small></a>
+      <nav class="nav" aria-label="[g-nav-aria]">
+        <a class="current" href="#page-start">[g-nav-start]</a><a href="#page-oferta">[g-nav-oferta]</a><a href="#page-zamowienia">[g-nav-zamowienia]</a><a href="#page-o-nas">[g-nav-onas]</a><a href="#page-aktualnosci">[g-nav-aktualnosci]</a><a href="#page-kontakt">[g-nav-kontakt]</a>
+      </nav>
+      <div class="btn-row"><a class="btn btn-order" href="#">[g-cta-order]</a><a class="btn btn-write" href="#">[g-cta-write]</a></div>
+      <span class="phone-btn icon" aria-label="[g-phone-aria]">☎</span>
+      <span class="menu-btn chip">☰ [g-menu-label]</span>
+    </div></div>
+  </header>
+
+  <!-- 1.1 HERO -->
+  <div class="photo hero">
+    <div class="ph">[ZDJĘCIE TŁA na całą szerokość: przekrój chleba żytniego na zakwasie; alt = start-hero-img-alt]</div>
+    <div class="scrim-l"></div>
+    <div class="inner"><div class="txt">
+      <span class="sec-tag">1.1 HERO [MUST]</span>
+      <p>[start-hero-eyebrow: etykieta, maks. 5 słów]</p>
+      <h1 class="h2-line">[start-hero-title: h1, maks. 8 słów]</h1>
+      <p style="font-size:1.25rem">[start-hero-lead: lead, maks. 30 słów – zakwas, długa fermentacja]</p>
+      <div class="btn-row"><a class="btn btn-order" href="#">[start-hero-cta-order: „Zamów”]</a><a class="btn btn-write" href="#">[start-hero-cta-write: „Napisz do nas”]</a></div>
+      <p class="hero-info">◷ [start-hero-hours-label] <b>[start-hero-hours-today: fakt]</b> · <a style="color:var(--scrim-text)" href="#">[start-hero-hours-link]</a><br>⌖ [start-hero-address: fakt]</p>
+    </div></div>
+  </div>
+
+  <!-- 1.3 WYPIEK DNIA -->
+  <div class="sec"><div class="wrap">
+    <span class="sec-tag">1.3 WYPIEK DNIA [SHOULD]</span>
+    <h2 class="h2-line">[start-wd-title: h2, maks. 4 słowa]</h2>
+    <p>[start-wd-lead: lead, maks. 20 słów]</p>
+    <div class="grid g57">
+      <div class="card">
+        <span class="badge today">[start-wd-today-label: „Dziś, &lt;dzień&gt;”]</span>
+        <div class="ph" style="margin:12px 0">[ZDJĘCIE 4:3 wypieku dnia; alt = start-wd-img-alt-1…7 wg dnia]</div>
+        <h3>[start-wd-today-name: fakt, dynamiczne]</h3>
+        <p><b style="font-size:1.25rem">[start-wd-today-price: fakt]</b></p>
+        <p>[g-alg-label] <span class="badge">[start-wd-today-alg: fakt]</span></p>
+        <p class="muted">◷ [start-wd-delivery: fakt „druga dostawa ok. 12:00”]</p>
+      </div>
+      <div>
+        <h3>[start-wd-week-title: h3, maks. 4 słowa]</h3>
+        <table>
+          <tr><td>[start-wd-week-1: pon. – fakt]</td></tr>
+          <tr><td>[start-wd-week-2: wt. – fakt]</td></tr>
+          <tr><td>[start-wd-week-3: śr. – fakt]</td></tr>
+          <tr style="background:var(--surface-alt);font-weight:700"><td>[start-wd-week-4: czw. – fakt] ← dzisiejszy wiersz wyróżniony (aria-current="date")</td></tr>
+          <tr><td>[start-wd-week-5: pt. – fakt]</td></tr>
+          <tr><td>[start-wd-week-6: sob. – fakt]</td></tr>
+          <tr><td>[start-wd-week-7: niedz. – fakt „ciasto drożdżowe z kruszonką”]</td></tr>
+        </table>
+        <p style="margin-top:16px"><a class="link-more" href="#">[start-wd-link] →</a></p>
+      </div>
+    </div>
+  </div></div>
+
+  <!-- 1.4 SPECJALNOŚCI -->
+  <div class="sec alt"><div class="wrap">
+    <span class="sec-tag">1.4 ZAJAWKA OFERTY / SPECJALNOŚCI [SHOULD]</span>
+    <h2 class="h2-line">[start-spec-title: h2, maks. 6 słów]</h2>
+    <p>[start-spec-lead: lead, maks. 25 słów]</p>
+    <div class="grid g3">
+      <div class="card"><div class="ph">[ZDJĘCIE 4:3; alt = start-spec-1-img-alt]</div><h3 style="margin-top:12px">[start-spec-1-name: fakt „Chleb żytni na zakwasie”]</h3><p>[start-spec-1-desc: maks. 20 słów]</p><p><span class="badge">[start-spec-1-alg: fakt]</span> <b style="float:right">[start-spec-1-price: fakt]</b></p></div>
+      <div class="card"><div class="ph">[ZDJĘCIE 4:3; alt = start-spec-2-img-alt]</div><h3 style="margin-top:12px">[start-spec-2-name: fakt „Pączek z różą”]</h3><p>[start-spec-2-desc: maks. 20 słów]</p><p><span class="badge">[start-spec-2-alg: fakt]</span> <b style="float:right">[start-spec-2-price: fakt]</b></p></div>
+      <div class="card"><div class="ph">[ZDJĘCIE 4:3; alt = start-spec-3-img-alt]</div><h3 style="margin-top:12px">[start-spec-3-name: fakt „Chałka maślana z kruszonką”]</h3><p>[start-spec-3-desc: maks. 20 słów]</p><p><span class="badge">[start-spec-3-alg: fakt]</span> <b style="float:right">[start-spec-3-price: fakt]</b></p></div>
+    </div>
+    <p style="margin-top:24px"><a class="link-more" href="#page-oferta">[start-spec-link] →</a></p>
+  </div></div>
+
+  <!-- 1.5 ZAJAWKA HISTORII -->
+  <div class="photo story">
+    <div class="ph">[ZDJĘCIE TŁA: ręce przy cieście, ciepłe światło; alt = start-story-img-alt]</div>
+    <div class="scrim-r"></div>
+    <div class="inner" style="width:100%"><div class="txt">
+      <span class="sec-tag">1.5 ZAJAWKA HISTORII [SHOULD]</span>
+      <div class="bignum" style="color:var(--accent)">[start-story-year: fakt „1987”]</div>
+      <h2>[start-story-title: h2, maks. 7 słów]</h2>
+      <p>[start-story-text: maks. 45 słów, fakty z intake „Historia”]</p>
+      <a class="link-more" style="color:var(--scrim-text)" href="#page-o-nas">[start-story-link] →</a>
+    </div></div>
+  </div>
+
+  <!-- 1.6 B2B -->
+  <div class="sec alt"><div class="wrap">
+    <div class="grid g2" style="align-items:center">
+      <div class="ph" style="min-height:300px">[ZDJĘCIE: kosze z pieczywem; alt = start-b2b-img-alt]</div>
+      <div>
+        <span class="sec-tag">1.6 DLA FIRM (B2B) [SHOULD]</span>
+        <h2 class="h2-line">[start-b2b-title: h2, maks. 6 słów]</h2>
+        <p>[start-b2b-text: maks. 35 słów – kawiarnie, restauracje, sklepy, codzienne poranne dostawy; BEZ warunków]</p>
+        <a class="btn btn-write" href="#page-kontakt">[start-b2b-cta: „Napisz do nas” → kontakt#napisz]</a>
+      </div>
+    </div>
+  </div></div>
+
+  <!-- 1.7 AKTUALNOŚCI -->
+  <div class="sec"><div class="wrap">
+    <span class="sec-tag">1.7 NAJNOWSZE AKTUALNOŚCI [SHOULD]</span>
+    <h2 class="h2-line">[start-news-title: h2, maks. 5 słów]</h2>
+    <div class="grid g3">
+      <div class="card"><div class="ph">[ZDJĘCIE 16:9; alt = akt-post-1-img-alt]</div><p class="muted" style="margin-top:12px"><span class="badge">[akt-tag-wd]</span> [akt-post-1-date]</p><h3>[akt-post-1-title]</h3><p>[akt-post-1-excerpt]</p><a class="link-more" href="#" aria-label="[start-news-more-aria]">[start-news-more] →</a></div>
+      <div class="card"><div class="ph">[ZDJĘCIE 16:9; alt = akt-post-2-img-alt]</div><p class="muted" style="margin-top:12px"><span class="badge">[akt-tag-season]</span> [akt-post-2-date]</p><h3>[akt-post-2-title]</h3><p>[akt-post-2-excerpt]</p><a class="link-more" href="#">[start-news-more] →</a></div>
+      <div class="card"><div class="ph">[ZDJĘCIE 16:9; alt = akt-post-3-img-alt]</div><p class="muted" style="margin-top:12px"><span class="badge">[akt-tag-season]</span> [akt-post-3-date]</p><h3>[akt-post-3-title]</h3><p>[akt-post-3-excerpt]</p><a class="link-more" href="#">[start-news-more] →</a></div>
+    </div>
+    <p style="margin-top:24px"><a class="link-more" href="#page-aktualnosci">[start-news-link] →</a></p>
+  </div></div>
+
+  <!-- 0.2 STOPKA (wspólna) -->
+  <footer class="footer"><div class="wrap">
+    <span class="sec-tag">0.2 STOPKA [MUST] – wspólna</span>
+    <div class="grid">
+      <div><div class="wordmark" style="color:var(--band-text)">[g-footer-name]</div><p>[g-footer-tagline: maks. 12 słów]</p><p>[g-footer-address: fakt]<br><a href="#">[g-footer-phone: fakt]</a><br><a href="#">[g-footer-email: fakt, przykładowy]</a></p></div>
+      <div><h3>[g-footer-hours-title]</h3><p>[g-footer-hours: fakt, 3 wiersze]</p></div>
+      <nav aria-label="[g-footer-nav-aria]"><h3>Menu</h3><p><a href="#">[g-nav-start]</a><br><a href="#">[g-nav-oferta]</a><br><a href="#">[g-nav-zamowienia]</a><br><a href="#">[g-nav-onas]</a><br><a href="#">[g-nav-aktualnosci]</a><br><a href="#">[g-nav-kontakt]</a></p></nav>
+      <div><h3>[g-footer-social-title]</h3><p><span class="icon" style="border-color:var(--accent);color:var(--accent)" aria-label="[g-footer-fb-aria]">FB</span> <span class="icon" style="border-color:var(--accent);color:var(--accent)" aria-label="[g-footer-ig-aria]">IG</span></p><p style="border:1px solid rgba(245,235,221,.3);padding:12px;border-radius:10px">[g-footer-allergen-note: fakt, dosłownie]<br><a href="#">[g-footer-allergen-link]</a></p></div>
+    </div>
+    <p class="copy">[g-footer-copy]</p>
+  </div></footer>
+  <!-- 0.3 PASEK MOBILNY (podgląd, widoczny tylko < 768 px; w kodzie position: fixed na dole) -->
+  <nav class="sticky-demo" aria-label="[g-sticky-aria]"><a href="#">☎<span>[g-sticky-call]</span></a><a class="o" href="#">[g-sticky-order]</a><a class="w" href="#">[g-sticky-write]</a></nav>
+</section>
+
+<!-- ============================================================ -->
+<!-- PODSTRONA 2: OFERTA -->
+<!-- ============================================================ -->
+<section id="page-oferta" class="page" aria-label="Podstrona Oferta">
+  <p class="page-label">PODSTRONA 2 / 6: OFERTA (oferta.html)</p>
+  <header>
+    <div class="topbar"><div class="wrap"><span>⌖ [g-topbar-address]</span><span>◷ [g-topbar-hours-label] [g-topbar-hours-today]</span><a class="phone" href="#">☎ [g-topbar-phone]</a></div></div>
+    <div class="mainbar"><div class="wrap">
+      <a class="wordmark" href="#">[g-wordmark: Piekarynka]<small>[nad Zegrzem]</small></a>
+      <nav class="nav" aria-label="[g-nav-aria]"><a href="#page-start">[g-nav-start]</a><a class="current" href="#page-oferta">[g-nav-oferta]</a><a href="#page-zamowienia">[g-nav-zamowienia]</a><a href="#page-o-nas">[g-nav-onas]</a><a href="#page-aktualnosci">[g-nav-aktualnosci]</a><a href="#page-kontakt">[g-nav-kontakt]</a></nav>
+      <div class="btn-row"><a class="btn btn-order" href="#">[g-cta-order]</a><a class="btn btn-write" href="#">[g-cta-write]</a></div>
+      <span class="phone-btn icon">☎</span><span class="menu-btn chip">☰ [g-menu-label]</span>
+    </div></div>
+  </header>
+
+  <div class="photo pagehead">
+    <div class="ph">[PAS ZDJĘCIA TŁA – pieczywo na półkach; dekoracyjne, alt=""]</div><div class="scrim-full"></div>
+    <div class="inner"><h1>[oferta-title: h1, maks. 5 słów]</h1><p>[oferta-lead: lead, maks. 30 słów]</p></div>
+  </div>
+
+  <div class="sec" style="padding-top:32px"><div class="wrap" style="max-width:1024px">
+    <nav class="catnav" aria-label="[oferta-catnav-aria]"><a class="chip" href="#">[oferta-cat-pieczywo]</a><a class="chip" href="#">[oferta-cat-slodkie]</a><a class="chip" href="#">[oferta-cat-dnia]</a><a class="chip" href="#">[oferta-cat-sezonowe]</a><a class="chip" href="#">[oferta-cat-torty]</a><a class="chip" href="#">[oferta-cat-kanapki]</a></nav>
+
+    <div style="margin:32px 0">
+      <span class="sec-tag">2.5 FILTR DIET [NICE] (ukryty bez JS)</span>
+      <p><b>[oferta-filter-title]</b> <span class="chip">[oferta-filter-gf]</span> <span class="chip">[oferta-filter-lf]</span> <span class="chip">[oferta-filter-nuts]</span> <span class="chip">[oferta-filter-sesame]</span> <a class="link-more" href="#">[oferta-filter-reset]</a></p>
+      <p class="muted">aria-live: [oferta-filter-status] · przy orzechach/sezamie: [oferta-filter-trace] · brak wyników: [oferta-filter-empty] · TORT: zachowanie OTWARTE (P3)</p>
+    </div>
+
+    <div class="note" id="alergeny"><span class="sec-tag">2.3 + 2.4 DOPISEK</span><p><b>[oferta-trace-note: fakt, dosłownie]</b></p><p>[oferta-gf-note: maks. 20 słów, fakt]</p></div>
+
+    <span class="sec-tag" style="margin-top:40px">2.1 CENNIK + 2.2 ALERGENY + 2.4 OZNACZENIA [MUST]</span>
+    <h2 class="h2-line">[oferta-cat-pieczywo]</h2>
+    <table><thead><tr><th>[oferta-th-product]</th><th>[oferta-th-alg]</th><th style="text-align:right">[oferta-th-price]</th></tr></thead><tbody>
+      <tr><td>[oferta-p-chleb-zytni-name]</td><td class="alg"><span class="badge">[…-alg: gluten]</span></td><td class="price">[oferta-p-chleb-zytni-price]</td></tr>
+      <tr><td>[oferta-p-chleb-pszenny-name]</td><td class="alg"><span class="badge">[…-alg]</span></td><td class="price">[…-price]</td></tr>
+      <tr><td>[oferta-p-bagietka-name]</td><td class="alg"><span class="badge">[…-alg]</span></td><td class="price">[…-price]</td></tr>
+      <tr><td>[oferta-p-kajzerka-name]</td><td class="alg"><span class="badge">[…-alg]</span></td><td class="price">[…-price]</td></tr>
+      <tr><td>[oferta-p-grahamka-name]</td><td class="alg"><span class="badge">[gluten]</span><span class="badge">[sezam]</span></td><td class="price">[…-price]</td></tr>
+      <tr><td>[oferta-p-chleb-orkiszowy-name]</td><td class="alg"><span class="badge">[…-alg]</span></td><td class="price">[…-price]</td></tr>
+      <tr><td>[oferta-p-chleb-bezglutenowy-name] <span class="badge diet">[oferta-badge-gf]</span></td><td class="alg"><span class="badge">[…-alg: jaja]</span></td><td class="price">[…-price]</td></tr>
+      <tr><td>[oferta-p-focaccia-name]</td><td class="alg"><span class="badge">[…-alg]</span></td><td class="price">[…-price]</td></tr>
+      <tr><td>[oferta-p-chalka-name]</td><td class="alg"><span class="badge">[gluten]</span><span class="badge">[jaja]</span><span class="badge">[mleko]</span></td><td class="price">[…-price]</td></tr>
+    </tbody></table>
+
+    <h2 class="h2-line" style="margin-top:48px">[oferta-cat-slodkie]</h2>
+    <table><tbody>
+      <tr><td>[oferta-p-paczek-name]</td><td class="alg"><span class="badge">[…-alg]</span></td><td class="price">[…-price]</td></tr>
+      <tr><td>[oferta-p-drozdzowka-ser-name]</td><td class="alg"><span class="badge">[…-alg]</span></td><td class="price">[…-price]</td></tr>
+      <tr><td>[oferta-p-rogal-name]</td><td class="alg"><span class="badge">[…-alg]</span></td><td class="price">[…-price]</td></tr>
+      <tr><td>[oferta-p-szarlotka-name]</td><td class="alg"><span class="badge">[…-alg]</span></td><td class="price">[…-price: „/kawałek”]</td></tr>
+      <tr><td>[oferta-p-drozdzowka-bez-laktozy-name] <span class="badge diet">[oferta-badge-lf]</span></td><td class="alg"><span class="badge">[…-alg]</span></td><td class="price">[…-price]</td></tr>
+    </tbody></table>
+
+    <h2 class="h2-line" style="margin-top:48px">[oferta-cat-dnia]</h2><p class="muted">[oferta-cat-dnia-note: maks. 15 słów]</p>
+    <table><tbody>
+      <tr><td>[oferta-p-bulka-ziarna-name] <span class="muted">[…-when: wtorek]</span></td><td class="alg"><span class="badge">[…-alg]</span></td><td class="price">[…-price]</td></tr>
+      <tr><td>[oferta-p-chleb-zurawina-name] <span class="muted">[…-when: środa]</span></td><td class="alg"><span class="badge">[…-alg]</span></td><td class="price">[…-price]</td></tr>
+      <tr><td>[oferta-p-ciasto-drozdzowe-name] <span class="muted">[…-when: niedziela]</span></td><td class="alg"><span class="badge">[…-alg]</span></td><td class="price">[…-price]</td></tr>
+    </tbody></table>
+
+    <h2 class="h2-line" style="margin-top:48px">[oferta-cat-sezonowe]</h2><p class="muted">[oferta-cat-sezonowe-note: maks. 15 słów]</p>
+    <table><tbody>
+      <tr><td>[oferta-p-pierniki-name] <span class="muted">[…-when: grudzień]</span></td><td class="alg"><span class="badge">[…-alg]</span></td><td class="price">[…-price]</td></tr>
+      <tr><td>[oferta-p-mazurek-name] <span class="muted">[…-when: Wielkanoc]</span></td><td class="alg"><span class="badge">[…-alg]</span></td><td class="price">[…-price]</td></tr>
+    </tbody></table>
+
+    <h2 class="h2-line" style="margin-top:48px">[oferta-cat-torty]</h2><p class="muted">[oferta-cat-torty-note: maks. 20 słów, fakt: min. 3 dni]</p>
+    <table><tbody>
+      <tr><td>[oferta-p-tort-name]</td><td class="alg">[oferta-p-tort-alg: fakt „zależnie od zamówienia, informacja przy składaniu”]</td><td class="price">[…-price: „od 120 zł”]</td></tr>
+    </tbody></table>
+
+    <h2 class="h2-line" style="margin-top:48px">[oferta-cat-kanapki]</h2>
+    <table><tbody>
+      <tr><td>[oferta-p-kanapka-jajeczna-name]</td><td class="alg"><span class="badge">[gluten]</span><span class="badge">[jaja]</span><span class="badge">[gorczyca]</span></td><td class="price">[…-price]</td></tr>
+      <tr><td>[oferta-p-zapiekanka-name]</td><td class="alg"><span class="badge">[…-alg]</span></td><td class="price">[…-price]</td></tr>
+    </tbody></table>
+
+    <div class="note" style="margin-top:32px"><p><b>[oferta-trace-note: fakt, dosłownie – drugie wystąpienie]</b></p></div>
+  </div></div>
+
+  <div class="sec alt" style="text-align:center"><div class="wrap" style="max-width:720px">
+    <span class="sec-tag">2.6 PRZYCISK „ZAMÓW” [MUST]</span>
+    <h2>[oferta-cta-title: h2, maks. 8 słów]</h2><p>[oferta-cta-text: maks. 25 słów, fakty: terminy]</p>
+    <a class="btn btn-order" href="#page-zamowienia">[oferta-cta-order: „Zamów”]</a>
+  </div></div>
+
+  <footer class="footer"><div class="wrap"><p><b>[0.2 STOPKA – identyczna jak na Starcie]</b> [g-footer-name] · [g-footer-address] · [g-footer-phone] · [g-footer-hours] · FB/IG · [g-footer-allergen-note] · <a href="#">[g-footer-allergen-link]</a></p><p class="copy">[g-footer-copy]</p></div></footer>
+  <nav class="sticky-demo"><a href="#">☎<span>[g-sticky-call]</span></a><a class="o" href="#">[g-sticky-order]</a><a class="w" href="#">[g-sticky-write]</a></nav>
+</section>
+
+<!-- ============================================================ -->
+<!-- PODSTRONA 3: ZAMÓWIENIA -->
+<!-- ============================================================ -->
+<section id="page-zamowienia" class="page" aria-label="Podstrona Zamówienia">
+  <p class="page-label">PODSTRONA 3 / 6: ZAMÓWIENIA (zamowienia.html)</p>
+  <header>
+    <div class="topbar"><div class="wrap"><span>⌖ [g-topbar-address]</span><span>◷ [g-topbar-hours-label] [g-topbar-hours-today]</span><a class="phone" href="#">☎ [g-topbar-phone]</a></div></div>
+    <div class="mainbar"><div class="wrap">
+      <a class="wordmark" href="#">[g-wordmark: Piekarynka]<small>[nad Zegrzem]</small></a>
+      <nav class="nav" aria-label="[g-nav-aria]"><a href="#page-start">[g-nav-start]</a><a href="#page-oferta">[g-nav-oferta]</a><a class="current" href="#page-zamowienia">[g-nav-zamowienia]</a><a href="#page-o-nas">[g-nav-onas]</a><a href="#page-aktualnosci">[g-nav-aktualnosci]</a><a href="#page-kontakt">[g-nav-kontakt]</a></nav>
+      <div class="btn-row"><a class="btn btn-order" href="#">[g-cta-order]</a><a class="btn btn-write" href="#">[g-cta-write]</a></div>
+      <span class="phone-btn icon">☎</span><span class="menu-btn chip">☰ [g-menu-label]</span>
+    </div></div>
+  </header>
+
+  <div class="photo pagehead">
+    <div class="ph">[PAS ZDJĘCIA TŁA – tort / pakowanie zamówienia; dekoracyjne, alt=""]</div><div class="scrim-full"></div>
+    <div class="inner"><h1>[zam-title: h1, maks. 5 słów]</h1><p>[zam-lead: lead, maks. 30 słów]</p></div>
+  </div>
+
+  <div class="sec band"><div class="wrap">
+    <span class="sec-tag">3.1 ZASADY [MUST] – ciemny pas (wzorzec R3), w punktach</span>
+    <h2>[zam-rules-title: h2, maks. 5 słów]</h2>
+    <div class="grid g3">
+      <div><div class="bignum" style="color:var(--accent);font-size:3rem">1</div><p>[zam-rules-1: fakt – telefon lub formularz]</p></div>
+      <div><div class="bignum" style="color:var(--accent);font-size:3rem">2</div><p>[zam-rules-2: fakt – dzień wcześniej do 14:00]</p></div>
+      <div><div class="bignum" style="color:var(--accent);font-size:3rem">3</div><p>[zam-rules-3: fakt – torty min. 3 dni]</p></div>
+    </div>
+  </div></div>
+
+  <div class="sec"><div class="wrap">
+    <span class="sec-tag">3.2 ODBIÓR I DOSTAWA [MUST] + 3.3 PŁATNOŚĆ [MUST]</span>
+    <h2 class="h2-line">[zam-delivery-title: h2, maks. 5 słów]</h2>
+    <div class="grid g3">
+      <div class="card"><span class="icon">⌂</span><h3 style="margin-top:12px">[zam-pickup-title]</h3><p>[zam-pickup-text: maks. 20 słów, fakt]</p></div>
+      <div class="card"><span class="icon">⛟</span><h3 style="margin-top:12px">[zam-dostawa-title]</h3><p>[zam-dostawa-text: maks. 25 słów, fakt; bez dni/godzin dowozu]</p></div>
+      <div class="card"><span class="icon">zł</span><h3 style="margin-top:12px">[zam-pay-title]</h3><p>[zam-pay-text: maks. 15 słów, fakt]</p></div>
+    </div>
+  </div></div>
+
+  <div class="sec alt" id="formularz"><div class="wrap">
+    <div class="grid g84">
+      <div class="card">
+        <span class="sec-tag">3.4 FORMULARZ ZAMÓWIENIA [MUST] – kroki (wzorzec R3)</span>
+        <h2>[zam-form-title: h2, maks. 5 słów]</h2>
+        <p>[zam-form-lead: maks. 20 słów]</p>
+        <p class="muted">[zam-f-required-note]</p>
+        <fieldset><legend><span class="step">1</span>[zam-step1-legend]</legend>
+          <div class="row3"><div><label>[zam-f-product-label] *</label><span class="field">[zam-f-product-placeholder] ▾ (optgroup = kategorie)</span></div><div><label>[zam-f-qty-label]</label><span class="field">1</span></div></div>
+          <div class="row3"><div><span class="field" style="margin-top:12px">[wiersz 2 – opcjonalny] ▾</span></div><div><span class="field" style="margin-top:12px">–</span></div></div>
+          <div class="row3"><div><span class="field" style="margin-top:12px">[wiersz 3 – opcjonalny] ▾</span></div><div><span class="field" style="margin-top:12px">–</span></div></div>
+          <p class="muted" style="margin-top:8px">[zam-f-rows-hint: maks. 15 słów]</p>
+        </fieldset>
+        <fieldset><legend><span class="step">2</span>[zam-step2-legend]</legend>
+          <label>[zam-f-date-label] *</label><span class="field">dd.mm.rrrr 📅</span>
+          <p class="muted">[zam-f-date-hint: dynamiczne, fakt – zasada terminu / tort]</p>
+          <p class="err">⚠ przykład błędu: [zam-f-err-date] / [zam-f-err-date-tort]</p>
+          <p><b>[zam-f-method-legend]</b><br>◉ [zam-f-method-pickup] &nbsp; ○ [zam-f-method-delivery]</p>
+          <p class="muted">[zam-f-delivery-cost-hint: fakt]</p>
+          <label>[zam-f-address-label] (tylko przy dostawie)</label><span class="field">&nbsp;</span><p class="muted">[zam-f-address-hint]</p>
+        </fieldset>
+        <fieldset><legend><span class="step">3</span>[zam-step3-legend]</legend>
+          <label>[zam-f-name-label] *</label><span class="field">&nbsp;</span>
+          <label>[zam-f-phone-label] *</label><span class="field">&nbsp;</span>
+          <label>[zam-f-email-label]</label><span class="field">&nbsp;</span>
+          <label>[zam-f-notes-label]</label><span class="field" style="min-height:120px">&nbsp;</span><p class="muted">[zam-f-notes-hint]</p>
+        </fieldset>
+        <p class="muted">[zam-f-pay-note: fakt – płatność przy odbiorze / dostawie]</p>
+        <p class="muted" style="border:1px dashed var(--border-input);padding:8px;border-radius:8px">[MIEJSCE NA KLAUZULĘ RODO – OTWARTE, P5]</p>
+        <a class="btn btn-order" href="#">[zam-f-submit]</a>
+        <p class="muted" style="margin-top:12px">Komunikaty: [zam-f-success] · [zam-f-error-generic] · [zam-f-err-required] · [zam-f-err-phone] · [zam-f-err-address]</p>
+      </div>
+      <aside>
+        <div class="card" style="position:sticky;top:96px">
+          <span class="sec-tag">3.5 TELEFON [MUST]</span>
+          <span class="icon">☎</span>
+          <h3 style="margin-top:12px">[zam-phone-title: maks. 6 słów]</h3>
+          <p>[zam-phone-text: maks. 20 słów]</p>
+          <p><a href="#" style="font-size:1.5rem;font-weight:700" aria-label="[zam-phone-aria]">[zam-phone-number: fakt]</a></p>
+          <hr style="border:0;border-top:1px solid var(--border)">
+          <p class="muted">W skrócie (ponownie użyte id): [zam-rules-2] · [zam-rules-3] · [zam-f-delivery-cost-hint]</p>
+        </div>
+      </aside>
+    </div>
+  </div></div>
+
+  <footer class="footer"><div class="wrap"><p><b>[0.2 STOPKA – identyczna jak na Starcie]</b> [g-footer-name] · [g-footer-address] · [g-footer-phone] · [g-footer-hours] · FB/IG · [g-footer-allergen-note] · <a href="#">[g-footer-allergen-link]</a></p><p class="copy">[g-footer-copy]</p></div></footer>
+  <nav class="sticky-demo"><a href="#">☎<span>[g-sticky-call]</span></a><a class="o" href="#">[g-sticky-order] → #formularz</a><a class="w" href="#">[g-sticky-write]</a></nav>
+</section>
+
+<!-- ============================================================ -->
+<!-- PODSTRONA 4: O NAS -->
+<!-- ============================================================ -->
+<section id="page-o-nas" class="page" aria-label="Podstrona O nas">
+  <p class="page-label">PODSTRONA 4 / 6: O NAS (o-nas.html)</p>
+  <header>
+    <div class="topbar"><div class="wrap"><span>⌖ [g-topbar-address]</span><span>◷ [g-topbar-hours-label] [g-topbar-hours-today]</span><a class="phone" href="#">☎ [g-topbar-phone]</a></div></div>
+    <div class="mainbar"><div class="wrap">
+      <a class="wordmark" href="#">[g-wordmark: Piekarynka]<small>[nad Zegrzem]</small></a>
+      <nav class="nav" aria-label="[g-nav-aria]"><a href="#page-start">[g-nav-start]</a><a href="#page-oferta">[g-nav-oferta]</a><a href="#page-zamowienia">[g-nav-zamowienia]</a><a class="current" href="#page-o-nas">[g-nav-onas]</a><a href="#page-aktualnosci">[g-nav-aktualnosci]</a><a href="#page-kontakt">[g-nav-kontakt]</a></nav>
+      <div class="btn-row"><a class="btn btn-order" href="#">[g-cta-order]</a><a class="btn btn-write" href="#">[g-cta-write]</a></div>
+      <span class="phone-btn icon">☎</span><span class="menu-btn chip">☰ [g-menu-label]</span>
+    </div></div>
+  </header>
+
+  <div class="photo pagehead" style="padding-bottom:88px">
+    <div class="ph">[PAS ZDJĘCIA TŁA – wnętrze piekarni; dekoracyjne, alt=""]</div><div class="scrim-full"></div>
+    <div class="inner"><h1>[onas-title: h1, maks. 5 słów]</h1><p>[onas-lead: lead, maks. 25 słów]</p></div>
+  </div>
+
+  <!-- WYRÓŻNIKI – przeniesione z Startu na O nas (decyzja użytkownika). Miejsce w obrębie podstrony: propozycja, P1 -->
+  <div class="wrap overlap">
+    <div class="card">
+      <span class="sec-tag">WYRÓŻNIKI [NICE] – przeniesione na O nas (miejsce: P1)</span>
+      <h2 style="font-size:1.5rem">[onas-usp-title: h2, maks. 5 słów, może być sr]</h2>
+      <div class="grid g5 usp" style="text-align:center">
+        <div><span class="icon">1987</span><p style="font-weight:700;margin-top:8px">[onas-usp-1: fakt – od 1987 r.]</p></div>
+        <div><span class="icon">18h</span><p style="font-weight:700;margin-top:8px">[onas-usp-2: fakt – 18 h fermentacji zakwasu]</p></div>
+        <div><span class="icon">∅</span><p style="font-weight:700;margin-top:8px">[onas-usp-3: fakt – bez polepszaczy]</p></div>
+        <div><span class="icon">GF</span><p style="font-weight:700;margin-top:8px">[onas-usp-4: fakt – osobna strefa bezglutenowa]</p></div>
+        <div><span class="icon">⛟</span><p style="font-weight:700;margin-top:8px">[onas-usp-5: fakt – dostawa gratis od 80 zł (10 km)]</p></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sec"><div class="wrap">
+    <span class="sec-tag">4.1 HISTORIA [MUST] – zygzak „wtedy / dziś” (wzorzec L3)</span>
+    <h2 class="h2-line">[onas-hist-title: h2, maks. 6 słów]</h2>
+    <div class="tl" style="margin-top:32px">
+      <div class="polaroid"><div class="ph" style="min-height:280px">[ZDJĘCIE „archiwalne” (sepia, ramka polaroid); alt = onas-hist-1-img-alt]</div></div>
+      <div><div class="bignum">[onas-hist-1-year: fakt „1987”]</div><h3>[onas-hist-1-title: h3, maks. 6 słów]</h3><p>[onas-hist-1-text: maks. 50 słów, fakty: Józef Kowalczyk, przepisy z rodzinnej wsi]</p></div>
+    </div>
+    <div class="tl">
+      <div><div class="bignum">[onas-hist-2-year: „Dziś”]</div><h3>[onas-hist-2-title: h3, maks. 6 słów]</h3><p>[onas-hist-2-text: maks. 50 słów, fakty: syn i wnuczka, ręcznie, bez sztucznych polepszaczy]</p></div>
+      <div class="ph" style="min-height:300px">[ZDJĘCIE współczesne, pełny kolor; alt = onas-hist-2-img-alt]</div>
+    </div>
+  </div></div>
+
+  <div class="photo story">
+    <div class="ph">[ZDJĘCIE TŁA – zakwas / ciasto w dzieży; dekoracyjne, alt=""]</div><div class="scrim-l"></div>
+    <div class="inner" style="width:100%"><div class="grid g2" style="align-items:center">
+      <div><span class="sec-tag">4.2 JAK PIECZEMY [MUST]</span><div class="bignum" style="color:var(--accent)">[onas-bake-big-number: fakt „18 h”]</div><p style="font-weight:700">[onas-bake-big-label: maks. 8 słów]</p></div>
+      <div><h2>[onas-bake-title: h2, maks. 5 słów]</h2><p>[onas-bake-lead: lead, maks. 30 słów]</p></div>
+    </div></div>
+  </div>
+  <div class="sec" style="padding-top:40px"><div class="wrap">
+    <div class="grid g4">
+      <div class="card"><span class="icon">Z</span><h3 style="margin-top:12px">[onas-bake-fact-1-title]</h3><p>[onas-bake-fact-1-text: maks. 20 słów]</p></div>
+      <div class="card"><span class="icon">18h</span><h3 style="margin-top:12px">[onas-bake-fact-2-title]</h3><p>[onas-bake-fact-2-text: maks. 20 słów]</p></div>
+      <div class="card"><span class="icon">✋</span><h3 style="margin-top:12px">[onas-bake-fact-3-title]</h3><p>[onas-bake-fact-3-text: maks. 20 słów]</p></div>
+      <div class="card"><span class="icon">∅</span><h3 style="margin-top:12px">[onas-bake-fact-4-title]</h3><p>[onas-bake-fact-4-text: maks. 20 słów]</p></div>
+    </div>
+  </div></div>
+
+  <div class="sec alt"><div class="wrap">
+    <span class="sec-tag">4.3 GALERIA [SHOULD] – bez lightboxa, link do pełnego zdjęcia</span>
+    <h2 class="h2-line">[onas-gal-title: h2, maks. 4 słowa]</h2><p>[onas-gal-lead: maks. 15 słów]</p>
+    <div class="gallery">
+      <div class="ph big">[onas-gal-1-alt: wypieki]</div><div class="ph">[onas-gal-2-alt: wypieki]</div><div class="ph">[onas-gal-3-alt: wypieki]</div>
+      <div class="ph">[onas-gal-4-alt: wypieki]</div><div class="ph">[onas-gal-5-alt: wnętrze]</div><div class="ph">[onas-gal-6-alt: wnętrze]</div>
+      <div class="ph">[onas-gal-7-alt: przy piecu]</div><div class="ph">[onas-gal-8-alt: przy piecu]</div><div class="ph">[onas-gal-9-alt: przy piecu]</div>
+    </div>
+  </div></div>
+
+  <footer class="footer"><div class="wrap"><p><b>[0.2 STOPKA – identyczna jak na Starcie]</b> [g-footer-name] · [g-footer-address] · [g-footer-phone] · [g-footer-hours] · FB/IG · [g-footer-allergen-note] · <a href="#">[g-footer-allergen-link]</a></p><p class="copy">[g-footer-copy]</p></div></footer>
+  <nav class="sticky-demo"><a href="#">☎<span>[g-sticky-call]</span></a><a class="o" href="#">[g-sticky-order]</a><a class="w" href="#">[g-sticky-write]</a></nav>
+</section>
+
+<!-- ============================================================ -->
+<!-- PODSTRONA 5: AKTUALNOŚCI (+ szablon wpisu) -->
+<!-- ============================================================ -->
+<section id="page-aktualnosci" class="page" aria-label="Podstrona Aktualności">
+  <p class="page-label">PODSTRONA 5 / 6: AKTUALNOŚCI (aktualnosci.html) + SZABLON WPISU (aktualnosci/&lt;slug&gt;.html)</p>
+  <header>
+    <div class="topbar"><div class="wrap"><span>⌖ [g-topbar-address]</span><span>◷ [g-topbar-hours-label] [g-topbar-hours-today]</span><a class="phone" href="#">☎ [g-topbar-phone]</a></div></div>
+    <div class="mainbar"><div class="wrap">
+      <a class="wordmark" href="#">[g-wordmark: Piekarynka]<small>[nad Zegrzem]</small></a>
+      <nav class="nav" aria-label="[g-nav-aria]"><a href="#page-start">[g-nav-start]</a><a href="#page-oferta">[g-nav-oferta]</a><a href="#page-zamowienia">[g-nav-zamowienia]</a><a href="#page-o-nas">[g-nav-onas]</a><a class="current" href="#page-aktualnosci">[g-nav-aktualnosci]</a><a href="#page-kontakt">[g-nav-kontakt]</a></nav>
+      <div class="btn-row"><a class="btn btn-order" href="#">[g-cta-order]</a><a class="btn btn-write" href="#">[g-cta-write]</a></div>
+      <span class="phone-btn icon">☎</span><span class="menu-btn chip">☰ [g-menu-label]</span>
+    </div></div>
+  </header>
+
+  <div class="photo pagehead">
+    <div class="ph">[PAS ZDJĘCIA TŁA – świeże wypieki na blacie; dekoracyjne, alt=""]</div><div class="scrim-full"></div>
+    <div class="inner"><h1>[akt-title: h1, maks. 4 słowa]</h1><p>[akt-lead: lead, maks. 25 słów]</p></div>
+  </div>
+
+  <div class="sec alt"><div class="wrap">
+    <span class="sec-tag">5.3 KALENDARZ SEZONOWY [NICE]</span>
+    <h2 class="h2-line">[akt-cal-title: h2, maks. 5 słów]</h2>
+    <div class="grid g4">
+      <div class="card"><span class="icon">☼</span><p style="font-weight:700;margin-top:8px">[akt-cal-1-when: fakt „tłusty czwartek”]</p><p>[akt-cal-1-what: OTWARTE – P4]</p></div>
+      <div class="card"><span class="icon">☼</span><p style="font-weight:700;margin-top:8px">[akt-cal-2-when: fakt „11 listopada”]</p><p>[akt-cal-2-what: fakt – rogale]</p></div>
+      <div class="card"><span class="icon">☼</span><p style="font-weight:700;margin-top:8px">[akt-cal-3-when: fakt „grudzień”]</p><p>[akt-cal-3-what: fakt – pierniki]</p></div>
+      <div class="card"><span class="icon">☼</span><p style="font-weight:700;margin-top:8px">[akt-cal-4-when: fakt „Wielkanoc”]</p><p>[akt-cal-4-what: fakt – mazurki]</p></div>
+    </div>
+  </div></div>
+
+  <div class="sec"><div class="wrap">
+    <span class="sec-tag">5.1 LISTA WPISÓW [MUST]</span>
+    <h2 class="h2-line">[akt-list-title: h2, może być sr]</h2>
+    <div class="card grid g2" style="align-items:center;margin-bottom:32px">
+      <div class="ph" style="min-height:280px">[ZDJĘCIE 16:9; alt = akt-post-1-img-alt]</div>
+      <div><p class="muted"><span class="badge">[akt-tag-wd]</span> [akt-post-1-date]</p><h3>[akt-post-1-title: maks. 10 słów]</h3><p>[akt-post-1-excerpt: maks. 25 słów]</p><a class="link-more" href="#wpis-szablon" aria-label="[akt-post-1-more-aria]">[akt-post-more] →</a></div>
+    </div>
+    <div class="grid g2">
+      <div class="card"><div class="ph">[alt = akt-post-2-img-alt]</div><p class="muted" style="margin-top:12px"><span class="badge">[akt-tag-season]</span> [akt-post-2-date]</p><h3>[akt-post-2-title: tłusty czwartek]</h3><p>[akt-post-2-excerpt]</p><a class="link-more" href="#" aria-label="[akt-post-2-more-aria]">[akt-post-more] →</a></div>
+      <div class="card"><div class="ph">[alt = akt-post-3-img-alt]</div><p class="muted" style="margin-top:12px"><span class="badge">[akt-tag-season]</span> [akt-post-3-date]</p><h3>[akt-post-3-title: rogale 11 listopada]</h3><p>[akt-post-3-excerpt]</p><a class="link-more" href="#" aria-label="[akt-post-3-more-aria]">[akt-post-more] →</a></div>
+      <div class="card"><div class="ph">[alt = akt-post-4-img-alt]</div><p class="muted" style="margin-top:12px"><span class="badge">[akt-tag-season]</span> [akt-post-4-date]</p><h3>[akt-post-4-title: pierniki]</h3><p>[akt-post-4-excerpt]</p><a class="link-more" href="#" aria-label="[akt-post-4-more-aria]">[akt-post-more] →</a></div>
+      <div class="card"><div class="ph">[alt = akt-post-5-img-alt]</div><p class="muted" style="margin-top:12px"><span class="badge">[akt-tag-season]</span> [akt-post-5-date]</p><h3>[akt-post-5-title: mazurki]</h3><p>[akt-post-5-excerpt]</p><a class="link-more" href="#" aria-label="[akt-post-5-more-aria]">[akt-post-more] →</a></div>
+    </div>
+  </div></div>
+
+  <!-- 5.2 SZABLON WPISU (osobny plik; tu podgląd) -->
+  <div id="wpis-szablon" style="border-top:6px dashed #222">
+    <p class="page-label" style="background:#555">5.2 SZABLON POJEDYNCZEGO WPISU [MUST] – podgląd (osobny plik aktualnosci/&lt;slug&gt;.html; &lt;title&gt; = wpis-N-page-title, meta = wpis-N-meta)</p>
+    <div class="wrap" style="padding-top:16px;padding-bottom:16px"><nav aria-label="[wpis-breadcrumb-aria]" class="muted"><a href="#">[wpis-breadcrumb-home]</a> › <a href="#">[wpis-breadcrumb-list]</a> › [akt-post-N-title]</nav></div>
+    <div class="photo pagehead" style="min-height:360px">
+      <div class="ph">[ZDJĘCIE WPISU NA TLE; alt = akt-post-N-img-alt]</div><div class="scrim-full"></div>
+      <div class="inner"><span class="badge today">[akt-tag-…]</span><h1>[akt-post-N-title: h1]</h1><p>[akt-post-N-date]</p></div>
+    </div>
+    <div class="sec"><div class="wrap" style="max-width:760px">
+      <p>[wpis-N-body: treść, maks. 200–250 słów, akapity / h2 / lista; tylko fakty z intake]</p>
+      <p>[wpis-N-body: …]</p>
+      <p><a class="link-more" href="#">← [wpis-back-link]</a></p>
+    </div></div>
+  </div>
+
+  <footer class="footer"><div class="wrap"><p><b>[0.2 STOPKA – identyczna jak na Starcie]</b> [g-footer-name] · [g-footer-address] · [g-footer-phone] · [g-footer-hours] · FB/IG · [g-footer-allergen-note] · <a href="#">[g-footer-allergen-link]</a></p><p class="copy">[g-footer-copy]</p></div></footer>
+  <nav class="sticky-demo"><a href="#">☎<span>[g-sticky-call]</span></a><a class="o" href="#">[g-sticky-order]</a><a class="w" href="#">[g-sticky-write]</a></nav>
+</section>
+
+<!-- ============================================================ -->
+<!-- PODSTRONA 6: KONTAKT -->
+<!-- ============================================================ -->
+<section id="page-kontakt" class="page" aria-label="Podstrona Kontakt">
+  <p class="page-label">PODSTRONA 6 / 6: KONTAKT (kontakt.html)</p>
+  <header>
+    <div class="topbar"><div class="wrap"><span>⌖ [g-topbar-address]</span><span>◷ [g-topbar-hours-label] [g-topbar-hours-today]</span><a class="phone" href="#">☎ [g-topbar-phone]</a></div></div>
+    <div class="mainbar"><div class="wrap">
+      <a class="wordmark" href="#">[g-wordmark: Piekarynka]<small>[nad Zegrzem]</small></a>
+      <nav class="nav" aria-label="[g-nav-aria]"><a href="#page-start">[g-nav-start]</a><a href="#page-oferta">[g-nav-oferta]</a><a href="#page-zamowienia">[g-nav-zamowienia]</a><a href="#page-o-nas">[g-nav-onas]</a><a href="#page-aktualnosci">[g-nav-aktualnosci]</a><a class="current" href="#page-kontakt">[g-nav-kontakt]</a></nav>
+      <div class="btn-row"><a class="btn btn-order" href="#">[g-cta-order]</a><a class="btn btn-write" href="#">[g-cta-write]</a></div>
+      <span class="phone-btn icon">☎</span><span class="menu-btn chip">☰ [g-menu-label]</span>
+    </div></div>
+  </header>
+
+  <div class="photo pagehead">
+    <div class="ph">[PAS ZDJĘCIA TŁA – witryna piekarni / rynek; dekoracyjne, alt=""]</div><div class="scrim-full"></div>
+    <div class="inner"><h1>[kont-title: h1, maks. 4 słowa]</h1><p>[kont-lead: lead, maks. 20 słów]</p></div>
+  </div>
+
+  <div class="sec"><div class="wrap">
+    <div class="grid g2">
+      <div class="card">
+        <span class="sec-tag">6.1 DANE KONTAKTOWE [MUST]</span>
+        <h2 style="font-size:1.75rem">[kont-data-title]</h2>
+        <p>⌖ <b>[kont-address-label]</b><br>[kont-address: fakt]</p>
+        <p>☎ <b>[kont-phone-label]</b><br><a href="#" style="font-size:1.25rem;font-weight:700" aria-label="[kont-phone-aria]">[kont-phone: fakt]</a></p>
+        <p>✉ <b>[kont-email-label]</b><br><a href="#">[kont-email: fakt, przykładowy]</a></p>
+        <p><b>[kont-social-label]</b><br><a href="#" aria-label="[kont-fb-aria]">[kont-fb]</a> · <a href="#" aria-label="[kont-ig-aria]">[kont-ig]</a></p>
+      </div>
+      <div class="card" id="godziny">
+        <span class="sec-tag">6.2 PEŁNE GODZINY [MUST]</span>
+        <h2 style="font-size:1.75rem">[kont-hours-title]</h2>
+        <table>
+          <tr style="background:var(--surface-alt);font-weight:700"><td>[kont-hours-weekdays: fakt] ← dziś (aria-current)</td></tr>
+          <tr><td>[kont-hours-sat: fakt]</td></tr>
+          <tr><td>[kont-hours-sun: fakt]</td></tr>
+        </table>
+        <p class="muted" style="margin-top:12px">[kont-hours-note: fakt – świeże pieczywo od otwarcia, druga dostawa ok. 12:00]</p>
+      </div>
+    </div>
+  </div></div>
+
+  <div class="sec alt"><div class="wrap">
+    <span class="sec-tag">6.3 MAPA Z DOJAZDEM [MUST]</span>
+    <h2 class="h2-line">[kont-map-title: h2, maks. 4 słowa]</h2>
+    <div class="ph" style="min-height:400px">[MAPA – iframe (rekomendacja: OpenStreetMap), title = kont-map-iframe-title, loading="lazy"]</div>
+    <p style="margin-top:16px"><a class="btn btn-order" href="#" aria-label="[kont-map-route-aria]">[kont-map-route] ↗</a></p>
+    <p class="muted">[kont-map-fallback: maks. 15 słów]</p>
+  </div></div>
+
+  <div class="sec" id="napisz"><div class="wrap" style="max-width:760px">
+    <div class="card">
+      <span class="sec-tag">6.4 FORMULARZ „NAPISZ DO NAS” [MUST]</span>
+      <h2>[kont-form-title: „Napisz do nas”]</h2>
+      <p>[kont-form-lead: maks. 20 słów]</p>
+      <p class="muted">[kont-f-required-note]</p>
+      <label>[kont-f-name-label] *</label><span class="field">&nbsp;</span>
+      <label>[kont-f-contact-label] *</label><span class="field">&nbsp;</span><p class="muted">[kont-f-contact-hint]</p>
+      <p class="err">⚠ przykład błędu: [kont-f-err-contact]</p>
+      <label>[kont-f-message-label] *</label><span class="field" style="min-height:160px">&nbsp;</span><p class="muted">[kont-f-message-hint: maks. 15 słów, może wspomnieć o firmach]</p>
+      <p class="muted" style="border:1px dashed var(--border-input);padding:8px;border-radius:8px">[MIEJSCE NA KLAUZULĘ RODO – OTWARTE, P5]</p>
+      <a class="btn btn-write" href="#">[kont-f-submit]</a>
+      <p class="muted" style="margin-top:12px">Komunikaty: [kont-f-success] · [kont-f-error-generic] · [kont-f-err-required]</p>
+    </div>
+  </div></div>
+
+  <div class="sec alt"><div class="wrap" style="max-width:820px">
+    <span class="sec-tag">6.5 FAQ [SHOULD] – &lt;details&gt;, działa bez JS</span>
+    <h2 class="h2-line">[kont-faq-title: h2, maks. 5 słów]</h2>
+    <details open><summary>[kont-faq-1-q: termin zamówień] ＋</summary><p>[kont-faq-1-a: maks. 40 słów, fakt]</p></details>
+    <details><summary>[kont-faq-2-q: torty] ＋</summary><p>[kont-faq-2-a]</p></details>
+    <details><summary>[kont-faq-3-q: dostawa i koszt] ＋</summary><p>[kont-faq-3-a]</p></details>
+    <details><summary>[kont-faq-4-q: płatność] ＋</summary><p>[kont-faq-4-a]</p></details>
+    <details><summary>[kont-faq-5-q: godziny] ＋</summary><p>[kont-faq-5-a]</p></details>
+    <details><summary>[kont-faq-6-q: alergeny i ślady] ＋</summary><p>[kont-faq-6-a]</p></details>
+    <details><summary>[kont-faq-7-q: chleb bezglutenowy] ＋</summary><p>[kont-faq-7-a]</p></details>
+    <details><summary>[kont-faq-8-q: obsługa firm] ＋</summary><p>[kont-faq-8-a]</p></details>
+  </div></div>
+
+  <footer class="footer"><div class="wrap"><p><b>[0.2 STOPKA – identyczna jak na Starcie]</b> [g-footer-name] · [g-footer-address] · [g-footer-phone] · [g-footer-hours] · FB/IG · [g-footer-allergen-note] · <a href="#">[g-footer-allergen-link]</a></p><p class="copy">[g-footer-copy]</p></div></footer>
+  <nav class="sticky-demo"><a href="#">☎<span>[g-sticky-call]</span></a><a class="o" href="#">[g-sticky-order]</a><a class="w" href="#">[g-sticky-write] → #napisz</a></nav>
+</section>
+
+</body>
+</html>
