@@ -78,6 +78,13 @@
   - P7, pola formularza: **a) telefon wymagany, e-mail opcjonalny**
   - P8, mapa: **a) OpenStreetMap bez cookies**
   - P3, tort w filtrze diet (alergeny tortu zależą od zamówienia): **b) pokazywać zawsze z dopiskiem**
+- **Dane do polityki prywatności** (odpowiedź „2b”): **b) poda prawdziwe dane**. Dane jeszcze NIE zostały podane. Każde pole ma status „brak odpowiedzi”, szczegóły w pytaniach otwartych 2–6:
+  - Nazwa firmy: brak odpowiedzi
+  - Adres rejestrowy: brak odpowiedzi
+  - NIP: brak odpowiedzi
+  - Kontakt w sprawach danych osobowych: brak odpowiedzi
+  - Okres przechowywania danych: brak odpowiedzi
+- **Działanie formularzy** (odpowiedź „3c”): **c) zewnętrzna usługa formularzy (np. Formspree), która działa naprawdę, ale wymaga konta**. Konkretna usługa, konto, adres (endpoint) i adres e-mail odbiorcy: brak odpowiedzi, patrz pytania otwarte 7–9
 
 ## Branża: piekarnia (rzemieślnicza)
 
@@ -154,7 +161,10 @@ pon.–pt. 6:00–19:00, sob. 6:30–15:00, niedz. 7:00–13:00. Świeże pieczy
 ### Zamówienia z wyprzedzeniem (dosłownie)
 a) + b) + c) Zamówienia telefonicznie (+48 512 345 678) lub przez formularz na stronie, najpóźniej dzień wcześniej do 14:00. Torty okolicznościowe przyjmujemy z minimum 3-dniowym wyprzedzeniem.
 
-Pytanie designera P6: „Torty min. 3 dni wcześniej: zamówienie w poniedziałek → odbiór w czwartek? Czy 14:00 dotyczy też tortów?”. Odpowiedź użytkownika: „tak”. Pytanie miało dwie części, a odpowiedź jest jedna, więc nie wiadomo, do której części się odnosi: patrz pytania otwarte 1 i 2.
+Torty, doprecyzowanie:
+- Pytanie designera P6: „Torty min. 3 dni wcześniej: zamówienie w poniedziałek → odbiór w czwartek? Czy 14:00 dotyczy też tortów?”. Odpowiedź użytkownika: „tak” (jedna odpowiedź na dwie części).
+- **P6.2, czy godzina 14:00 dotyczy tortów:** **a) tak, zamówienie po 14:00 przesuwa odbiór o dzień** (odpowiedź „1a”)
+- **P6.1, tort zamówiony w poniedziałek, od kiedy najwcześniej odbiór:** użytkownik nie odpowiedział na to pytanie osobno. Designer przyjął „czwartek” na podstawie pierwotnego „tak” na P6, ale użytkownik tego nie potwierdził. Patrz pytanie otwarte 1
 
 ### Dostawa / odbiór (dosłownie)
 b) + c) + d) Odbiór osobisty zamówień w piekarni. Dostawa w promieniu 10 km (gratis od 80 zł, poniżej 10 zł). Obsługujemy też kawiarnie, restauracje i sklepy (B2B) z codziennymi porannymi dostawami.
@@ -201,18 +211,48 @@ Tłusty czwartek, czy wpisać pączki (pytanie designera P4): **a) tak, pączki*
 
 Odpowiedź użytkownika na ostatnie 3 pytania (dosłownie): „obr4azek olej, wsyztko inne tak to ywjatki”
 
-## Odpowiedzi na pytania designera P1–P9 (dosłownie)
-„P1a P2a P3b P4a P5a P6 tak P7a P8a P9a”. Każda odpowiedź jest wpisana w odpowiedniej sekcji powyżej. P6 nie jest jednoznaczne, patrz pytania otwarte.
+## Odpowiedzi na pytania designera i managera (dosłownie)
+- P1–P9: „P1a P2a P3b P4a P5a P6 tak P7a P8a P9a”
+- Runda P6.2 / polityka prywatności / formularze: „1a 2b 3c”
+
+Każda odpowiedź jest wpisana w odpowiedniej sekcji powyżej.
 
 ## Otwarte pytania (tylko przy statusie QUESTIONS)
 
-Doprecyzowanie P6 (torty). Na pytanie z dwiema częściami odpisałeś jednym „tak”. Odpowiedz osobno na każdą część:
+**Torty**
 
-1. **(P6.1) Tort zamówiony w poniedziałek: od kiedy najwcześniej można go odebrać?**
+1. **(P6.1) Tort zamówiony w poniedziałek (do 14:00): od kiedy najwcześniej można go odebrać?** Na to pytanie nie było jeszcze osobnej odpowiedzi.
    a) w czwartek
    b) w środę
    c) inaczej (napisz)
-2. **(P6.2) Czy godzina 14:00 dotyczy też tortów?**
-   a) tak: tort zamówiony w poniedziałek do 14:00 będzie w czwartek, a zamówiony po 14:00 dopiero w piątek
-   b) nie: przy tortach liczy się tylko dzień zamówienia, godzina jest bez znaczenia
+
+**Dane do polityki prywatności** (wybrałeś „podam prawdziwe dane”; podaj je, proszę, pole po polu)
+
+2. **Pełna nazwa firmy** (tak jak w rejestrze CEIDG lub KRS):
+   a) podam pełną nazwę
+   b) jest taka sama jak nazwa piekarni, „Piekarynka nad Zegrzem”
+3. **Adres rejestrowy firmy:**
+   a) taki sam jak adres piekarni (ul. Rynek 12, 05-140 Serock)
+   b) inny (podam)
+4. **NIP:** podaj numer.
+5. **Kontakt w sprawach danych osobowych:** e-mail na stronie (kontakt@piekarynkanadzegrzem.pl) jest przykładowy.
+   a) podam prawdziwy e-mail do spraw danych
+   b) podam prawdziwy adres pocztowy
    c) inaczej (napisz)
+6. **Jak długo przechowywać dane z formularzy?**
+   a) podam okres
+   b) nie wiem: przygotujcie kilka wariantów do mojej akceptacji
+
+**Formularze przez zewnętrzną usługę** (wybrałeś „c) zewnętrzna usługa, np. Formspree”)
+
+7. **Która usługa?**
+   a) Formspree
+   b) inna (podaj nazwę)
+   c) nie wiem: pokażcie mi porównanie, sam wybiorę
+8. **Konto i adres formularza (endpoint):**
+   a) mam już konto, podam adres (endpoint)
+   b) założę konto i wtedy podam adres (endpoint)
+   c) na razie zostawcie w kodzie wyraźnie oznaczone miejsce na adres, uzupełnię później
+9. **Na jaki adres e-mail mają przychodzić zgłoszenia z formularzy?**
+   a) podam prawdziwy adres
+   b) ten sam co w pytaniu 5
