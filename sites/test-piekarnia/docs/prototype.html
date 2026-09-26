@@ -141,6 +141,7 @@ summary{font-weight:700;min-height:44px;cursor:pointer}
   .photo .scrim-l,.photo .scrim-r{background:linear-gradient(0deg,rgba(31,21,16,.70) 0%,rgba(31,21,16,.70) 65%,rgba(31,21,16,.15) 100%)}
   .hero .btn-row .btn{width:100%}
   .pagehead{min-height:200px;padding-bottom:24px}
+  .side-img{display:none!important}
   .story .txt{margin-left:0}
   .overlap{margin-top:0}
   .gallery{grid-template-columns:1fr 1fr}
@@ -455,7 +456,8 @@ summary{font-weight:700;min-height:44px;cursor:pointer}
         <p class="muted" style="margin-top:12px">Komunikaty: [zam-f-success] · [zam-f-error-generic] · [zam-f-err-required] · [zam-f-err-phone] · [zam-f-err-address]</p>
       </div>
       <aside>
-        <div class="card" style="position:sticky;top:96px">
+        <div style="position:sticky;top:96px">
+        <div class="card">
           <span class="sec-tag">3.5 TELEFON [MUST]</span>
           <span class="icon">☎</span>
           <h3 style="margin-top:12px">[zam-phone-title: maks. 6 słów]</h3>
@@ -463,6 +465,9 @@ summary{font-weight:700;min-height:44px;cursor:pointer}
           <p><a href="#" style="font-size:1.5rem;font-weight:700" aria-label="[zam-phone-aria]">[zam-phone-number: fakt]</a></p>
           <hr style="border:0;border-top:1px solid var(--border)">
           <p class="muted">W skrócie (ponownie użyte id): [zam-rules-2] · [zam-rules-3] · [zam-f-delivery-cost-hint]</p>
+        </div>
+        <!-- Zdjęcie chleba pod kartą telefonu (poprawka użytkownika). Sticky razem z kartą; ukryte < 768 px -->
+        <div class="ph side-img" style="margin-top:24px;aspect-ratio:4/5">[ZDJĘCIE PIONOWE 4:5 – bochenek chleba żytniego na zakwasie na desce, ciepłe światło; alt = zam-side-img-alt]</div>
         </div>
       </aside>
     </div>

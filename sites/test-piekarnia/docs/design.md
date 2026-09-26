@@ -307,7 +307,7 @@ Pas ze zdjęciem tła na całą szerokość (wzorzec R3), wys. 280 px desktop / 
 - Karty 3.2 grupuje wspólny nagłówek `zam-delivery-title` (h2). Karta płatności należy do tej samej siatki, a jej h3 wystarcza jako nagłówek sekcji 3.3 (mniej przewijania). Jeśli reviewer uzna, że płatność potrzebuje własnego h2, można go dodać bez zmiany układu.
 
 #### 3.4 Formularz zamówienia [MUST] (kotwica `#formularz`)
-- **Desktop:** 2 kolumny 8/4. Po lewej formularz w karcie `--surface`, po prawej przyklejona kolumna (`position: sticky`) z blokiem telefonu 3.5 i skrótem zasad (te same teksty co 3.1, bez nowych id, tylko ponowne użycie `zam-rules-2`, `zam-rules-3`, `zam-f-delivery-cost-hint`). Wzorzec R3: panel zamówienia z boku.
+- **Desktop:** 2 kolumny 8/4. Po lewej formularz w karcie `--surface`, po prawej przyklejona kolumna (`position: sticky`) z blokiem telefonu 3.5, skrótem zasad i pod nimi pionowym zdjęciem chleba (szczegóły w 3.5) (te same teksty co 3.1, bez nowych id, tylko ponowne użycie `zam-rules-2`, `zam-rules-3`, `zam-f-delivery-cost-hint`). Wzorzec R3: panel zamówienia z boku.
 - **Mobile:** 1 kolumna. Formularz, pod nim blok telefonu.
 - **Nagłówek:** `zam-form-title` (h2), `zam-form-lead`, `zam-f-required-note`.
 - **Kroki** (wzorzec R3: numerowane kroki; `<fieldset>` + `<legend>` z kółkiem-numerem):
@@ -321,6 +321,11 @@ Pas ze zdjęciem tła na całą szerokość (wzorzec R3), wys. 280 px desktop / 
 
 #### 3.5 Alternatywa: telefon [MUST]
 - Karta `--surface-alt` z dużą ikoną słuchawki: `zam-phone-title` (h2/h3), `zam-phone-text`, numer `zam-phone-number` dużą czcionką (1.5 rem, 700) jako `tel:`, z `aria-label` = `zam-phone-aria`.
+- **Zdjęcie chleba pod kartą telefonu** (poprawka użytkownika po obejrzeniu zrzutów: „pod numerem telefonu dodaj jakieś zdjęcie chleba”). To element dekoracyjny sekcji 3.5, a nie nowa sekcja.
+  - **Desktop (≥ 1100 px):** zdjęcie zastępcze w proporcjach pionowych 4:5, na całą szerokość prawej kolumny (odstęp 24 px pod kartą telefonu), `--radius-lg`, `object-fit: cover`. Temat: bochenek chleba żytniego na zakwasie na drewnianej desce, w ciepłym świetle, w tej samej stylistyce co reszta zdjęć. Karta telefonu i zdjęcie są w jednym wspólnym kontenerze `position: sticky; top: 96px`, więc przy przewijaniu formularza przesuwają się razem. Jeśli wysokość okna jest mniejsza niż karta + zdjęcie (np. < 820 px), sticky wyłącza się (`@media (max-height: 819px)`), żeby zdjęcie nie było ucięte.
+  - **Tablet (768–1099 px):** jest jedna kolumna (formularz, pod nim karta telefonu), a zdjęcie w proporcjach 16:9 stoi pod kartą.
+  - **Mobile (< 768 px):** zdjęcie jest ukryte (`display: none`). Na telefonie nie ma obok formularza pustej przestrzeni do wypełnienia, a dodatkowe zdjęcie tylko wydłużyłoby przewijanie do stopki.
+  - Alt: `zam-side-img-alt`. `loading="lazy"`, stałe `width` i `height`.
 
 ---
 
@@ -594,7 +599,7 @@ Pas ze zdjęciem tła na całą szerokość (wzorzec R3), wys. 280 px desktop / 
 | Kanapki i przekąski | oferta-p-kanapka-jajeczna-name | oferta-p-kanapka-jajeczna-price | oferta-p-kanapka-jajeczna-alg | (alergeny obejmują „gorczyca”) |
 | Kanapki i przekąski | oferta-p-zapiekanka-name | oferta-p-zapiekanka-price | oferta-p-zapiekanka-alg | |
 
-### 3. Zamówienia (51 id)
+### 3. Zamówienia (52 id)
 | id | Sekcja | Typ | Maks. długość | Podsekcja briefu |
 |----|--------|-----|---------------|------------------|
 | zam-page-title | head | meta title | 60 znaków | 3 |
@@ -648,6 +653,7 @@ Pas ze zdjęciem tła na całą szerokość (wzorzec R3), wys. 280 px desktop / 
 | zam-phone-text | Telefon | p | 20 słów (bez godzin przyjmowania telefonów, których nie ma w intake) | 3.5 |
 | zam-phone-number | Telefon | link tel | fakt z intake: +48 512 345 678 | 3.5 |
 | zam-phone-aria | Telefon | aria | 5 słów + numer | 3.5 |
+| zam-side-img-alt | Zdjęcie pod kartą telefonu | alt | 12 słów (bochenek chleba żytniego na zakwasie; zdjęcie zastępcze, bez nowych deklaracji) | 3.5 (element dekoracyjny) |
 
 ### 4. O nas (42 id)
 | id | Sekcja | Typ | Maks. długość | Podsekcja briefu |
@@ -831,12 +837,12 @@ Pas ze zdjęciem tła na całą szerokość (wzorzec R3), wys. 280 px desktop / 
 | 0. Wspólne | 48 |
 | 1. Start | 66 |
 | 2. Oferta (33 w tabeli ogólnej + 71 w tabeli produktów) | 104 |
-| 3. Zamówienia | 51 |
+| 3. Zamówienia | 52 |
 | 4. O nas (w tym 6 id Wyróżników) | 42 |
 | 5. Aktualności | 42 |
 | 5.2 Szablon wpisu | 19 |
 | 6. Kontakt | 57 |
-| **Razem** | **429** |
+| **Razem** | **430** |
 
 `page-title` i `meta-description` są dla każdej podstrony (6 × 2) oraz dla każdego z 5 wpisów (5 × 2).
 
