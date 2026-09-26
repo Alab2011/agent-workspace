@@ -206,7 +206,7 @@ Prosty zestaw liniowy (np. Lucide / Phosphor, licencja MIT, grubość linii 1.75
 - **Desktop:** 4 kolumny: (1) znak słowny w wersji jasnej, `g-footer-tagline`, `g-footer-address`, `g-footer-phone`, `g-footer-email`; (2) `g-footer-hours-title` + `g-footer-hours` (3 wiersze); (3) menu w stopce (`g-footer-nav-aria`, te same 6 linków); (4) `g-footer-social-title` + ikony FB/IG (48×48, `aria-label` z id) oraz ramka z `g-footer-allergen-note` i linkiem `g-footer-allergen-link` (do `oferta.html#alergeny`).
 - Pasek na dole: `g-footer-copy`.
 - **Mobile:** kolumny jedna pod drugą, kolejność 1 → 2 → 4 → 3. Na dole dodatkowy padding równy wysokości paska 0.3 + `env(safe-area-inset-bottom)`.
-- Linki w stopce mają kolor `--accent` (9,1 : 1 na `--band` w trybie jasnym, bo `--band` = `#3B2A1E`, a w ciemnym 7,4 : 1).
+- Linki w stopce mają kolor `--accent` (w trybie jasnym `#C8962E` na `#3B2A1E` = 5,1 : 1, w ciemnym `#E0B25A` na `#362619` = 7,4 : 1; oba ≥ 4,5 ✔) i podkreślenie.
 
 #### 0.3 Przyklejony pasek akcji na telefonie [NICE]
 - Tylko < 768 px. Przyklejony do dołu, `--surface` z `--shadow-2` i górną linią `--border`, wysokość 64 px + safe-area.
@@ -359,7 +359,7 @@ Pas ze zdjęciem tła na całą szerokość (wzorzec R3), wys. 280 px desktop / 
 - **Nagłówek podstrony:** `akt-title` (h1), `akt-lead`.
 
 #### 5.3 Kalendarz sezonowy [NICE]
-- Nad listą wpisów: `akt-cal-title` (h2) i 4 karty w poziomym rzędzie (desktop 4 kolumny, mobile 2×2): każda to ikona, `akt-cal-N-when` (okres, 700) i `akt-cal-N-what` (produkt). Kolejność wg roku: tłusty czwartek, Wielkanoc, 11 listopada, grudzień? Nie, **kolejność zostawiam jak w briefie** (tłusty czwartek, 11 listopada, grudzień, Wielkanoc), a coder może dodatkowo wyróżnić najbliższy termin. **`akt-cal-1-what` (tłusty czwartek) jest OTWARTE (P4).**
+- Nad listą wpisów: `akt-cal-title` (h2) i 4 karty w poziomym rzędzie (desktop 4 kolumny, mobile 2×2): każda to ikona, `akt-cal-N-when` (okres, 700) i `akt-cal-N-what` (produkt). Kolejność kart jest taka jak w briefie (tłusty czwartek, 11 listopada, grudzień, Wielkanoc), bez przestawiania na kolejność kalendarzową. **`akt-cal-1-what` (tłusty czwartek) jest OTWARTE (P4).**
 
 #### 5.1 Lista wpisów [MUST]
 - `akt-list-title` (h2, może być `.sr-only`). 5 wpisów zastępczych: 1 wypiek dnia (`akt-tag-wd`) + 4 sezonowe (`akt-tag-season`): tłusty czwartek, rogale na 11 listopada, pierniki w grudniu, mazurki na Wielkanoc.
@@ -390,7 +390,7 @@ Pas ze zdjęciem tła na całą szerokość (wzorzec R3), wys. 280 px desktop / 
 - **Rekomendacja:** OpenStreetMap (embed) nie wymaga zgody na cookies, a przy Google Maps trzeba by dodać baner zgody (research ostrzega przed banerami cookies zasłaniającymi ekran, L1). Link „Wyznacz trasę” może prowadzić do Google Maps (to zwykły link, bez cookies na naszej stronie). Decyzja techniczna należy do codera/managera, a w razie wątpliwości do użytkownika (P8).
 
 #### 6.4 Formularz „Napisz do nas” [MUST] (kotwica `#napisz`)
-- **Desktop:** 2 kolumny 7/5: formularz po lewej, FAQ po prawej? **Nie**, bo FAQ ma swoją kolejność w briefie (po formularzu). Formularz jest wyśrodkowany w kolumnie max 720 px, w karcie `--surface`.
+- **Desktop:** formularz w jednej kolumnie max 720 px, w karcie `--surface`. FAQ stoi pod nim, bo taka jest kolejność w briefie.
 - `kont-form-title` (h2), `kont-form-lead`, `kont-f-required-note`. Pola: `kont-f-name-label` (wymagane), `kont-f-contact-label` + `kont-f-contact-hint` (wymagane; walidacja: poprawny e-mail **albo** telefon), `kont-f-message-label` + `kont-f-message-hint` (textarea, min. 6 wierszy, wymagane). Przycisk `kont-f-submit` (`--accent`, bo to akcja „Napisz do nas”). Komunikaty: `kont-f-success`, `kont-f-error-generic`, `kont-f-err-required`, `kont-f-err-contact`. Miejsce na klauzulę RODO jak w 3.4 (P5).
 - Link B2B ze Startu prowadzi tutaj (`#napisz`), a `kont-f-message-hint` może wspomnieć o firmach.
 
@@ -888,7 +888,7 @@ Urządzenia są „po równo” (intake C), więc oba widoki projektuję z tą s
 ---
 
 ## Otwarte pytania (do przekazania użytkownikowi przez managera)
-- **P1.** Wyróżniki (5 haseł z ikonami) stoją na Starcie zaraz pod hero, zgodnie z propozycją interpretera. Czy potwierdzasz to miejsce? Alternatywa: pod „Wypiekiem dnia”.
+- **P1.** Wyróżniki (5 haseł z ikonami) są na podstronie O nas, zgodnie z Twoją decyzją. W którym miejscu tej podstrony? Proponuję zaraz pod nagłówkiem, przed Historią. Alternatywa: po „Jak pieczemy”. Trzy hasła (1987, 18 h, bez polepszaczy) tematycznie powtarzają się z „Jak pieczemy”. Czy takie powtórzenie jest OK?
 - **P2.** Z Braci Kowalskich (strona 3) przenoszę układ (telefon w nagłówku, historia „wtedy / dziś”, duże zdjęcia), ale **nie czerwień**, bo w preferencjach kolorów podałeś beże, brązy i złoto. Czy tak zostaje?
 - **P3.** Filtr diet w Ofercie: jak traktować **tort** (alergeny „zależnie od zamówienia”)? a) ukrywać go przy każdym aktywnym filtrze, b) pokazywać zawsze z dopiskiem „alergeny ustalamy przy zamówieniu”, c) inaczej.
 - **P4.** W kalendarzu sezonowym (i we wpisie) przy **tłustym czwartku** intake nie wymienia produktu. Czy wpisać „pączki” (np. pączki z różą z oferty), czy zostawić sam termin?
