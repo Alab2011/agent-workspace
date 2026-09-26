@@ -5,190 +5,105 @@
 "zróbmy stronę lokalnej piekarni"
 
 ## A. Sektor i firma
-- Branża: piekarnia (z opisu)
-- Charakter: lokalna (z opisu)
-- Nazwa: brak odpowiedzi
-- Czym się zajmuje (asortyment, profil): brak odpowiedzi
-- Lokalizacja i zasięg działania: brak odpowiedzi
-- Znani konkurenci: brak odpowiedzi
+- Branża: piekarnia, lokalna (z opisu)
+- Nazwa: „Piekarynka nad zegrza” (pisownia dosłowna, do potwierdzenia: pytanie uzupełniające 1)
+- Typ: c) piekarnia rzemieślnicza (chleb na zakwasie, długa fermentacja, mąki ekologiczne)
+- Lokalizacja i zasięg: b) kilka punktów w jednym mieście (nie podano miasta ani liczby punktów: pytanie uzupełniające 2)
+- Konkurenci: b) nie wiem / nieistotne
 
 ## B. Rodzaj strony i cel
-- Rodzaj strony: brak odpowiedzi
-- Cel strony: brak odpowiedzi
-- Najważniejsza akcja odwiedzającego: brak odpowiedzi
+- Rodzaj strony: d) wizytówka + blog / aktualności
+- Cel: c) zbierać zamówienia (np. torty, pieczywo na imprezy) oraz d) budować wizerunek marki (historia, tradycja, jakość)
+- Najważniejsza akcja: d) napisać wiadomość (e-mail / Messenger) (do potwierdzenia wobec celu „zamówienia”: pytanie uzupełniające 3)
 
 ## C. Odbiorcy
-- Kim są, wiek, czego szukają: brak odpowiedzi
-- Główne urządzenie: brak odpowiedzi
+- Klienci: a) mieszkańcy okolicy, rodziny, osoby starsze oraz b) osoby pracujące w pobliżu (śniadanie, szybki zakup po drodze)
+- Urządzenie: c) po równo / nie wiem
 
 ## D. Wygląd
-- Styl: brak odpowiedzi
-- Kolory ulubione / zakazane: brak odpowiedzi
-- Logo / identyfikacja: brak odpowiedzi
-- Strony, które się podobają / nie podobają: brak odpowiedzi
-- Motyw jasny / ciemny: brak odpowiedzi
+- Styl: a) ciepły i domowy (drewno, kremowe kolory, swojski klimat)
+- Kolory: a) ciepłe: beże, brązy, złoto, kolor skórki chleba. Kolory zakazane: brak odpowiedzi
+- Logo: b) jest tylko szyld / nazwa, bez pliku logo
+- Strony wzorcowe: „nie mam przykladow”
+- Motyw: c) jasny z automatycznym trybem ciemnym (zależnie od ustawień telefonu)
 
 ## E. Treści i ton
-- Dostępne materiały: brak odpowiedzi
-- Dane kontaktowe: brak odpowiedzi
-- Social media: brak odpowiedzi
-- Język strony: brak odpowiedzi
-- Ton i forma zwracania się: brak odpowiedzi
-- Czego nie wolno pisać / obiecywać: brak odpowiedzi
+- Materiały: f) nic nie ma, teksty i zdjęcia zastępcze trzeba przygotować (użytkownik podał jednak treści w odpowiedziach 22–29, zapisane niżej)
+- Dane kontaktowe: b) użyjcie przykładowych danych (w odpowiedzi 24 podano numer +48 512 345 678: pytanie uzupełniające 4)
+- Social media: a) Facebook, b) Instagram (bez linków / nazw profili)
+- Język: a) tylko polski
+- Ton: a) ciepły i luźny, na „Ty” („Wpadnij po świeży chleb!”)
+- Czego nie pisać / obiecywać: „a - nie obiecuj niczego” (zakres do doprecyzowania: pytanie uzupełniające 5)
 
 ## F. Funkcje
-- brak odpowiedzi
+- a) formularz kontaktowy
+- b) formularz zamówień (np. torty, większe zamówienia)
+- c) mapa z dojazdem
+- d) galeria zdjęć
+- e) FAQ
 
-## Branża: piekarnia (gastronomia / handel lokalny)
-- Asortyment i ceny: brak odpowiedzi
-- Godziny otwarcia: brak odpowiedzi
-- Zamówienia / rezerwacje: brak odpowiedzi
-- Dostawa / odbiór: brak odpowiedzi
-- Specjalność: brak odpowiedzi
-- Informacje o składnikach / alergenach: brak odpowiedzi
-- Liczba punktów sprzedaży: brak odpowiedzi
-- Historia / tradycja: brak odpowiedzi
-- Współpraca B2B: brak odpowiedzi
-- Aktualności / oferty dnia: brak odpowiedzi
+## Branża: piekarnia (rzemieślnicza)
+
+### Oferta (dosłownie)
+Oferta: d) podział na kategorie, z cenami.
+- **Pieczywo:** chleb żytni na zakwasie 12 zł, chleb pszenny 8 zł, bagietka 6 zł, bułka kajzerka 1,20 zł, grahamka 1,80 zł
+- **Słodkie wypieki:** pączek z różą 4,50 zł, drożdżówka z serem 5 zł, rogal świętomarciński 9 zł, szarlotka 8 zł/kawałek
+- **Torty i ciasta na zamówienie:** od 120 zł za tort 1,5 kg
+- **Kanapki i przekąski:** kanapka z pastą jajeczną 9 zł, zapiekanka 12 zł
+
+### Godziny otwarcia (dosłownie)
+a) pon.–pt. 6:00–19:00, sob. 6:30–15:00, niedz. 7:00–13:00. Świeże pieczywo codziennie od otwarcia, druga dostawa ok. 12:00.
+
+### Zamówienia z wyprzedzeniem (dosłownie)
+a) + b) + c) Zamówienia telefonicznie (+48 512 345 678) lub przez formularz na stronie, najpóźniej dzień wcześniej do 14:00. Torty okolicznościowe przyjmujemy z minimum 3-dniowym wyprzedzeniem.
+
+### Dostawa / odbiór (dosłownie)
+b) + c) + d) Odbiór osobisty zamówień w piekarni. Dostawa w promieniu 10 km (gratis od 80 zł, poniżej 10 zł). Obsługujemy też kawiarnie, restauracje i sklepy (B2B) z codziennymi porannymi dostawami.
+
+### Specjalność (dosłownie)
+Chleb żytni na naturalnym zakwasie, wypiekany według tej samej receptury od 1987 roku, fermentowany przez 18 godzin. Klienci pokochali też nasze pączki z domową konfiturą z róży oraz maślane chałki z kruszonką.
+
+### Alergeny (dosłownie)
+a) Przy każdym produkcie podajemy pełną listę alergenów (gluten, jaja, mleko, orzechy, sezam itp.). W ofercie mamy też kilka wypieków bez laktozy i chleb bezglutenowy (pieczony w osobnej strefie).
+
+### Historia (dosłownie)
+a) Piekarnię założył w 1987 roku pan Józef Kowalczyk, który przez lata doskonalił przepisy przywiezione z rodzinnej wsi. Dziś prowadzą ją jego syn i wnuczka, wciąż wypiekając chleb ręcznie, w tradycyjny sposób i bez sztucznych polepszaczy.
+
+### Aktualności / oferta dnia (dosłownie)
+a) + b) Codziennie publikujemy „wypiek dnia" (np. w poniedziałki chleb orkiszowy, w piątki focaccia z rozmarynem). Sezonowo: tłusty czwartek, rogale na 11 listopada, pierniki w grudniu i mazurki na Wielkanoc.
 
 ## Otwarte pytania (tylko przy statusie QUESTIONS)
 
-### A. Sektor i firma
-1. Jak nazywa się piekarnia? (Jeśli to fikcyjna piekarnia na potrzeby testu, możesz podać dowolną nazwę albo zostawić ją mnie do wymyślenia.)
-2. Jaki to typ piekarni?
-   a) tradycyjna piekarnia rodzinna (chleb, bułki, drożdżówki)
-   b) piekarnio-cukiernia (również ciasta, torty, desery)
-   c) piekarnia rzemieślnicza (chleb na zakwasie, długa fermentacja, mąki ekologiczne)
-   d) piekarnia z kawiarnią (można usiąść na kawę na miejscu)
-   e) inne (opisz)
-3. Gdzie znajduje się piekarnia i jaki ma zasięg?
-   a) jedno miasto / osiedle (podaj miejscowość)
-   b) kilka punktów w jednym mieście
-   c) region (np. kilka miejscowości, dostawy do sklepów)
-4. Czy znasz konkurencję w okolicy (nazwy lub strony innych piekarni)?
-   a) tak (podaj nazwy lub linki)
-   b) nie wiem / nieistotne
-
-### B. Rodzaj strony i cel
-5. Jaki rodzaj strony?
-   a) wizytówka (kilka podstron: o nas, oferta, kontakt)
-   b) one-page (wszystko na jednej przewijanej stronie)
-   c) landing page (jedna konkretna akcja, np. zamówienie tortu)
-   d) wizytówka + blog / aktualności
-6. Jaki jest główny cel strony?
-   a) żeby ludzie łatwo znaleźli adres i godziny otwarcia
-   b) pokazać ofertę i zachęcić do odwiedzin
-   c) zbierać zamówienia (np. torty, pieczywo na imprezy)
-   d) budować wizerunek marki (historia, tradycja, jakość)
-7. Jaka jest JEDNA najważniejsza akcja odwiedzającego?
-   a) zadzwonić
-   b) wyznaczyć trasę dojazdu (mapa)
-   c) złożyć zamówienie przez formularz
-   d) napisać wiadomość (e-mail / Messenger)
-   e) inne
-
-### C. Odbiorcy
-8. Kto najczęściej jest klientem piekarni?
-   a) mieszkańcy okolicy, rodziny, osoby starsze
-   b) osoby pracujące w pobliżu (śniadanie, szybki zakup po drodze)
-   c) osoby szukające jakościowego / rzemieślniczego pieczywa
-   d) firmy i organizatorzy imprez (zamówienia hurtowe, catering)
-   e) mieszanka (napisz, jaka)
-9. Z jakiego urządzenia klienci najczęściej wejdą na stronę?
-   a) głównie telefon
-   b) głównie komputer
-   c) po równo / nie wiem
-
-### D. Wygląd
-10. Jaki styl ma mieć strona?
-    a) ciepły i domowy (drewno, kremowe kolory, swojski klimat)
-    b) rzemieślniczy / rustykalny (naturalne tekstury, papier, ręczne pismo)
-    c) nowoczesny i minimalistyczny (dużo bieli, duże zdjęcia)
-    d) elegancki (np. pod cukiernię i torty okolicznościowe)
-    e) inny (opisz)
-11. Jakie kolory lubisz, a jakich na pewno nie chcesz?
-    a) ciepłe: beże, brązy, złoto, kolor skórki chleba
-    b) pastelowe: kremowy, pudrowy róż, miętowy
-    c) kontrastowe: czerń / grafit + jeden mocny akcent
-    d) mam własne kolory (podaj) / zakazane kolory: (podaj)
-12. Czy piekarnia ma logo lub identyfikację wizualną?
-    a) tak, mam logo (w jakim formacie?)
-    b) jest tylko szyld / nazwa, bez pliku logo
-    c) nie ma, trzeba zaproponować coś prostego
-13. Podaj 1–3 strony, które Ci się podobają (dowolne, niekoniecznie piekarnie), i 1 stronę, która Ci się nie podoba. Przy każdej napisz krótko dlaczego.
-    a) podam linki
-    b) nie mam przykładów, zdaję się na Was
-14. Jasny czy ciemny motyw?
-    a) jasny
-    b) ciemny
-    c) jasny z automatycznym trybem ciemnym (zależnie od ustawień telefonu)
-
-### E. Treści i ton
-15. Jakie materiały już są? (można zaznaczyć kilka)
-    a) teksty (o nas, historia)
-    b) zdjęcia pieczywa / wnętrza / zespołu
-    c) logo
-    d) cennik / lista produktów
-    e) opinie klientów (np. z Google)
-    f) nic nie ma, teksty i zdjęcia zastępcze trzeba przygotować
-16. Jakie dane kontaktowe mają być na stronie? (adres, telefon, e-mail; jeśli to test, mogą być przykładowe)
-    a) podam prawdziwe
-    b) użyjcie przykładowych danych
-17. Czy piekarnia ma social media?
-    a) Facebook
-    b) Instagram
-    c) TikTok / inne
-    d) nie ma
-18. W jakim języku ma być strona?
-    a) tylko polski
-    b) polski + angielski
-    c) inne
-19. Jaki ton tekstów?
-    a) ciepły i luźny, na „Ty” („Wpadnij po świeży chleb!”)
-    b) uprzejmy i formalny, na „Pan/Pani” / „Państwo”
-    c) neutralny, bez bezpośredniego zwracania się
-20. Czy jest coś, czego nie wolno pisać ani obiecywać? (np. „bez glutenu”, „100% eko”, „dostawa w 30 minut”)
-    a) tak (podaj)
-    b) nie ma ograniczeń
-
-### F. Funkcje
-21. Jakie funkcje mają się znaleźć na stronie? (można zaznaczyć kilka)
-    a) formularz kontaktowy
-    b) formularz zamówień (np. torty, większe zamówienia)
-    c) mapa z dojazdem
-    d) galeria zdjęć
-    e) FAQ
-    f) sekcja opinii klientów
-    g) inne (opisz)
-
-### Branża: piekarnia
-22. Jak ma być pokazana oferta?
-    a) pełna lista produktów z cenami
-    b) lista produktów bez cen
-    c) tylko kilka najważniejszych produktów / bestsellerów ze zdjęciami
-    d) podział na kategorie (pieczywo, słodkie wypieki, ciasta, torty, kanapki)
-23. Jakie są godziny otwarcia? (dni powszednie / sobota / niedziela)
-    a) podam
-    b) użyjcie przykładowych
-24. Czy można składać zamówienia z wyprzedzeniem?
-    a) tak, telefonicznie
-    b) tak, przez formularz na stronie
-    c) tak, torty okolicznościowe na zamówienie
-    d) nie, tylko sprzedaż na miejscu
-25. Czy jest dostawa lub odbiór?
-    a) tylko zakup na miejscu
-    b) odbiór osobisty zamówionych wypieków
-    c) dostawa do klientów (podaj obszar)
-    d) dostawy do sklepów / restauracji / biur (B2B)
-26. Co jest specjalnością piekarni? (np. chleb na zakwasie, pączki, chałki, rogale świętomarcińskie, wypieki bezglutenowe)
-27. Czy na stronie mają być informacje o składnikach i alergenach?
-    a) tak, przy każdym produkcie
-    b) ogólna informacja + „zapytaj w sklepie”
-    c) nie
-28. Czy piekarnia ma historię lub tradycję, którą warto pokazać? (np. rok założenia, rodzinny interes od pokoleń, własne receptury)
-    a) tak (opisz krótko)
-    b) nie / nieistotne
-29. Czy strona ma mieć sekcję aktualności lub „oferty dnia” (np. nowości, wypieki sezonowe, święta)?
-    a) tak, regularnie aktualizowaną
-    b) tylko sezonowo (np. Wielkanoc, Boże Narodzenie, Tłusty Czwartek)
-    c) nie
+1. **Nazwa.** Podałeś „Piekarynka nad zegrza”. Jak dokładnie ma być zapisana na stronie?
+   a) „Piekarynka nad Zegrzem”
+   b) „Piekarynka nad Zegrza” (dokładnie tak, jak napisałeś, z wielką literą Z)
+   c) inaczej (napisz dokładną pisownię)
+2. **Lokalizacja i punkty sprzedaży.** Wybrałeś „kilka punktów w jednym mieście”, ale nie podałeś miasta. W innych odpowiedziach piszesz o „piekarni” w liczbie pojedynczej (np. „odbiór osobisty zamówień w piekarni”).
+   a) jedna piekarnia (podaj miejscowość albo użyjcie przykładowej)
+   b) kilka punktów: podaj miasto i liczbę punktów (np. 2 lub 3). Czy wszystkie mają te same godziny otwarcia?
+   c) wymyślcie przykładowe miasto i punkty sami
+3. **Najważniejsza akcja.** Jako główny cel wybrałeś zbieranie zamówień, a jako najważniejszą akcję „napisać wiadomość (e-mail / Messenger)”. Który przycisk ma być najbardziej widoczny?
+   a) „Napisz do nas” (wiadomość / Messenger)
+   b) „Zamów” (formularz zamówień)
+   c) „Zadzwoń” (telefon)
+   d) dwa równorzędne: „Zamów” + „Napisz”
+4. **Dane kontaktowe.** Wybrałeś „użyjcie przykładowych danych”, a w odpowiedzi 24 podałeś numer +48 512 345 678.
+   a) użyjcie tego numeru, a resztę danych (adres, e-mail, linki do Facebooka i Instagrama) wymyślcie przykładowo
+   b) wszystko przykładowe, ten numer też jest tylko przykładem
+   c) podam prawdziwe dane (adres, e-mail, linki do profili)
+5. **„Nie obiecuj niczego”.** W odpowiedziach sam podałeś kilka konkretnych deklaracji: „bez sztucznych polepszaczy”, chleb bezglutenowy „pieczony w osobnej strefie”, „fermentowany przez 18 godzin”, dostawa „gratis od 80 zł”, codzienne poranne dostawy B2B. Jak to rozumieć?
+   a) to, co podałem, można pisać, tylko nie dodawajcie żadnych własnych obietnic
+   b) nie piszcie żadnych obietnic, nawet tych, które podałem (podaj, które usunąć)
+   c) inaczej (opisz)
+6. **Produkty spoza cennika.** W odpowiedziach pojawiają się produkty, których nie ma w cenniku: maślana chałka z kruszonką, chleb bezglutenowy, wypieki bez laktozy, chleb orkiszowy, focaccia z rozmarynem, sezonowe pierniki i mazurki.
+   a) dodajcie je do oferty (podam ceny)
+   b) dodajcie je do oferty bez cen (np. „cena w sklepie”)
+   c) nie dodawajcie ich do cennika, mają być tylko w opisach / aktualnościach
+7. **Alergeny.** Chcesz pełną listę alergenów przy każdym produkcie, ale nie ma jej w odpowiedziach.
+   a) podam listę alergenów dla każdego produktu
+   b) przygotujcie przykładowe listy, z dopiskiem, że są przykładowe
+   c) przy produktach dajcie ogólną notkę „skład i alergeny: zapytaj w sklepie”
+8. **„Wypiek dnia”.** Podałeś przykłady na poniedziałek i piątek.
+   a) podam pełny tygodniowy plan (pon.–niedz.)
+   b) wymyślcie pozostałe dni sami
+   c) wystarczą te dwa przykłady
