@@ -1,5 +1,5 @@
 # Intake: test-piekarnia
-**Status: READY**
+**Status: QUESTIONS**
 
 ## Opis od użytkownika (dosłownie)
 "zróbmy stronę lokalnej piekarni"
@@ -30,6 +30,7 @@
 - Kolory: a) ciepłe: beże, brązy, złoto, kolor skórki chleba
 - Kolory zakazane (dosłownie): „nie mam zakazanych kolorow”
   - ~~brak odpowiedzi~~ (zastąpione odpowiedzią użytkownika)
+- Czerwień jak u Braci Kowalskich (pytanie designera P2): **a) bez czerwieni**
 - Logo: b) jest tylko szyld / nazwa, bez pliku logo
 - Strony wzorcowe (ocena zrzutów 8 stron ponumerowanych 1–8, pokazanych przez managera):
   - Odpowiedź użytkownika (dosłownie): „1,3,7 sie podobaja”. Na pytanie o potwierdzenie numerów i ocenę pozostałych stron: „tak dobrze odczytales reszta taka sobie”
@@ -52,6 +53,8 @@
 
 ## E. Treści i ton
 - Materiały: f) nic nie ma, teksty i zdjęcia zastępcze trzeba przygotować (treści merytoryczne użytkownik podał w odpowiedziach 22–29 i uzupełniających, zapisane niżej)
+- Zdjęcia zastępcze (pytanie designera P9): **a) darmowe CC0**
+- Wyróżniki w sekcji „O nas” (pytanie designera P1): **a) zostają pod nagłówkiem**
 - Dane kontaktowe (odpowiedź uzupełniająca 4: „a) Numer +48 512 345 678, pozostałe dane przykładowe”):
   - Adres: ul. Rynek 12, 05-140 Serock
   - Telefon: +48 512 345 678
@@ -70,6 +73,11 @@
 - c) mapa z dojazdem
 - d) galeria zdjęć
 - e) FAQ
+- Ustalenia z pytań designera:
+  - P5, klauzula RODO / polityka prywatności przy formularzach: **a) tak**
+  - P7, pola formularza: **a) telefon wymagany, e-mail opcjonalny**
+  - P8, mapa: **a) OpenStreetMap bez cookies**
+  - P3, tort w filtrze diet (alergeny tortu zależą od zamówienia): **b) pokazywać zawsze z dopiskiem**
 
 ## Branża: piekarnia (rzemieślnicza)
 
@@ -134,6 +142,8 @@ Przy każdym produkcie pełna lista alergenów.
 | Ciasto drożdżowe z kruszonką | gluten, jaja, mleko |
 | Torty | zależnie od zamówienia, informacja przy składaniu |
 
+Tort w filtrze diet (P3): b) pokazywać zawsze z dopiskiem.
+
 Dopisek na stronie (dosłownie): „w piekarni pracujemy z orzechami i sezamem, więc możliwe są śladowe ilości.”
 
 Z odpowiedzi 27 (dosłownie): „W ofercie mamy też kilka wypieków bez laktozy i chleb bezglutenowy (pieczony w osobnej strefie).”
@@ -143,6 +153,8 @@ pon.–pt. 6:00–19:00, sob. 6:30–15:00, niedz. 7:00–13:00. Świeże pieczy
 
 ### Zamówienia z wyprzedzeniem (dosłownie)
 a) + b) + c) Zamówienia telefonicznie (+48 512 345 678) lub przez formularz na stronie, najpóźniej dzień wcześniej do 14:00. Torty okolicznościowe przyjmujemy z minimum 3-dniowym wyprzedzeniem.
+
+Pytanie designera P6: „Torty min. 3 dni wcześniej: zamówienie w poniedziałek → odbiór w czwartek? Czy 14:00 dotyczy też tortów?”. Odpowiedź użytkownika: „tak”. Pytanie miało dwie części, a odpowiedź jest jedna, więc nie wiadomo, do której części się odnosi: patrz pytania otwarte 1 i 2.
 
 ### Dostawa / odbiór (dosłownie)
 b) + c) + d) Odbiór osobisty zamówień w piekarni. Dostawa w promieniu 10 km (gratis od 80 zł, poniżej 10 zł). Obsługujemy też kawiarnie, restauracje i sklepy (B2B) z codziennymi porannymi dostawami.
@@ -185,4 +197,22 @@ Z odpowiedzi 29 (dosłownie): a) + b) Codziennie publikujemy „wypiek dnia". Se
 
 Potwierdzenie użytkownika („tak to ywjatki”): terminy we wpisach 1 i 3 (otwarcie o 5:30 w tłusty czwartek, zamówienia do wtorku, rogale do 8 listopada) to celowe wyjątki na te okazje. Ogólne godziny otwarcia i zasady zamówień na stronie się nie zmieniają.
 
+Tłusty czwartek, czy wpisać pączki (pytanie designera P4): **a) tak, pączki**
+
 Odpowiedź użytkownika na ostatnie 3 pytania (dosłownie): „obr4azek olej, wsyztko inne tak to ywjatki”
+
+## Odpowiedzi na pytania designera P1–P9 (dosłownie)
+„P1a P2a P3b P4a P5a P6 tak P7a P8a P9a”. Każda odpowiedź jest wpisana w odpowiedniej sekcji powyżej. P6 nie jest jednoznaczne, patrz pytania otwarte.
+
+## Otwarte pytania (tylko przy statusie QUESTIONS)
+
+Doprecyzowanie P6 (torty). Na pytanie z dwiema częściami odpisałeś jednym „tak”. Odpowiedz osobno na każdą część:
+
+1. **(P6.1) Tort zamówiony w poniedziałek: od kiedy najwcześniej można go odebrać?**
+   a) w czwartek
+   b) w środę
+   c) inaczej (napisz)
+2. **(P6.2) Czy godzina 14:00 dotyczy też tortów?**
+   a) tak: tort zamówiony w poniedziałek do 14:00 będzie w czwartek, a zamówiony po 14:00 dopiero w piątek
+   b) nie: przy tortach liczy się tylko dzień zamówienia, godzina jest bez znaczenia
+   c) inaczej (napisz)

@@ -152,7 +152,7 @@ Prosty zestaw liniowy (np. Lucide / Phosphor, licencja MIT, grubość linii 1.75
 | 0.2 | Stopka | MUST | TAK | wszystkie podstrony, z dosłownym dopiskiem o alergenach i linkiem do cennika |
 | 0.3 | Przyklejony pasek akcji na telefonie | NICE | TAK | < 768 px: „Zadzwoń / Zamów / Napisz do nas” |
 | 1.1 | Hero | MUST | TAK | Start, zdjęcie tła na całą szerokość |
-| 1.2 → O nas | Wyróżniki | NICE | TAK | **Podstrona O nas** (decyzja użytkownika: „na podstronie o nas”), pas 5 haseł z ikonami zaraz pod nagłówkiem podstrony, przed Historią (**miejsce w obrębie podstrony to moja propozycja, do potwierdzenia: P1**) |
+| 1.2 → O nas | Wyróżniki | NICE | TAK | **Podstrona O nas** (decyzja użytkownika: „na podstronie o nas”), pas 5 haseł z ikonami zaraz pod nagłówkiem podstrony, przed Historią (miejsce potwierdzone przez użytkownika, P1a) |
 | 1.3 | Wypiek dnia | SHOULD | TAK | Start, karta „Dziś” + harmonogram tygodnia |
 | 1.4 | Zajawka oferty / specjalności | SHOULD | TAK | Start, 3 karty |
 | 1.5 | Zajawka historii | SHOULD | TAK | Start, pas ze zdjęciem tła i dużym „1987” |
@@ -162,7 +162,7 @@ Prosty zestaw liniowy (np. Lucide / Phosphor, licencja MIT, grubość linii 1.75
 | 2.2 | Alergeny przy każdym produkcie | MUST | TAK | Oferta (oraz Start, wszędzie tam, gdzie jest produkt z ceną) |
 | 2.3 | Dopisek o śladowych ilościach | MUST | TAK | Oferta (na górze i na dole cennika) + stopka |
 | 2.4 | Oznaczenia diet | MUST | TAK | plakietki `--diet-*` |
-| 2.5 | Filtr diet | NICE | TAK | Oferta, 4 przełączniki (**otwarte: jak traktować tort, P3**) |
+| 2.5 | Filtr diet | NICE | TAK | Oferta, 4 przełączniki. Tort jest zawsze widoczny z dopiskiem o alergenach (P3b) |
 | 2.6 | Przycisk „Zamów” pod cennikiem | MUST | TAK | Oferta, pas na końcu |
 | 3.1 | Zasady | MUST | TAK | Zamówienia, ciemny pas w 3 punktach |
 | 3.2 | Odbiór i dostawa | MUST | TAK | Zamówienia, 2 karty |
@@ -174,7 +174,7 @@ Prosty zestaw liniowy (np. Lucide / Phosphor, licencja MIT, grubość linii 1.75
 | 4.3 | Galeria zdjęć | SHOULD | TAK | O nas, siatka 9 zdjęć |
 | 5.1 | Lista wpisów | MUST | TAK | Aktualności, 5 wpisów zastępczych |
 | 5.2 | Szablon pojedynczego wpisu | MUST | TAK | osobny plik wpisu (szablon) |
-| 5.3 | Kalendarz sezonowy | NICE | TAK | Aktualności, pas 4 kart nad listą (**otwarte: produkt na tłusty czwartek, P4**) |
+| 5.3 | Kalendarz sezonowy | NICE | TAK | Aktualności, pas 4 kart nad listą (tłusty czwartek z pączkami, P4a) |
 | 6.1 | Dane kontaktowe | MUST | TAK | Kontakt |
 | 6.2 | Pełne godziny otwarcia | MUST | TAK | Kontakt |
 | 6.3 | Mapa z dojazdem | MUST | TAK | Kontakt |
@@ -183,12 +183,14 @@ Prosty zestaw liniowy (np. Lucide / Phosphor, licencja MIT, grubość linii 1.75
 
 **Razem: MUST 21/21, SHOULD 7/7, NICE 4/4. Nie dodałem żadnych sekcji spoza briefu.**
 
+**Dodatkowo, z decyzji użytkownika spoza briefu (P5a: „tak, klauzula RODO / polityka prywatności”):** krótka klauzula informacyjna pod obydwoma formularzami, link „Polityka prywatności” w stopce i prosta podstrona tekstowa `polityka-prywatnosci.html` (opis w sekcji 7). **Brief jej jeszcze nie ma, więc interpreter powinien ją dopisać.** Treść prawna wymaga danych administratora (pełna nazwa firmy, adres rejestrowy, NIP), których nie ma w intake: **OTWARTE**, do uzupełnienia przez użytkownika.
+
 ---
 
 ## Struktura strony
 
 ### Pliki (propozycja nazw dla codera)
-`index.html` (Start), `oferta.html`, `zamowienia.html`, `o-nas.html`, `aktualnosci.html`, `aktualnosci/<slug>.html` (wpisy według jednego szablonu, 5 plików zastępczych), `kontakt.html`.
+`index.html` (Start), `oferta.html`, `zamowienia.html`, `o-nas.html`, `aktualnosci.html`, `aktualnosci/<slug>.html` (wpisy według jednego szablonu, 5 plików zastępczych), `kontakt.html`, `polityka-prywatnosci.html` (P5a, poza menu głównym, link tylko w stopce i przy formularzach).
 
 ### 0. Elementy wspólne (każda podstrona)
 
@@ -204,7 +206,7 @@ Prosty zestaw liniowy (np. Lucide / Phosphor, licencja MIT, grubość linii 1.75
 #### 0.2 Stopka [MUST]
 - `--band` (ciemny brąz) z tekstem `--band-text` w obu trybach (spójne zamknięcie strony, jak ciemne pasy w R3).
 - **Desktop:** 4 kolumny: (1) znak słowny w wersji jasnej, `g-footer-tagline`, `g-footer-address`, `g-footer-phone`, `g-footer-email`; (2) `g-footer-hours-title` + `g-footer-hours` (3 wiersze); (3) menu w stopce (`g-footer-nav-aria`, te same 6 linków); (4) `g-footer-social-title` + ikony FB/IG (48×48, `aria-label` z id) oraz ramka z `g-footer-allergen-note` i linkiem `g-footer-allergen-link` (do `oferta.html#alergeny`).
-- Pasek na dole: `g-footer-copy`.
+- Pasek na dole: `g-footer-copy` + link `g-footer-privacy-link` → `polityka-prywatnosci.html` (P5a).
 - **Mobile:** kolumny jedna pod drugą, kolejność 1 → 2 → 4 → 3. Na dole dodatkowy padding równy wysokości paska 0.3 + `env(safe-area-inset-bottom)`.
 - Linki w stopce mają kolor `--accent` (w trybie jasnym `#C8962E` na `#3B2A1E` = 5,1 : 1, w ciemnym `#E0B25A` na `#362619` = 7,4 : 1; oba ≥ 4,5 ✔) i podkreślenie.
 
@@ -273,7 +275,7 @@ Pas ze zdjęciem tła na całą szerokość (wzorzec R3), wys. 280 px desktop / 
   - „bez orzechów”: bez „orzechy” i „orzechy (włoskie)”,
   - „bez sezamu”: bez „sezam”,
   - filtry łączą się logicznie przez AND,
-  - **tort (alergeny „zależnie od zamówienia”): OTWARTE, pytanie P3.** Do czasu odpowiedzi coder przygotowuje flagę `data-allergens="unknown"`, a zachowanie ustawimy po decyzji.
+  - **tort (alergeny „zależnie od zamówienia”, decyzja P3b):** jest widoczny zawsze, przy każdym filtrze, i nigdy nie jest ukrywany. W jego wierszu stale stoi dopisek `oferta-p-tort-alg` (fakt: „zależnie od zamówienia, informacja przy składaniu”). Przy aktywnym filtrze dopisek dostaje wyróżnienie: ramkę `--accent` z lewej i ikonę „i”, żeby nikt nie uznał tortu za „przefiltrowany”. Flaga `data-allergens="unknown"` omija filtrowanie i nie wlicza się do liczby w `oferta-filter-status`.
 - Bez JS filtr jest ukryty (`hidden`, odkrywany skryptem), cennik działa w całości.
 
 #### 2.1–2.4 Cennik w kategoriach [MUST]
@@ -313,10 +315,10 @@ Pas ze zdjęciem tła na całą szerokość (wzorzec R3), wys. 280 px desktop / 
 - **Kroki** (wzorzec R3: numerowane kroki; `<fieldset>` + `<legend>` z kółkiem-numerem):
   1. `zam-step1-legend`: **Co zamawiasz?** 3 wiersze [`zam-f-product-label` (select, opcja 0 = `zam-f-product-placeholder`, opcje = nazwy produktów z cennika pogrupowane `<optgroup>` wg kategorii) + `zam-f-qty-label` (number, min 1, domyślnie 1)]. Pierwszy wiersz jest wymagany, 2. i 3. opcjonalne. Pod nimi `zam-f-rows-hint`. Kolejność kroków: najpierw produkty, potem data. To świadoma zmiana względem R3, bo termin zależy od produktu (tort = 3 dni).
   2. `zam-step2-legend`: **Kiedy i jak odbierasz?** `zam-f-date-label` (input date) + `zam-f-date-hint` (zasada terminu, aktualizowana dynamicznie, jeśli wybrano tort); radio `zam-f-method-legend`: `zam-f-method-pickup` / `zam-f-method-delivery`; pole `zam-f-address-label` + `zam-f-address-hint` (pojawia się po wybraniu dostawy, CSS `:has()` z fallbackiem „zawsze widoczne”; wymagane tylko przy dostawie); `zam-f-delivery-cost-hint` pod radiami.
-  3. `zam-step3-legend`: **Twoje dane.** `zam-f-name-label` (wymagane), `zam-f-phone-label` (wymagane, `type="tel"`, `autocomplete="tel"`), `zam-f-email-label` (opcjonalne, P7), `zam-f-notes-label` (textarea) + `zam-f-notes-hint` (np. do tortu).
-- **Pod krokami:** `zam-f-pay-note` (bez płatności online), przycisk `zam-f-submit` (`--primary`, pełna szerokość na mobile, min. 260 px na desktopie). Miejsce na klauzulę informacyjną RODO jest zarezerwowane, ale **bez treści do czasu odpowiedzi na P5**.
+  3. `zam-step3-legend`: **Twoje dane.** `zam-f-name-label` (wymagane), `zam-f-phone-label` (wymagane, `type="tel"`, `autocomplete="tel"`), `zam-f-email-label` (opcjonalne, potwierdzone P7a), `zam-f-notes-label` (textarea) + `zam-f-notes-hint` (np. do tortu).
+- **Pod krokami:** `zam-f-pay-note` (bez płatności online), przycisk `zam-f-submit` (`--primary`, pełna szerokość na mobile, min. 260 px na desktopie). Nad przyciskiem stoi klauzula informacyjna RODO (P5a): `zam-f-privacy-note` (16 px, `--text-muted`) z linkiem `zam-f-privacy-link` → `polityka-prywatnosci.html`. To zwykła informacja, bez checkboxa zgody, bo dane służą do realizacji zamówienia. Jeśli prawnik lub użytkownik będzie chciał checkbox, można go dodać bez zmiany układu.
 - **Walidacja** (natywna + JS): komunikaty pod polem (`--error`, ikona, `aria-describedby`, `aria-invalid`), podsumowanie błędów nad formularzem (`zam-f-error-generic`, focus na nim). Pola: `zam-f-err-required`, `zam-f-err-date`, `zam-f-err-date-tort`, `zam-f-err-phone`, `zam-f-err-address`.
-- **Reguła daty** (fakt z intake: „najpóźniej dzień wcześniej do 14:00”, „torty z min. 3-dniowym wyprzedzeniem”): najwcześniejsza data = jutro, jeśli teraz jest przed 14:00 (czas Europe/Warsaw), a w przeciwnym razie pojutrze. Jeśli w którymś wierszu wybrano tort, najwcześniejsza data to dziś + 3 dni. **Dokładna interpretacja „3 dni” jest OTWARTA (P6)**, więc coder trzyma ją w jednej stałej.
+- **Reguła daty** (fakt z intake: „najpóźniej dzień wcześniej do 14:00”, „torty z min. 3-dniowym wyprzedzeniem”): najwcześniejsza data = jutro, jeśli teraz jest przed 14:00 (czas Europe/Warsaw), a w przeciwnym razie pojutrze. Jeśli w którymś wierszu wybrano tort, najwcześniejsza data to dziś + 3 dni (zamówienie w poniedziałek → odbiór najwcześniej w czwartek). **OTWARTE (tylko tutaj, P6):** użytkownik odpowiedział jednym „tak” na pytanie dwuczęściowe. Informator sprawdza to w intake. Pierwsza część („poniedziałek → czwartek”) przyjmuje wariant „dziś + 3 dni”. Druga część, czyli czy godzina 14:00 dotyczy też tortów (po 14:00 byłoby to dziś + 4 dni), czeka na potwierdzenie. Coder trzyma obie reguły jako stałe (`CAKE_MIN_DAYS = 3`, `CAKE_USES_CUTOFF = true/false`), a treść `zam-f-date-hint`, `zam-f-err-date-tort` i `kont-faq-2-a` writer dopasuje po potwierdzeniu.
 - **Po wysłaniu:** komunikat `zam-f-success` w ramce sukcesu w miejscu formularza, z focusem na nim (`role="status"`).
 
 #### 3.5 Alternatywa: telefon [MUST]
@@ -335,7 +337,7 @@ Pas ze zdjęciem tła na całą szerokość (wzorzec R3), wys. 280 px desktop / 
 
 #### 4.0 Wyróżniki [NICE] (w briefie dotąd 1.2, przeniesione na O nas decyzją użytkownika)
 - **Cel:** krótkie „dlaczego my” na początku opowieści o piekarni.
-- **Miejsce:** zaraz pod nagłówkiem podstrony, przed Historią. To moja propozycja, bo użytkownik wskazał tylko podstronę (P1). Alternatywa to wstawienie ich po „Jak pieczemy” jako podsumowania.
+- **Miejsce:** zaraz pod nagłówkiem podstrony, przed Historią (potwierdzone przez użytkownika, P1a).
 - **Zawartość:** `onas-usp-title` (h2, może być `.sr-only`; w prototypie widoczne), 5 haseł `onas-usp-1` … `onas-usp-5` z ikonami. **Wyłącznie 5 haseł z briefu** (od 1987 r., 18 h fermentacji zakwasu, bez polepszaczy, osobna strefa bezglutenowa, dostawa gratis od 80 zł w promieniu 10 km), bez żadnych innych.
 - **Desktop:** karta `--surface` z `--radius-lg` i `--shadow-1` nachodząca −48 px na dół pasa-nagłówka podstrony (wzorzec L1: jasny blok nachodzący na zdjęcie), 5 kolumn: ikona 32 px nad hasłem (17 px 700, wyśrodkowane).
 - **Mobile:** karta bez nachodzenia, lista pionowa: ikona po lewej, hasło po prawej (5 wierszy po 56 px).
@@ -364,7 +366,7 @@ Pas ze zdjęciem tła na całą szerokość (wzorzec R3), wys. 280 px desktop / 
 - **Nagłówek podstrony:** `akt-title` (h1), `akt-lead`.
 
 #### 5.3 Kalendarz sezonowy [NICE]
-- Nad listą wpisów: `akt-cal-title` (h2) i 4 karty w poziomym rzędzie (desktop 4 kolumny, mobile 2×2): każda to ikona, `akt-cal-N-when` (okres, 700) i `akt-cal-N-what` (produkt). Kolejność kart jest taka jak w briefie (tłusty czwartek, 11 listopada, grudzień, Wielkanoc), bez przestawiania na kolejność kalendarzową. **`akt-cal-1-what` (tłusty czwartek) jest OTWARTE (P4).**
+- Nad listą wpisów: `akt-cal-title` (h2) i 4 karty w poziomym rzędzie (desktop 4 kolumny, mobile 2×2): każda to ikona, `akt-cal-N-when` (okres, 700) i `akt-cal-N-what` (produkt). Kolejność kart jest taka jak w briefie (tłusty czwartek, 11 listopada, grudzień, Wielkanoc), bez przestawiania na kolejność kalendarzową. Przy tłustym czwartku stoją pączki (`akt-cal-1-what`, decyzja użytkownika P4a).
 
 #### 5.1 Lista wpisów [MUST]
 - `akt-list-title` (h2, może być `.sr-only`). 5 wpisów zastępczych: 1 wypiek dnia (`akt-tag-wd`) + 4 sezonowe (`akt-tag-season`): tłusty czwartek, rogale na 11 listopada, pierniki w grudniu, mazurki na Wielkanoc.
@@ -392,16 +394,25 @@ Pas ze zdjęciem tła na całą szerokość (wzorzec R3), wys. 280 px desktop / 
 
 #### 6.3 Mapa z dojazdem [MUST]
 - `kont-map-title` (h2). Pełna szerokość kontenera, wys. 400 px desktop / 300 px mobile, `--radius-lg`. `<iframe>` mapy z `title` = `kont-map-iframe-title` i `loading="lazy"`. Pod mapą przycisk-link `kont-map-route` (otwiera nawigację do „ul. Rynek 12, 05-140 Serock” w nowej karcie, `aria-label` = `kont-map-route-aria`) oraz `kont-map-fallback`.
-- **Rekomendacja:** OpenStreetMap (embed) nie wymaga zgody na cookies, a przy Google Maps trzeba by dodać baner zgody (research ostrzega przed banerami cookies zasłaniającymi ekran, L1). Link „Wyznacz trasę” może prowadzić do Google Maps (to zwykły link, bez cookies na naszej stronie). Decyzja techniczna należy do codera/managera, a w razie wątpliwości do użytkownika (P8).
+- **Decyzja (P8a): OpenStreetMap (embed), bez cookies stron trzecich i bez baneru zgody.** Link „Wyznacz trasę” to zwykły link zewnętrzny do nawigacji (np. OpenStreetMap z trasą albo Google Maps), który na naszej stronie nie ustawia cookies.
 
 #### 6.4 Formularz „Napisz do nas” [MUST] (kotwica `#napisz`)
 - **Desktop:** formularz w jednej kolumnie max 720 px, w karcie `--surface`. FAQ stoi pod nim, bo taka jest kolejność w briefie.
-- `kont-form-title` (h2), `kont-form-lead`, `kont-f-required-note`. Pola: `kont-f-name-label` (wymagane), `kont-f-contact-label` + `kont-f-contact-hint` (wymagane; walidacja: poprawny e-mail **albo** telefon), `kont-f-message-label` + `kont-f-message-hint` (textarea, min. 6 wierszy, wymagane). Przycisk `kont-f-submit` (`--accent`, bo to akcja „Napisz do nas”). Komunikaty: `kont-f-success`, `kont-f-error-generic`, `kont-f-err-required`, `kont-f-err-contact`. Miejsce na klauzulę RODO jak w 3.4 (P5).
+- `kont-form-title` (h2), `kont-form-lead`, `kont-f-required-note`. Pola: `kont-f-name-label` (wymagane), `kont-f-contact-label` + `kont-f-contact-hint` (wymagane; walidacja: poprawny e-mail **albo** telefon), `kont-f-message-label` + `kont-f-message-hint` (textarea, min. 6 wierszy, wymagane). Przycisk `kont-f-submit` (`--accent`, bo to akcja „Napisz do nas”). Komunikaty: `kont-f-success`, `kont-f-error-generic`, `kont-f-err-required`, `kont-f-err-contact`. Nad przyciskiem klauzula RODO jak w 3.4 (P5a): `kont-f-privacy-note` + link `kont-f-privacy-link`.
 - Link B2B ze Startu prowadzi tutaj (`#napisz`), a `kont-f-message-hint` może wspomnieć o firmach.
 
 #### 6.5 FAQ [SHOULD]
 - `kont-faq-title` (h2). Akordeon na `<details>/<summary>` (działa bez JS, dostępny z klawiatury), 8 pytań `kont-faq-1…8-q` / `-a` na tematy z briefu 6.5 w tej kolejności: termin zamówień, torty, dostawa i koszt, płatność, godziny, alergeny i ślady, chleb bezglutenowy, obsługa firm.
 - `summary` min. 56 px, ikona +/− po prawej, linia `--border` między pytaniami. Kolumna max 800 px.
+
+---
+
+### 7. Polityka prywatności (`polityka-prywatnosci.html`) — z decyzji P5a, poza briefem (do dopisania przez interpretera)
+- **Cel:** miejsce na pełną informację o przetwarzaniu danych z formularzy (link z klauzul pod formularzami i ze stopki).
+- **Układ:** wspólny nagłówek i stopka. Zamiast pasa ze zdjęciem jest prosty nagłówek tekstowy na `--surface-alt`: `pp-title` (h1) i `pp-updated` (data aktualizacji). Treść `pp-body` w jednej kolumnie 68ch, z h2 dla kolejnych punktów. Bez zdjęć i bez CTA w treści.
+- **Mobile:** to samo, 1 kolumna.
+- **Nie ma jej w menu głównym**, bo menu ma zostać 6 podstron z briefu.
+- **OTWARTE:** dane administratora (pełna nazwa firmy, adres rejestrowy, NIP, e-mail do spraw danych) i okres przechowywania danych. Nie ma ich w intake, więc writer nie może ich wymyślić. Użytkownik musi je podać (np. przez informatora).
 
 ---
 
@@ -411,7 +422,7 @@ Pas ze zdjęciem tła na całą szerokość (wzorzec R3), wys. 280 px desktop / 
 **„fakt z intake”** = writer przepisuje wartość dokładnie z intake.md we wskazanym miejscu, bez przeredagowania treści merytorycznej (dopuszczalna tylko forma zapisu, np. „pon.–pt.”).
 **Zakazy dla wszystkich tekstów (brief):** słowo „ekologiczne”, „najlepsze w okolicy”, „mąka z lokalnych młynów”, „naturalne składniki”, „ręcznie robione z miłością” i **jakiekolwiek nowe deklaracje**. Ton: ciepły, luźny, na „Ty”, w 1. os. l. mn. (rodzina).
 
-### 0. Wspólne (48 id)
+### 0. Wspólne (49 id)
 | id | Sekcja | Typ | Maks. długość | Podsekcja briefu |
 |----|--------|-----|---------------|------------------|
 | g-skip-link | Nagłówek | link sr (widoczny po focusie) | 4 słowa | 0.1 |
@@ -448,6 +459,7 @@ Pas ze zdjęciem tła na całą szerokość (wzorzec R3), wys. 280 px desktop / 
 | g-footer-allergen-link | Stopka | link | 6 słów | 0.2 |
 | g-footer-nav-aria | Stopka | aria nav | 3 słowa | 0.2 |
 | g-footer-copy | Stopka | etykieta | 8 słów (rok 2026 + nazwa) | 0.2 |
+| g-footer-privacy-link | Stopka | link → polityka-prywatnosci.html | 2 słowa („Polityka prywatności”) | 0.2 + P5a |
 | g-sticky-aria | Pasek mobile | aria nav | 3 słowa | 0.3 |
 | g-sticky-call | Pasek mobile | przycisk | 1 słowo (np. „Zadzwoń”, wg briefu) | 0.3 |
 | g-sticky-order | Pasek mobile | przycisk | fakt: „Zamów” | 0.3 |
