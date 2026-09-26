@@ -29,7 +29,21 @@
 - Styl: a) ciepły i domowy (drewno, kremowe kolory, swojski klimat)
 - Kolory: a) ciepłe: beże, brązy, złoto, kolor skórki chleba. Kolory zakazane: brak odpowiedzi
 - Logo: b) jest tylko szyld / nazwa, bez pliku logo
-- Strony wzorcowe: „nie mam przykladow”
+- Strony wzorcowe (ocena zrzutów 8 stron ponumerowanych 1–8, pokazanych przez managera):
+  - Odpowiedź użytkownika (dosłownie): „1,3,7 sie podobaja”. Na pytanie o potwierdzenie numerów i ocenę pozostałych stron: „tak dobrze odczytales reszta taka sobie”
+  - **Podobają się:**
+    - 1: Brodzik Naturalnie (https://www.brodziknaturalnie.pl/)
+    - 3: Bracia Kowalscy (https://braciakowalscy.pl/)
+    - 7: Breaking Bread (https://breakingbread.dodla.pl/)
+    - Co konkretnie się podoba: brak odpowiedzi
+  - **„Taka sobie”** (określenie użytkownika; nie wskazał żadnej strony jako niepodobającej się):
+    - 2: Putka (https://www.putka.pl/)
+    - 4: Grzybki (https://piekarniagrzybki.pl/)
+    - 5: Cała w Mące (https://calawmace.pl/)
+    - 6: Sztuka Mąki (https://www.sztukamaki.pl/)
+    - 8: Bardzo Dobry Chleb (https://bardzodobrychleb.pl/). Uwaga: zrzut pokazywał tylko ekran anty-botowy, a nie samą stronę
+    - Dlaczego „taka sobie”: brak odpowiedzi
+  - ~~„nie mam przykladow”~~ (zastąpione oceną zrzutów stron)
 - Motyw: c) jasny z automatycznym trybem ciemnym (zależnie od ustawień telefonu)
 
 ## E. Treści i ton
