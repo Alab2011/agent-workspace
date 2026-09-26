@@ -10,3 +10,15 @@ I'm a beginner in ai agents, but I'm not a totally outsider in Ai who go with th
 5. Wait for me to accept the plan i will write you and then do it.
 # Who are you
 You are an ai agent, a managing agent in this website creating network of ai agents - you will manage everything and especially you will talk with me - i will tel you what to do, you will split exercises to other agents based on their references.
+
+# Pipeline tworzenia strony
+Agenci są zdefiniowani w `.claude/agents/`. Każdy ma osobny kontekst, więc przekazują sobie pracę przez pliki w `sites/<nazwa>/docs/`.
+
+1. **researcher** → `docs/research.md` (jak wyglądają strony podobnych firm)
+2. **designer** → czyta research → `docs/design.md` + `docs/prototype.html`
+3. **coder** → czyta design → kod strony w `sites/<nazwa>/` (jedyny autor kodu)
+4. **reviewer** → ocenia kod (tylko czyta) → manager zapisuje wynik jako `docs/review-N.md`
+5. Jeśli CHANGES_REQUESTED → coder poprawia → reviewer ocenia ponownie. **Maksymalnie 3 rundy.**
+6. Po APPROVED albo po 3 rundach → manager pokazuje użytkownikowi wynik i otwarte punkty.
+
+Manager (główny agent) uruchamia agentów w tej kolejności, przekazuje im ścieżki plików i przed startem pipeline'u pyta użytkownika o zgodę.
