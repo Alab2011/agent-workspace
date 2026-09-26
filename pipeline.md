@@ -26,6 +26,16 @@ Agenci są zdefiniowani w `.claude/agents/`. Każdy ma osobny kontekst i nie mo�
                     wynik dla użytkownika
 ```
 
+## Przygotowanie środowiska (przed pierwszym przebiegiem)
+
+Wnioski z przebiegu treningowego `test-piekarnia`. Bez tych kroków researcher nie zobaczy żadnej strony.
+
+1. **Dostęp do sieci:** w ustawieniach środowiska chmurowego (claude.ai/code → selektor środowisk → ⚙️ → **Network access**) wybierz **Full** albo **Custom** z domenami, np. `*.pl`, `*.com`, i zaznacz domyślną listę rejestrów pakietów.
+2. **Reguły uprawnień:** plik `.claude/settings.json` w katalogu głównym repo (nie w `.claude/agents/`!) z regułami `Bash(curl:*)` i `Bash(node:*)`. Plik musi dodać **użytkownik**, bo agent nie może sam przyznawać sobie uprawnień (blokada „Self-Modification”).
+3. **Certyfikat proxy dla Chromium:** przeglądarka nie ufa domyślnie certyfikatowi proxy sesji (`ERR_CERT_AUTHORITY_INVALID`). Manager instaluje `certutil` (`libnss3-tools`) i dodaje `/root/.ccr/agent-proxy-ca.crt` do `~/.pki/nssdb`. Weryfikacji TLS nigdy nie wyłączamy.
+4. **Research w wariancie B1:** WebFetch może pozostać zablokowany nawet przy otwartej sieci. Wtedy **manager** pobiera strony (`curl` → HTML, Playwright/Chromium → zrzuty desktop i mobile) do `sites/<nazwa>/docs/research-raw/`, a **researcher** tylko je analizuje, bez dostępu do terminala. Folder `research-raw/` jest w `.gitignore` (cudze treści).
+5. **Użytkownik może ocenić zrzuty** (podoba się / nie podoba się). Jego oceny trafiają do `intake.md` przez informatora, zanim ruszy designer.
+
 ## Kroki
 
 0. **informator**
