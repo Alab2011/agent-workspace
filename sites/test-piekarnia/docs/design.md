@@ -833,7 +833,7 @@ Pas ze zdjęciem tła na całą szerokość (wzorzec R3), wys. 280 px desktop / 
 | kont-faq-1-q | FAQ | pytanie (summary) | 12 słów: termin zamówień | 6.5 |
 | kont-faq-1-a | FAQ | odpowiedź | 40 słów, fakt z intake: dzień wcześniej do 14:00, telefon lub formularz | 6.5 |
 | kont-faq-2-q | FAQ | pytanie | 12 słów: torty | 6.5 |
-| kont-faq-2-a | FAQ | odpowiedź | 40 słów, fakt z intake: min. 3 dni, od 120 zł za 1,5 kg, alergeny zależnie od zamówienia | 6.5 |
+| kont-faq-2-a | FAQ | odpowiedź | 40 słów, fakt z intake: min. 3 dni (np. w poniedziałek na czwartek, P6), od 120 zł za 1,5 kg, alergeny zależnie od zamówienia. Próg 14:00 dla tortów OTWARTY (P6) | 6.5 |
 | kont-faq-3-q | FAQ | pytanie | 12 słów: dostawa i koszt | 6.5 |
 | kont-faq-3-a | FAQ | odpowiedź | 40 słów, fakt z intake: 10 km, gratis od 80 zł, poniżej 10 zł, odbiór osobisty | 6.5 |
 | kont-faq-4-q | FAQ | pytanie | 12 słów: płatność | 6.5 |
@@ -906,12 +906,12 @@ Urządzenia są „po równo” (intake C), więc oba widoki projektuję z tą s
 1. **Tokeny:** zdefiniuj wszystkie kolory z sekcji „Design tokens” jako zmienne CSS w `:root` i nadpisz je w `@media (prefers-color-scheme: dark)`. Nie wpisuj hexów bezpośrednio w komponentach. **Złoto `--accent` w trybie jasnym nigdy jako kolor tekstu na jasnym tle.**
 2. **Fonty:** Google Fonts `Alegreya:ital,wght@0,700;1,400;1,700` i `Mulish:wght@400;600;700`, `display=swap`, `subset latin-ext` (polskie znaki), `preconnect` do fonts.googleapis.com i fonts.gstatic.com. Fallback: `Georgia, serif` / `system-ui, sans-serif`.
 3. **Jedno źródło danych produktów:** nazwy, ceny, alergeny, kategorie i przypisanie „wypieku dnia” do dni trzymaj w jednym miejscu (np. obiekt JS lub `data-*` generowane z jednej listy). Z niego powinny korzystać cennik, karta „Dziś”, harmonogram, karty specjalności i select w formularzu zamówienia. Dzięki temu cena nie rozjedzie się między stronami. Teksty dostarczy writer według id z mapy tekstów, a fakty muszą zgadzać się 1:1 z intake.md.
-4. **Filtr „bez laktozy”** działa tylko na produktach z frazą „bez laktozy” w nazwie (brief 2.4 / odp. 4a), a nie na podstawie braku „mleko”. Tort ma flagę `unknown`, a jego zachowanie w filtrze czeka na odpowiedź (P3).
-5. **Reguły daty** w formularzu zamówienia zapisz jako stałe (`ORDER_CUTOFF_HOUR = 14`, `CAKE_MIN_DAYS = 3`). Interpretacja „3 dni” jest otwarta (P6). Czas licz w `Europe/Warsaw` (np. `Intl.DateTimeFormat` z `timeZone`). Nie blokuj dni tygodnia, bo intake nie podaje dni dowozu.
-6. **Wysyłka formularzy:** sposób wysyłki (usługa formularzy, własny backend, mailto) nie wynika z briefu, więc manager musi go ustalić z użytkownikiem (P8). Do tego czasu zrób formularze z pełną walidacją i komunikatem sukcesu w trybie demo.
-7. **Mapa:** preferowany embed OpenStreetMap (brak cookies stron trzecich, więc bez baneru zgody). Link „Wyznacz trasę” jako zwykły link zewnętrzny z `rel="noopener"` i informacją o nowej karcie (`g-new-tab-sr`).
-8. **Zdjęcia zastępcze:** jednolite proporcje (hero 16:9 desktop / 4:5 mobile, karty 4:3, wpisy 16:9, galeria 1:1), ciepła tonacja. Źródło (np. darmowe zdjęcia na licencji CC0 albo neutralne placeholdery) potwierdza manager (P9). Plik nazwij tak, żeby było jasne, że to placeholder (`placeholder-hero.jpg`).
-9. **Bez banerów zasłaniających treść.** Jeśli coś będzie wymagało zgody na cookies (np. mapa Google), baner ma być mały, przy dolnej krawędzi i nie może zasłaniać CTA ani paska 0.3.
+4. **Filtr „bez laktozy”** działa tylko na produktach z frazą „bez laktozy” w nazwie (brief 2.4 / odp. 4a), a nie na podstawie braku „mleko”. Tort ma flagę `unknown`, jest **zawsze widoczny** przy każdym filtrze i ma wyróżniony dopisek `oferta-p-tort-alg` (decyzja P3b).
+5. **Reguły daty** w formularzu zamówienia zapisz jako stałe: `ORDER_CUTOFF_HOUR = 14`, `CAKE_MIN_DAYS = 3` (poniedziałek → czwartek), `CAKE_USES_CUTOFF` (czy próg 14:00 dotyczy tortów: **OTWARTE, P6**. Wartości nie zakładaj sam. Jeśli kod powstaje przed odpowiedzią, zostaw `// TODO P6` i zgłoś to managerowi.). Czas licz w `Europe/Warsaw` (np. `Intl.DateTimeFormat` z `timeZone`). Nie blokuj dni tygodnia, bo intake nie podaje dni dowozu.
+6. **Wysyłka formularzy:** sposób wysyłki (usługa formularzy, własny backend, mailto) nadal nie jest ustalony. Odpowiedź P8a dotyczyła tylko mapy, więc to kwestia techniczna dla managera. Do tego czasu zrób formularze z pełną walidacją i komunikatem sukcesu w trybie demo. Pod oboma formularzami jest klauzula RODO z linkiem do `polityka-prywatnosci.html` (P5a).
+7. **Mapa (decyzja P8a):** embed OpenStreetMap, bez cookies stron trzecich, więc bez baneru zgody. Link „Wyznacz trasę” jako zwykły link zewnętrzny z `rel="noopener"` i informacją o nowej karcie (`g-new-tab-sr`).
+8. **Zdjęcia zastępcze (decyzja P9a): darmowe zdjęcia na licencji CC0** (np. Unsplash / Pexels z licencją pozwalającą na użycie komercyjne bez atrybucji; źródło zapisz w komentarzu lub w pliku `CREDITS.md` obok zdjęć). Jednolite proporcje (hero 16:9 desktop / 4:5 mobile, karty 4:3, wpisy 16:9, galeria 1:1, zdjęcie chleba obok formularza zamówienia 4:5), ciepła tonacja. Nazwy plików z prefiksem `placeholder-`. Zdjęcia nie mogą przedstawiać rozpoznawalnych osób opisanych jako rodzina Kowalczyków.
+9. **Bez banerów zasłaniających treść.** Przy OSM i braku analityki baner cookies nie jest potrzebny.
 10. **Dane przykładowe** (e-mail, FB, IG) wstaw tak jak w intake, ale w kodzie oznacz je komentarzem `<!-- DANE PRZYKŁADOWE -->`, żeby łatwo było je podmienić.
 11. **Semantyka:** jeden `h1` na stronę, landmarki `header / nav / main / footer`, cennik jako `<table>` (na mobile przestylowana), godziny jako `<table>` lub `<dl>`, daty w `<time>`, telefon `tel:+48512345678`, adres w `<address>`. Dane strukturalne `schema.org/Bakery` (nazwa, adres, telefon, godziny) w JSON-LD na Starcie i Kontakcie, tylko z faktami z intake.
 12. **Wydajność:** bez frameworków, statyczny HTML/CSS + mały JS (menu, wypiek dnia, godziny na dziś, filtr, walidacja). Obrazy w WebP/AVIF z fallbackiem JPG.
@@ -919,13 +919,24 @@ Urządzenia są „po równo” (intake C), więc oba widoki projektuję z tą s
 
 ---
 
-## Otwarte pytania (do przekazania użytkownikowi przez managera)
-- **P1.** Wyróżniki (5 haseł z ikonami) są na podstronie O nas, zgodnie z Twoją decyzją. W którym miejscu tej podstrony? Proponuję zaraz pod nagłówkiem, przed Historią. Alternatywa: po „Jak pieczemy”. Trzy hasła (1987, 18 h, bez polepszaczy) tematycznie powtarzają się z „Jak pieczemy”. Czy takie powtórzenie jest OK?
-- **P2.** Z Braci Kowalskich (strona 3) przenoszę układ (telefon w nagłówku, historia „wtedy / dziś”, duże zdjęcia), ale **nie czerwień**, bo w preferencjach kolorów podałeś beże, brązy i złoto. Czy tak zostaje?
-- **P3.** Filtr diet w Ofercie: jak traktować **tort** (alergeny „zależnie od zamówienia”)? a) ukrywać go przy każdym aktywnym filtrze, b) pokazywać zawsze z dopiskiem „alergeny ustalamy przy zamówieniu”, c) inaczej.
-- **P4.** W kalendarzu sezonowym (i we wpisie) przy **tłustym czwartku** intake nie wymienia produktu. Czy wpisać „pączki” (np. pączki z różą z oferty), czy zostawić sam termin?
-- **P5.** Formularze zbierają dane osobowe (imię, telefon, adres). Czy dodać krótką klauzulę informacyjną RODO / link do polityki prywatności? Brief takiej sekcji nie ma, więc zostawiłem tylko miejsce.
-- **P6.** Torty „z min. 3-dniowym wyprzedzeniem”: czy np. zamawiając w poniedziałek, najwcześniejszy odbiór to czwartek? Czy godzina 14:00 dotyczy też tortów?
-- **P7.** W formularzu zamówienia telefon jest wymagany, a e-mail opcjonalny. Czy tak może być?
-- **P8.** (techniczne, dla managera) Jak mają być wysyłane formularze i jaka mapa (OpenStreetMap bez cookies czy Google Maps z banerem zgody)?
-- **P9.** (techniczne, dla managera) Skąd zdjęcia zastępcze: darmowe zdjęcia stockowe (CC0) czy neutralne szare placeholdery?
+## Decyzje użytkownika i punkty otwarte
+
+Odpowiedź użytkownika (dosłownie): „P1a P2a P3b P4a P5a P6 tak P7a P8a P9a”.
+
+| Pytanie | Decyzja | Gdzie uwzględniona |
+|---|---|---|
+| P1 | a) Wyróżniki pod nagłówkiem O nas, przed Historią | 4.0, tabela pokrycia |
+| P2 | a) bez czerwieni | kierunek wizualny |
+| P3 | b) tort w filtrze zawsze widoczny, z dopiskiem | 2.5, uwaga dla codera 4 |
+| P4 | a) tłusty czwartek z pączkami | 5.3, `akt-cal-1-what`, `wpis-2-body` |
+| P5 | a) klauzula RODO + polityka prywatności | 3.4, 6.4, stopka, sekcja 7, 7 nowych id |
+| P6 | „tak” (pytanie było dwuczęściowe) | 3.4: „poniedziałek → czwartek” przyjęte; **próg 14:00 dla tortów OTWARTY** |
+| P7 | a) telefon wymagany, e-mail opcjonalny | 3.4, `zam-f-email-label` |
+| P8 | a) OpenStreetMap bez cookies | 6.3, uwaga dla codera 7 |
+| P9 | a) darmowe zdjęcia CC0 | uwaga dla codera 8 |
+
+**Nadal otwarte:**
+- **P6 (część 2):** czy godzina 14:00 dotyczy też tortów? Jednym „tak” użytkownik mógł odpowiedzieć na obie części pytania. Informator sprawdza to w intake. Dotyczy tylko stałej `CAKE_USES_CUTOFF` i tekstów `zam-f-date-hint`, `zam-f-err-date-tort`, `kont-faq-2-a`.
+- **P5 (dane):** dane administratora danych (pełna nazwa firmy, adres rejestrowy, NIP, kontakt w sprawach danych) i okres przechowywania danych do polityki prywatności oraz klauzul. Nie ma ich w intake.
+- **Brief:** interpreter powinien dopisać podstronę „Polityka prywatności” (P5a), bo teraz jest poza briefem.
+- **Techniczne (manager):** sposób wysyłki formularzy (P8a dotyczyło tylko mapy).

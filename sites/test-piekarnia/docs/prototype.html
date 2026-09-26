@@ -286,7 +286,7 @@ summary{font-weight:700;min-height:44px;cursor:pointer}
       <nav aria-label="[g-footer-nav-aria]"><h3>Menu</h3><p><a href="#">[g-nav-start]</a><br><a href="#">[g-nav-oferta]</a><br><a href="#">[g-nav-zamowienia]</a><br><a href="#">[g-nav-onas]</a><br><a href="#">[g-nav-aktualnosci]</a><br><a href="#">[g-nav-kontakt]</a></p></nav>
       <div><h3>[g-footer-social-title]</h3><p><span class="icon" style="border-color:var(--accent);color:var(--accent)" aria-label="[g-footer-fb-aria]">FB</span> <span class="icon" style="border-color:var(--accent);color:var(--accent)" aria-label="[g-footer-ig-aria]">IG</span></p><p style="border:1px solid rgba(245,235,221,.3);padding:12px;border-radius:10px">[g-footer-allergen-note: fakt, dosłownie]<br><a href="#">[g-footer-allergen-link]</a></p></div>
     </div>
-    <p class="copy">[g-footer-copy]</p>
+    <p class="copy">[g-footer-copy] · <a href="#page-polityka">[g-footer-privacy-link]</a></p>
   </div></footer>
   <!-- 0.3 PASEK MOBILNY (podgląd, widoczny tylko < 768 px; w kodzie position: fixed na dole) -->
   <nav class="sticky-demo" aria-label="[g-sticky-aria]"><a href="#">☎<span>[g-sticky-call]</span></a><a class="o" href="#">[g-sticky-order]</a><a class="w" href="#">[g-sticky-write]</a></nav>
@@ -318,7 +318,7 @@ summary{font-weight:700;min-height:44px;cursor:pointer}
     <div style="margin:32px 0">
       <span class="sec-tag">2.5 FILTR DIET [NICE] (ukryty bez JS)</span>
       <p><b>[oferta-filter-title]</b> <span class="chip">[oferta-filter-gf]</span> <span class="chip">[oferta-filter-lf]</span> <span class="chip">[oferta-filter-nuts]</span> <span class="chip">[oferta-filter-sesame]</span> <a class="link-more" href="#">[oferta-filter-reset]</a></p>
-      <p class="muted">aria-live: [oferta-filter-status] · przy orzechach/sezamie: [oferta-filter-trace] · brak wyników: [oferta-filter-empty] · TORT: zachowanie OTWARTE (P3)</p>
+      <p class="muted">aria-live: [oferta-filter-status] · przy orzechach/sezamie: [oferta-filter-trace] · brak wyników: [oferta-filter-empty] · TORT: zawsze widoczny, z wyróżnionym dopiskiem o alergenach (P3b)</p>
     </div>
 
     <div class="note" id="alergeny"><span class="sec-tag">2.3 + 2.4 DOPISEK</span><p><b>[oferta-trace-note: fakt, dosłownie]</b></p><p>[oferta-gf-note: maks. 20 słów, fakt]</p></div>
@@ -361,7 +361,7 @@ summary{font-weight:700;min-height:44px;cursor:pointer}
 
     <h2 class="h2-line" style="margin-top:48px">[oferta-cat-torty]</h2><p class="muted">[oferta-cat-torty-note: maks. 20 słów, fakt: min. 3 dni]</p>
     <table><tbody>
-      <tr><td>[oferta-p-tort-name]</td><td class="alg">[oferta-p-tort-alg: fakt „zależnie od zamówienia, informacja przy składaniu”]</td><td class="price">[…-price: „od 120 zł”]</td></tr>
+      <tr><td>[oferta-p-tort-name]</td><td class="alg"><span style="border-left:4px solid var(--accent);padding-left:8px;display:inline-block">ⓘ [oferta-p-tort-alg: fakt „zależnie od zamówienia, informacja przy składaniu”] (przy filtrze widoczny zawsze, P3b)</span></td><td class="price">[…-price: „od 120 zł”]</td></tr>
     </tbody></table>
 
     <h2 class="h2-line" style="margin-top:48px">[oferta-cat-kanapki]</h2>
@@ -379,7 +379,7 @@ summary{font-weight:700;min-height:44px;cursor:pointer}
     <a class="btn btn-order" href="#page-zamowienia">[oferta-cta-order: „Zamów”]</a>
   </div></div>
 
-  <footer class="footer"><div class="wrap"><p><b>[0.2 STOPKA – identyczna jak na Starcie]</b> [g-footer-name] · [g-footer-address] · [g-footer-phone] · [g-footer-hours] · FB/IG · [g-footer-allergen-note] · <a href="#">[g-footer-allergen-link]</a></p><p class="copy">[g-footer-copy]</p></div></footer>
+  <footer class="footer"><div class="wrap"><p><b>[0.2 STOPKA – identyczna jak na Starcie]</b> [g-footer-name] · [g-footer-address] · [g-footer-phone] · [g-footer-hours] · FB/IG · [g-footer-allergen-note] · <a href="#">[g-footer-allergen-link]</a></p><p class="copy">[g-footer-copy] · <a href="#page-polityka">[g-footer-privacy-link]</a></p></div></footer>
   <nav class="sticky-demo"><a href="#">☎<span>[g-sticky-call]</span></a><a class="o" href="#">[g-sticky-order]</a><a class="w" href="#">[g-sticky-write]</a></nav>
 </section>
 
@@ -438,7 +438,7 @@ summary{font-weight:700;min-height:44px;cursor:pointer}
         </fieldset>
         <fieldset><legend><span class="step">2</span>[zam-step2-legend]</legend>
           <label>[zam-f-date-label] *</label><span class="field">dd.mm.rrrr 📅</span>
-          <p class="muted">[zam-f-date-hint: dynamiczne, fakt – zasada terminu / tort]</p>
+          <p class="muted">[zam-f-date-hint: dynamiczne, fakt – zasada terminu / tort: min. 3 dni, np. pon. → czw.; czy próg 14:00 dotyczy tortów – OTWARTE, P6]</p>
           <p class="err">⚠ przykład błędu: [zam-f-err-date] / [zam-f-err-date-tort]</p>
           <p><b>[zam-f-method-legend]</b><br>◉ [zam-f-method-pickup] &nbsp; ○ [zam-f-method-delivery]</p>
           <p class="muted">[zam-f-delivery-cost-hint: fakt]</p>
@@ -451,7 +451,7 @@ summary{font-weight:700;min-height:44px;cursor:pointer}
           <label>[zam-f-notes-label]</label><span class="field" style="min-height:120px">&nbsp;</span><p class="muted">[zam-f-notes-hint]</p>
         </fieldset>
         <p class="muted">[zam-f-pay-note: fakt – płatność przy odbiorze / dostawie]</p>
-        <p class="muted" style="border:1px dashed var(--border-input);padding:8px;border-radius:8px">[MIEJSCE NA KLAUZULĘ RODO – OTWARTE, P5]</p>
+        <p class="muted">[zam-f-privacy-note: klauzula RODO, maks. 35 słów (P5a); dane administratora OTWARTE] <a href="#page-polityka">[zam-f-privacy-link]</a></p>
         <a class="btn btn-order" href="#">[zam-f-submit]</a>
         <p class="muted" style="margin-top:12px">Komunikaty: [zam-f-success] · [zam-f-error-generic] · [zam-f-err-required] · [zam-f-err-phone] · [zam-f-err-address]</p>
       </div>
@@ -473,7 +473,7 @@ summary{font-weight:700;min-height:44px;cursor:pointer}
     </div>
   </div></div>
 
-  <footer class="footer"><div class="wrap"><p><b>[0.2 STOPKA – identyczna jak na Starcie]</b> [g-footer-name] · [g-footer-address] · [g-footer-phone] · [g-footer-hours] · FB/IG · [g-footer-allergen-note] · <a href="#">[g-footer-allergen-link]</a></p><p class="copy">[g-footer-copy]</p></div></footer>
+  <footer class="footer"><div class="wrap"><p><b>[0.2 STOPKA – identyczna jak na Starcie]</b> [g-footer-name] · [g-footer-address] · [g-footer-phone] · [g-footer-hours] · FB/IG · [g-footer-allergen-note] · <a href="#">[g-footer-allergen-link]</a></p><p class="copy">[g-footer-copy] · <a href="#page-polityka">[g-footer-privacy-link]</a></p></div></footer>
   <nav class="sticky-demo"><a href="#">☎<span>[g-sticky-call]</span></a><a class="o" href="#">[g-sticky-order] → #formularz</a><a class="w" href="#">[g-sticky-write]</a></nav>
 </section>
 
@@ -551,7 +551,7 @@ summary{font-weight:700;min-height:44px;cursor:pointer}
     </div>
   </div></div>
 
-  <footer class="footer"><div class="wrap"><p><b>[0.2 STOPKA – identyczna jak na Starcie]</b> [g-footer-name] · [g-footer-address] · [g-footer-phone] · [g-footer-hours] · FB/IG · [g-footer-allergen-note] · <a href="#">[g-footer-allergen-link]</a></p><p class="copy">[g-footer-copy]</p></div></footer>
+  <footer class="footer"><div class="wrap"><p><b>[0.2 STOPKA – identyczna jak na Starcie]</b> [g-footer-name] · [g-footer-address] · [g-footer-phone] · [g-footer-hours] · FB/IG · [g-footer-allergen-note] · <a href="#">[g-footer-allergen-link]</a></p><p class="copy">[g-footer-copy] · <a href="#page-polityka">[g-footer-privacy-link]</a></p></div></footer>
   <nav class="sticky-demo"><a href="#">☎<span>[g-sticky-call]</span></a><a class="o" href="#">[g-sticky-order]</a><a class="w" href="#">[g-sticky-write]</a></nav>
 </section>
 
@@ -579,7 +579,7 @@ summary{font-weight:700;min-height:44px;cursor:pointer}
     <span class="sec-tag">5.3 KALENDARZ SEZONOWY [NICE]</span>
     <h2 class="h2-line">[akt-cal-title: h2, maks. 5 słów]</h2>
     <div class="grid g4">
-      <div class="card"><span class="icon">☼</span><p style="font-weight:700;margin-top:8px">[akt-cal-1-when: fakt „tłusty czwartek”]</p><p>[akt-cal-1-what: OTWARTE – P4]</p></div>
+      <div class="card"><span class="icon">☼</span><p style="font-weight:700;margin-top:8px">[akt-cal-1-when: fakt „tłusty czwartek”]</p><p>[akt-cal-1-what: pączki (P4a)]</p></div>
       <div class="card"><span class="icon">☼</span><p style="font-weight:700;margin-top:8px">[akt-cal-2-when: fakt „11 listopada”]</p><p>[akt-cal-2-what: fakt – rogale]</p></div>
       <div class="card"><span class="icon">☼</span><p style="font-weight:700;margin-top:8px">[akt-cal-3-when: fakt „grudzień”]</p><p>[akt-cal-3-what: fakt – pierniki]</p></div>
       <div class="card"><span class="icon">☼</span><p style="font-weight:700;margin-top:8px">[akt-cal-4-when: fakt „Wielkanoc”]</p><p>[akt-cal-4-what: fakt – mazurki]</p></div>
@@ -616,7 +616,7 @@ summary{font-weight:700;min-height:44px;cursor:pointer}
     </div></div>
   </div>
 
-  <footer class="footer"><div class="wrap"><p><b>[0.2 STOPKA – identyczna jak na Starcie]</b> [g-footer-name] · [g-footer-address] · [g-footer-phone] · [g-footer-hours] · FB/IG · [g-footer-allergen-note] · <a href="#">[g-footer-allergen-link]</a></p><p class="copy">[g-footer-copy]</p></div></footer>
+  <footer class="footer"><div class="wrap"><p><b>[0.2 STOPKA – identyczna jak na Starcie]</b> [g-footer-name] · [g-footer-address] · [g-footer-phone] · [g-footer-hours] · FB/IG · [g-footer-allergen-note] · <a href="#">[g-footer-allergen-link]</a></p><p class="copy">[g-footer-copy] · <a href="#page-polityka">[g-footer-privacy-link]</a></p></div></footer>
   <nav class="sticky-demo"><a href="#">☎<span>[g-sticky-call]</span></a><a class="o" href="#">[g-sticky-order]</a><a class="w" href="#">[g-sticky-write]</a></nav>
 </section>
 
@@ -666,7 +666,7 @@ summary{font-weight:700;min-height:44px;cursor:pointer}
   <div class="sec alt"><div class="wrap">
     <span class="sec-tag">6.3 MAPA Z DOJAZDEM [MUST]</span>
     <h2 class="h2-line">[kont-map-title: h2, maks. 4 słowa]</h2>
-    <div class="ph" style="min-height:400px">[MAPA – iframe (rekomendacja: OpenStreetMap), title = kont-map-iframe-title, loading="lazy"]</div>
+    <div class="ph" style="min-height:400px">[MAPA – iframe OpenStreetMap (decyzja P8a, bez cookies), title = kont-map-iframe-title, loading="lazy"]</div>
     <p style="margin-top:16px"><a class="btn btn-order" href="#" aria-label="[kont-map-route-aria]">[kont-map-route] ↗</a></p>
     <p class="muted">[kont-map-fallback: maks. 15 słów]</p>
   </div></div>
@@ -681,7 +681,7 @@ summary{font-weight:700;min-height:44px;cursor:pointer}
       <label>[kont-f-contact-label] *</label><span class="field">&nbsp;</span><p class="muted">[kont-f-contact-hint]</p>
       <p class="err">⚠ przykład błędu: [kont-f-err-contact]</p>
       <label>[kont-f-message-label] *</label><span class="field" style="min-height:160px">&nbsp;</span><p class="muted">[kont-f-message-hint: maks. 15 słów, może wspomnieć o firmach]</p>
-      <p class="muted" style="border:1px dashed var(--border-input);padding:8px;border-radius:8px">[MIEJSCE NA KLAUZULĘ RODO – OTWARTE, P5]</p>
+      <p class="muted">[kont-f-privacy-note: klauzula RODO, maks. 35 słów (P5a); dane administratora OTWARTE] <a href="#page-polityka">[kont-f-privacy-link]</a></p>
       <a class="btn btn-write" href="#">[kont-f-submit]</a>
       <p class="muted" style="margin-top:12px">Komunikaty: [kont-f-success] · [kont-f-error-generic] · [kont-f-err-required]</p>
     </div>
@@ -700,7 +700,7 @@ summary{font-weight:700;min-height:44px;cursor:pointer}
     <details><summary>[kont-faq-8-q: obsługa firm] ＋</summary><p>[kont-faq-8-a]</p></details>
   </div></div>
 
-  <footer class="footer"><div class="wrap"><p><b>[0.2 STOPKA – identyczna jak na Starcie]</b> [g-footer-name] · [g-footer-address] · [g-footer-phone] · [g-footer-hours] · FB/IG · [g-footer-allergen-note] · <a href="#">[g-footer-allergen-link]</a></p><p class="copy">[g-footer-copy]</p></div></footer>
+  <footer class="footer"><div class="wrap"><p><b>[0.2 STOPKA – identyczna jak na Starcie]</b> [g-footer-name] · [g-footer-address] · [g-footer-phone] · [g-footer-hours] · FB/IG · [g-footer-allergen-note] · <a href="#">[g-footer-allergen-link]</a></p><p class="copy">[g-footer-copy] · <a href="#page-polityka">[g-footer-privacy-link]</a></p></div></footer>
   <nav class="sticky-demo"><a href="#">☎<span>[g-sticky-call]</span></a><a class="o" href="#">[g-sticky-order]</a><a class="w" href="#">[g-sticky-write] → #napisz</a></nav>
 </section>
 
