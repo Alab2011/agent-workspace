@@ -1,5 +1,5 @@
 # Intake: test-piekarnia
-**Status: QUESTIONS**
+**Status: READY**
 
 ## Opis od użytkownika (dosłownie)
 "zróbmy stronę lokalnej piekarni"
@@ -9,6 +9,7 @@
 - Nazwa: **„Piekarynka nad Zegrzem”** (odpowiedź uzupełniająca 1: „a) „Piekarynka nad Zegrzem" (poprawna forma gramatyczna).”)
   - ~~„Piekarynka nad zegrza”~~ (zastąpione odpowiedzią uzupełniającą 1)
 - Pełna nazwa firmy (do polityki prywatności, dosłownie): „Piekarynka nad Zegrzem Marek Kowalczyk”
+  - Marek Kowalczyk to syn założyciela, a writer może o nim wspomnieć w „O nas” (odpowiedź użytkownika, dosłownie: „tak mzona o nim wspomniec to syn”)
 - Typ: **piekarnia rzemieślnicza. Piszemy o zakwasie i długiej fermentacji, a o mąkach ekologicznych nie piszemy wcale** (runda 3, odpowiedź 2: „a) Wersja rzemieślnicza: piszemy o zakwasie i długiej fermentacji, a o mąkach ekologicznych nie piszemy wcale. Zakaz słowa „ekologiczne" obowiązuje.”)
   - ~~c) piekarnia rzemieślnicza (chleb na zakwasie, długa fermentacja, mąki ekologiczne)~~ (doprecyzowane: bez „mąk ekologicznych”)
 - Lokalizacja: **jedna piekarnia, Serock, ul. Rynek 12, 05-140 Serock** (odpowiedź uzupełniająca 2: „a) Jedna piekarnia, w Serocku, ul. Rynek 12, 05-140 Serock. Wcześniejszą odpowiedź o „kilku punktach" proszę pominąć.”)
@@ -56,6 +57,7 @@
 - Materiały: f) nic nie ma, teksty i zdjęcia zastępcze trzeba przygotować (treści merytoryczne użytkownik podał w odpowiedziach 22–29 i uzupełniających, zapisane niżej)
 - Zdjęcia zastępcze (pytanie designera P9): **a) darmowe CC0**
 - Wyróżniki w sekcji „O nas” (pytanie designera P1): **a) zostają pod nagłówkiem**
+- Osoby w „O nas”: można wspomnieć o Marku Kowalczyku, synu założyciela (patrz sekcja A)
 - Dane kontaktowe (odpowiedź uzupełniająca 4: „a) Numer +48 512 345 678, pozostałe dane przykładowe”):
   - Adres: ul. Rynek 12, 05-140 Serock
   - Telefon: +48 512 345 678
@@ -84,16 +86,15 @@
 - a) Pełna nazwa firmy: Piekarynka nad Zegrzem Marek Kowalczyk
 - b) Adres rejestrowy: ul. Rynek 12, 05-140 Serock
 - c) NIP: 536-100-00-18 (**przykładowy**, trzeba go zastąpić prawdziwym)
-- d) Kontakt w sprawach danych osobowych: dane@piekarynkanadzegrzem.pl lub +48 512 345 678
+- d) Kontakt w sprawach danych osobowych: dane@piekarynkanadzegrzem.pl (**przykładowy**, do zastąpienia prawdziwym; odpowiedź użytkownika „1. a”) lub +48 512 345 678
 - e) Okres przechowywania danych z formularzy: 12 miesięcy od ostatniego kontaktu; dane z zamówień B2B (faktury) zgodnie z przepisami podatkowymi, czyli 5 lat.
 - ~~Wszystkie pola: brak odpowiedzi~~ (zastąpione powyższymi danymi)
-- Uwaga: użytkownik oznaczył jako przykładowy tylko NIP. Czy dane@piekarynkanadzegrzem.pl jest prawdziwy, patrz pytanie otwarte 1
 
 ### Formularze
 - Sposób działania (odpowiedź „3c”): **c) zewnętrzna usługa formularzy, która działa naprawdę, ale wymaga konta**
 - Usługa (dosłownie): „Formspree, poproszę o instrukcję zakładania konta krok po kroku.”
   - Prośba użytkownika do zespołu: **instrukcja zakładania konta Formspree krok po kroku**
-- Adres formularza (endpoint): użytkownik poda go po założeniu konta. Do tego czasu brak odpowiedzi (otwarte, niekrytyczne)
+- Adres formularza (endpoint): **później**. Użytkownik (dosłownie): „robimy prototyp zamowienia na razie moga wyskakiwac bleddy”. Do czasu podania endpointu formularze mogą pokazywać błąd (w pytaniu managera: miejsce na endpoint oznaczone w kodzie, a formularz pokazuje błąd)
 - E-mail odbiorcy zgłoszeń (dosłownie): „Do testów podam swój prawdziwy adres przy konfiguracji Formspree, bo na przykładowy zamówienia nie dotrą.”
   - Uwaga managera: prawdziwy e-mail użytkownika będzie tylko w ustawieniach Formspree, **nie w repozytorium**
 
@@ -175,7 +176,7 @@ a) + b) + c) Zamówienia telefonicznie (+48 512 345 678) lub przez formularz na 
 Torty, doprecyzowanie:
 - Pytanie designera P6: „Torty min. 3 dni wcześniej: zamówienie w poniedziałek → odbiór w czwartek? Czy 14:00 dotyczy też tortów?”. Odpowiedź użytkownika: „tak” (jedna odpowiedź na dwie części).
 - **P6.2, czy godzina 14:00 dotyczy tortów:** **a) tak, zamówienie po 14:00 przesuwa odbiór o dzień** (odpowiedź „1a”)
-- **P6.1, tort zamówiony w poniedziałek, od kiedy najwcześniej odbiór:** użytkownik nadal nie odpowiedział na to pytanie osobno. Designer przyjął „czwartek” na podstawie pierwotnego „tak” na P6, ale użytkownik tego nie potwierdził. Otwarte, niekrytyczne, patrz pytanie otwarte 2
+- **P6.1, tort zamówiony w poniedziałek, od kiedy najwcześniej odbiór:** użytkownik (dosłownie): „na razie po in”, czyli na razie pomijamy. Designer przyjął roboczo „czwartek” na podstawie pierwotnego „tak” na P6, ale użytkownik tego nie potwierdził. Otwarte, niekrytyczne
 
 ### Dostawa / odbiór (dosłownie)
 b) + c) + d) Odbiór osobisty zamówień w piekarni. Dostawa w promieniu 10 km (gratis od 80 zł, poniżej 10 zł). Obsługujemy też kawiarnie, restauracje i sklepy (B2B) z codziennymi porannymi dostawami.
@@ -198,6 +199,8 @@ Chleb żytni na naturalnym zakwasie, wypiekany według tej samej receptury od 19
 
 ### Historia (dosłownie)
 a) Piekarnię założył w 1987 roku pan Józef Kowalczyk, który przez lata doskonalił przepisy przywiezione z rodzinnej wsi. Dziś prowadzą ją jego syn i wnuczka, wciąż wypiekając chleb ręcznie, w tradycyjny sposób i bez sztucznych polepszaczy.
+
+Uzupełnienie: syn założyciela to Marek Kowalczyk (użytkownik: „tak mzona o nim wspomniec to syn”). Wnuczka: imię nie zostało podane.
 
 ### Aktualności / oferta dnia
 Z odpowiedzi 29 (dosłownie): a) + b) Codziennie publikujemy „wypiek dnia". Sezonowo: tłusty czwartek, rogale na 11 listopada, pierniki w grudniu i mazurki na Wielkanoc.
@@ -226,16 +229,11 @@ Odpowiedź użytkownika na ostatnie 3 pytania (dosłownie): „obr4azek olej, ws
 - P1–P9: „P1a P2a P3b P4a P5a P6 tak P7a P8a P9a”
 - Runda P6.2 / polityka prywatności / formularze: „1a 2b 3c”
 - Dane do polityki prywatności, usługa formularzy, e-mail do zamówień: zapisane dosłownie w sekcji F
+- Ostatnia runda (dane@, P6.1, endpoint, Marek Kowalczyk): „1. a 2 na razie po in - robimy prototyp zamowienia na razie moga wyskakiwac bleddy - tak mzona o nim wspomniec to syn”
 
 Każda odpowiedź jest wpisana w odpowiedniej sekcji powyżej.
 
-## Otwarte pytania (tylko przy statusie QUESTIONS)
-
-1. **E-mail w sprawach danych osobowych.** Podałeś dane@piekarynkanadzegrzem.pl. E-mail na stronie (kontakt@piekarynkanadzegrzem.pl) jest przykładowy, a oba adresy są w tej samej domenie. Jako przykładowy oznaczyłeś tylko NIP.
-   a) dane@piekarynkanadzegrzem.pl też jest przykładowy: oznaczcie go jak NIP, do zastąpienia prawdziwym
-   b) to prawdziwy adres, zostaje bez oznaczenia
-2. **(P6.1, niekrytyczne) Tort zamówiony w poniedziałek (do 14:00): od kiedy najwcześniej można go odebrać?**
-   a) w czwartek
-   b) w środę
-   c) inaczej (napisz)
-3. **(Niekrytyczne) Adres formularza Formspree (endpoint):** podasz go po założeniu konta według instrukcji. Do tego czasu w kodzie będzie wyraźnie oznaczone miejsce na ten adres.
+## Otwarte, niekrytyczne (nie blokują pracy)
+1. **P6.1:** od kiedy najwcześniej można odebrać tort zamówiony w poniedziałek do 14:00. Użytkownik: „na razie po in”. Designer przyjął roboczo czwartek, bez potwierdzenia użytkownika.
+2. **Endpoint Formspree:** użytkownik poda go po założeniu konta. Do tego czasu formularze mogą pokazywać błąd, bo to prototyp.
+3. **Dane przykładowe do podmiany przed publikacją:** NIP 536-100-00-18, e-mail dane@piekarynkanadzegrzem.pl, e-mail kontakt@piekarynkanadzegrzem.pl oraz profile social media @piekarynkanadzegrzem.
