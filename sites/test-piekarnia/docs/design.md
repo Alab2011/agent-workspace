@@ -1,6 +1,6 @@
 # Design: test-piekarnia („Piekarynka nad Zegrzem”)
 
-> Wejście: intake.md (READY), brief.md (READY, 6 podstron / 32 sekcje), research.md, zrzuty L1, L3, R3 z `research-raw/` oraz dwa uzupełnienia od użytkownika przekazane przez managera (26.09.2026): (1) co podoba się w stronach 1, 3, 7; (2) **sekcja „Wyróżniki” [NICE] trafia na podstronę O nas** (dosłownie: „na podstronie o nas”), a nie na Start pod hero.
+> Wejście: intake.md (READY), brief.md (READY, 6 podstron / 32 sekcje), research.md, zrzuty L1, L3, R3 z `research-raw/` oraz dwa uzupełnienia od użytkownika przekazane przez managera (26.09.2026): (1) co podoba się w stronach 1, 3, 7; (2) **sekcja „Wyróżniki” [NICE] trafia na podstronę O nas** (dosłownie: „na podstronie o nas”), a nie na Start pod hero; (3) poprawka po zrzutach: zdjęcie chleba pod kartą telefonu na Zamówieniach; (4) odpowiedzi na pytania P1–P9 („P1a P2a P3b P4a P5a P6 tak P7a P8a P9a”). Rozstrzygnięcia są opisane na końcu dokumentu.
 > Ten dokument **nie zawiera finalnych tekstów**. Teksty pisze writer według „Mapy tekstów”. Wyjątek to fakty wprost z intake, oznaczone jako **„fakt z intake”** ze wskazaniem, gdzie są.
 
 ---
@@ -16,14 +16,14 @@
    - **L1 Brodzik Naturalnie:** hero ze zdjęciem bochenka na całą szerokość, duży jasny napis bezpośrednio na zdjęciu po lewej, a chleb po prawej. Pod spodem jasny, wyśrodkowany blok treści z szeryfowym brązowym nagłówkiem i krótką kreską-separatorem pod nim. Paleta brąz / karmel / złoto.
      → Przenoszę: **zdjęcie tła w hero z tekstem po lewej stronie**, **szeryfowe nagłówki w kolorze brązu z krótką złotą kreską pod h2**, paletę.
    - **L3 Bracia Kowalscy:** zdjęcie na całą szerokość (drożdżówki) z tekstem na środku, **telefon i adres dużą czcionką w prawym górnym rogu nagłówka**, historia w **układzie zygzakowym „wtedy / dziś”** (tekst obok zdjęcia, na przemian), rząd 3 ikon z krótkimi opisami, prosta, czytelna czcionka bezszeryfowa.
-     → Przenoszę: **widoczny telefon i adres w nagłówku**, **zygzak historii 1987 → dziś**, **rzędy ikon** (Wyróżniki), **duże zdjęcia bez ramek**. **Nie przenoszę czerwieni**, bo użytkownik wskazał ciepłe beże, brązy i złoto, a research odradza czerwień jako „marketową” (research: „Bez czerwieni (L3)”). Zobacz pytanie P2.
+     → Przenoszę: **widoczny telefon i adres w nagłówku**, **zygzak historii 1987 → dziś**, **rzędy ikon** (Wyróżniki), **duże zdjęcia bez ramek**. **Nie przenoszę czerwieni**, bo użytkownik wskazał ciepłe beże, brązy i złoto, a research odradza czerwień jako „marketową” (research: „Bez czerwieni (L3)”). **Potwierdzone przez użytkownika (P2a: bez czerwieni).**
    - **R3 Breaking Bread:** pas zdjęcia na całą szerokość jako nagłówek strony, pod nim **ciemny pas z instrukcją zamawiania** i **zamówienie w ponumerowanych krokach** (1. data, 2. produkty) w panelu po prawej. Zaokrąglona, czytelna czcionka bezszeryfowa (Mulish lub bardzo podobna).
      → Przenoszę: **nagłówki podstron jako pasy ze zdjęciem**, **ciemny (brązowy) pas z zasadami zamawiania**, **formularz w numerowanych krokach**, **okrągławy krój tekstu (Mulish)**.
 3. **Research (wnioski ogólne):** hero ze zdjęciem pieczywa to standard (6/7). Historia jest drugim argumentem (6/7). Luki u konkurencji to cennik z alergenami (0/7), FAQ (0/7), godziny na stronie głównej (2/7) i telefon w nagłówku (1/7), a nasz brief wymaga ich wszystkich, więc projekt je eksponuje. Rekomendacja researchu, którą przyjmuję: szeryfowe ciepłe nagłówki + czytelny tekst w dużym rozmiarze (osoby starsze), umiarkowane zaokrąglenia, tryb ciemny „piekarnia nocą” (czekoladowe tło zamiast czystej czerni).
 4. **Czego unikam (błędy z researchu):** baner cookies zasłaniający pół ekranu (L1), hero bez produktu, treść pojawiająca się tylko z animacją (puste miejsca w L1, L3, R1), wyjustowany tekst w wąskich kolumnach, małe obrysowane przyciski „Więcej”, oferta tylko w PDF (L3), długi blok instrukcji w jednym akapicie (R3), czerwony blok zajmujący pół ekranu na mobile (L3).
 
 ### Zgodność preferencji z researchem
-Preferencje z intake (ciepłe kolory, domowy styl) i rekomendacje researchu są zgodne, więc nie widzę sprzeczności blokującej. Jedyny punkt do potwierdzenia to czerwień z L3 (pytanie P2, nieblokujące: domyślnie jej nie używam, bo nie ma jej w preferencjach kolorów).
+Preferencje z intake (ciepłe kolory, domowy styl) i rekomendacje researchu są zgodne, więc nie widzę sprzeczności. Czerwień z L3 odpada, co użytkownik potwierdził (P2a).
 
 ---
 
