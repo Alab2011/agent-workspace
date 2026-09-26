@@ -1,5 +1,5 @@
 # Intake: test-piekarnia
-**Status: READY**
+**Status: QUESTIONS**
 
 ## Opis od użytkownika (dosłownie)
 "zróbmy stronę lokalnej piekarni"
@@ -35,7 +35,9 @@
     - 1: Brodzik Naturalnie (https://www.brodziknaturalnie.pl/)
     - 3: Bracia Kowalscy (https://braciakowalscy.pl/)
     - 7: Breaking Bread (https://breakingbread.dodla.pl/)
-    - Co konkretnie się podoba: brak odpowiedzi
+    - Co konkretnie się podoba (dosłownie): „generalnie przykazdej sam overall - uklad strony - fajne zdjecia w tle przy dobrym ukladzie i czcione tekstu”
+      - ~~brak odpowiedzi~~ (zastąpione powyższą odpowiedzią)
+    - Załącznik niedostarczony: użytkownik próbował dołączyć obrazek, ale dotarła tylko nazwa pliku „1790438297104_image.png”, bez zawartości (patrz pytanie otwarte 3)
   - **„Taka sobie”** (określenie użytkownika; nie wskazał żadnej strony jako niepodobającej się):
     - 2: Putka (https://www.putka.pl/)
     - 4: Grzybki (https://piekarniagrzybki.pl/)
@@ -143,6 +145,19 @@ a) + b) + c) Zamówienia telefonicznie (+48 512 345 678) lub przez formularz na 
 ### Dostawa / odbiór (dosłownie)
 b) + c) + d) Odbiór osobisty zamówień w piekarni. Dostawa w promieniu 10 km (gratis od 80 zł, poniżej 10 zł). Obsługujemy też kawiarnie, restauracje i sklepy (B2B) z codziennymi porannymi dostawami.
 
+#### Godziny dowozu dla klientów indywidualnych (uzupełnienie, dosłownie)
+„Dostawy realizujemy od wtorku do soboty w dwóch oknach: poranne 8:00–11:00 i popołudniowe 15:00–18:00. Klient wybiera okno przy zamówieniu (do godz. 14:00 dnia poprzedniego). W niedziele i poniedziałki nie dowozimy.”
+
+(Popołudniowe okno w sobotę, 15:00–18:00, zaczyna się o godzinie zamknięcia piekarni w sobotę, 15:00: patrz pytanie otwarte 1.)
+
+#### Warunki B2B (uzupełnienie, dosłownie)
+- Dostawy codziennie (pon.–sob.) między 5:30 a 7:30.
+- Minimalne zamówienie: 150 zł netto na jedną dostawę.
+- Zamówienia stałe (np. tygodniowe) lub zmiany do godz. 12:00 dnia poprzedniego.
+- Płatność przelewem na fakturę, termin 14 dni.
+- Obszar ten sam co dla klientów indywidualnych (do 10 km), dostawa wliczona w cenę.
+- Ceny ustalane indywidualnie, kontakt: telefon lub „Napisz do nas" z dopiskiem „B2B".
+
 ### Specjalność (dosłownie)
 Chleb żytni na naturalnym zakwasie, wypiekany według tej samej receptury od 1987 roku, fermentowany przez 18 godzin. Klienci pokochali też nasze pączki z domową konfiturą z róży oraz maślane chałki z kruszonką.
 
@@ -160,3 +175,26 @@ Z odpowiedzi 29 (dosłownie): a) + b) Codziennie publikujemy „wypiek dnia". Se
 - Piątek: focaccia z rozmarynem
 - Sobota: chałka maślana z kruszonką
 - Niedziela: ciasto drożdżowe z kruszonką (~~„drożdżowe z kruszonką”~~, nazwa zastąpiona na prośbę użytkownika)
+
+#### Przykładowe wpisy aktualności (uzupełnienie, dosłownie; użytkownik: „do podmiany później”)
+1. Tłusty czwartek już wkrótce! Pączki z różą i nie tylko: przyjmujemy zamówienia do wtorku do 14:00. W czwartek otwieramy o 5:30.
+2. Nowość: chleb z żurawiną i orzechami Od tego tygodnia w każdą środę jako wypiek dnia. Uwaga dla alergików: zawiera orzechy włoskie.
+3. Rogale świętomarcińskie na 11 listopada Zamówienia przyjmujemy do 8 listopada. Cena: 9 zł za sztukę.
+
+(Wpisy 1 i 3 podają inne terminy niż ogólne zasady: patrz pytanie otwarte 2.)
+
+## Otwarte pytania (tylko przy statusie QUESTIONS)
+
+1. **Sobotnie popołudniowe okno dowozu.** Dowozy są od wtorku do soboty, także w oknie 15:00–18:00. W sobotę piekarnia jest otwarta 6:30–15:00, czyli popołudniowe okno zaczyna się dokładnie o godzinie zamknięcia.
+   a) tak ma być: dowozy działają niezależnie od godzin otwarcia sklepu, sobotnie okno 15:00–18:00 zostaje
+   b) w sobotę jest tylko okno poranne (8:00–11:00)
+   c) inaczej (napisz, jak)
+2. **Terminy w przykładowych wpisach a ogólne zasady.**
+   - Wpis 1: „W czwartek otwieramy o 5:30”, a od poniedziałku do piątku piekarnia jest otwarta od 6:00. Zamówienia na tłusty czwartek są przyjmowane „do wtorku do 14:00”, a ogólna zasada to „najpóźniej dzień wcześniej do 14:00”.
+   - Wpis 3: zamówienia na rogale na 11 listopada są przyjmowane „do 8 listopada”, a ogólna zasada to „dzień wcześniej”.
+   a) to celowe wyjątki na te okazje: zostawiamy tak, jak we wpisach, a ogólne zasady na stronie się nie zmieniają
+   b) wpisy trzeba dopasować do ogólnych zasad (czwartek od 6:00, zamówienia dzień wcześniej do 14:00)
+   c) inaczej (napisz, co zmienić)
+3. **Obrazek, który nie dotarł.** Dotarła tylko nazwa pliku „1790438297104_image.png”, bez zawartości.
+   a) wyślę go jeszcze raz
+   b) pomińcie go, opis słowny wystarczy
