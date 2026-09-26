@@ -27,7 +27,7 @@ Przebiegi: 4 (+1 po kontroli konfliktu). Pytania: 5 → 2 → 0 (READY).
 
 | # | Problem | Poprawka promptu | Status |
 |---|---------|------------------|--------|
-| P-1 | Pytanie z podpunktami (a/b/c) i odpowiedź jedną literą dały niejednoznaczność, potrzebna była dodatkowa runda. | Każdy podpunkt dostaje własny numer (3, 4, 5 zamiast 3a, 3b, 3c). Dotyczy informatora i interpretera. | PROPOSED |
+| P-1 | Pytanie z podpunktami (a/b/c) i odpowiedź jedną literą dały niejednoznaczność, potrzebna była dodatkowa runda. | Każdy podpunkt dostaje własny numer (3, 4, 5 zamiast 3a, 3b, 3c). Dotyczy informatora i interpretera. | APPROVED |
 
 ### researcher
 Przebiegi: 3. Dwa pierwsze nieudane (WebFetch → EGRESS_BLOCKED), trzeci w wariancie B1 (manager pobrał strony i zrobił zrzuty).
