@@ -6,15 +6,19 @@
 
 ## A. Sektor i firma
 - Branża: piekarnia, lokalna (z opisu)
-- Nazwa: „Piekarynka nad zegrza” (pisownia dosłowna, do potwierdzenia: pytanie uzupełniające 1)
-- Typ: c) piekarnia rzemieślnicza (chleb na zakwasie, długa fermentacja, mąki ekologiczne)
-- Lokalizacja i zasięg: b) kilka punktów w jednym mieście (nie podano miasta ani liczby punktów: pytanie uzupełniające 2)
+- Nazwa: **„Piekarynka nad Zegrzem”** (odpowiedź uzupełniająca 1: „a) „Piekarynka nad Zegrzem" (poprawna forma gramatyczna).”)
+  - ~~„Piekarynka nad zegrza”~~ (zastąpione odpowiedzią uzupełniającą 1)
+- Typ: c) piekarnia rzemieślnicza (chleb na zakwasie, długa fermentacja, mąki ekologiczne). Uwaga: w opisie tej opcji było „mąki ekologiczne”, a użytkownik zakazał słowa „ekologiczne”, patrz pytanie otwarte 2
+- Lokalizacja: **jedna piekarnia, Serock, ul. Rynek 12, 05-140 Serock** (odpowiedź uzupełniająca 2: „a) Jedna piekarnia, w Serocku, ul. Rynek 12, 05-140 Serock. Wcześniejszą odpowiedź o „kilku punktach" proszę pominąć.”)
+  - ~~b) kilka punktów w jednym mieście~~ (zastąpione, użytkownik prosi o pominięcie)
+- Zasięg dostaw: promień 10 km (z odpowiedzi 25)
 - Konkurenci: b) nie wiem / nieistotne
 
 ## B. Rodzaj strony i cel
 - Rodzaj strony: d) wizytówka + blog / aktualności
 - Cel: c) zbierać zamówienia (np. torty, pieczywo na imprezy) oraz d) budować wizerunek marki (historia, tradycja, jakość)
-- Najważniejsza akcja: d) napisać wiadomość (e-mail / Messenger) (do potwierdzenia wobec celu „zamówienia”: pytanie uzupełniające 3)
+- Najważniejsza akcja: **d) dwa równorzędne przyciski: „Zamów” (formularz zamówienia) i „Napisz do nas”** (odpowiedź uzupełniająca 3)
+  - ~~d) napisać wiadomość (e-mail / Messenger)~~ (zastąpione odpowiedzią uzupełniającą 3)
 
 ## C. Odbiorcy
 - Klienci: a) mieszkańcy okolicy, rodziny, osoby starsze oraz b) osoby pracujące w pobliżu (śniadanie, szybki zakup po drodze)
@@ -28,12 +32,17 @@
 - Motyw: c) jasny z automatycznym trybem ciemnym (zależnie od ustawień telefonu)
 
 ## E. Treści i ton
-- Materiały: f) nic nie ma, teksty i zdjęcia zastępcze trzeba przygotować (użytkownik podał jednak treści w odpowiedziach 22–29, zapisane niżej)
-- Dane kontaktowe: b) użyjcie przykładowych danych (w odpowiedzi 24 podano numer +48 512 345 678: pytanie uzupełniające 4)
-- Social media: a) Facebook, b) Instagram (bez linków / nazw profili)
+- Materiały: f) nic nie ma, teksty i zdjęcia zastępcze trzeba przygotować (treści merytoryczne użytkownik podał w odpowiedziach 22–29 i uzupełniających, zapisane niżej)
+- Dane kontaktowe (odpowiedź uzupełniająca 4: „a) Numer +48 512 345 678, pozostałe dane przykładowe”):
+  - Adres: ul. Rynek 12, 05-140 Serock
+  - Telefon: +48 512 345 678
+  - E-mail (przykładowy): kontakt@piekarynkanadzegrzem.pl
+  - ~~b) użyjcie przykładowych danych~~ (doprecyzowane odpowiedzią uzupełniającą 4)
+- Social media (przykładowe): Facebook i Instagram: @piekarynkanadzegrzem
 - Język: a) tylko polski
 - Ton: a) ciepły i luźny, na „Ty” („Wpadnij po świeży chleb!”)
-- Czego nie pisać / obiecywać: „a - nie obiecuj niczego” (zakres do doprecyzowania: pytanie uzupełniające 5)
+- Czego nie pisać / obiecywać (odpowiedź uzupełniająca 5, dosłownie): „a) To, co podałem, można pisać: bez polepszaczy, 18 h fermentacji zakwasu, osobna strefa bezglutenowa, dostawa gratis od 80 zł. Proszę nie dodawać żadnych własnych deklaracji (np. „ekologiczne", „najlepsze w okolicy", „mąka z lokalnych młynów").”
+  - ~~„a - nie obiecuj niczego”~~ (doprecyzowane odpowiedzią uzupełniającą 5)
 
 ## F. Funkcje
 - a) formularz kontaktowy
@@ -44,15 +53,60 @@
 
 ## Branża: piekarnia (rzemieślnicza)
 
-### Oferta (dosłownie)
-Oferta: d) podział na kategorie, z cenami.
-- **Pieczywo:** chleb żytni na zakwasie 12 zł, chleb pszenny 8 zł, bagietka 6 zł, bułka kajzerka 1,20 zł, grahamka 1,80 zł
-- **Słodkie wypieki:** pączek z różą 4,50 zł, drożdżówka z serem 5 zł, rogal świętomarciński 9 zł, szarlotka 8 zł/kawałek
-- **Torty i ciasta na zamówienie:** od 120 zł za tort 1,5 kg
-- **Kanapki i przekąski:** kanapka z pastą jajeczną 9 zł, zapiekanka 12 zł
+### Oferta z cenami (odpowiedź 22 + odpowiedź uzupełniająca 6)
+Podział na kategorie, z cenami.
+
+| Kategoria | Produkt | Cena |
+|---|---|---|
+| Pieczywo | Chleb żytni na zakwasie | 12 zł |
+| Pieczywo | Chleb pszenny | 8 zł |
+| Pieczywo | Bagietka | 6 zł |
+| Pieczywo | Bułka kajzerka | 1,20 zł |
+| Pieczywo | Grahamka | 1,80 zł |
+| Pieczywo | Chleb orkiszowy | 14 zł |
+| Pieczywo | Chleb bezglutenowy | 16 zł |
+| Pieczywo | Focaccia z rozmarynem | 11 zł |
+| Pieczywo | Chałka maślana z kruszonką | 9 zł |
+| Słodkie wypieki | Pączek z różą | 4,50 zł |
+| Słodkie wypieki | Drożdżówka z serem | 5 zł |
+| Słodkie wypieki | Rogal świętomarciński | 9 zł |
+| Słodkie wypieki | Szarlotka | 8 zł/kawałek |
+| Słodkie (tak w odp. uzup. 6) | Drożdżówka bez laktozy (z jabłkiem) | 5,50 zł |
+| Sezonowe | Pierniki (opakowanie 250 g, grudzień) | 18 zł |
+| Sezonowe | Mazurek kajmakowy (Wielkanoc) | 45 zł |
+| Torty i ciasta na zamówienie | Tort 1,5 kg | od 120 zł |
+| Kanapki i przekąski | Kanapka z pastą jajeczną | 9 zł |
+| Kanapki i przekąski | Zapiekanka | 12 zł |
+
+### Alergeny (odpowiedź 27 + odpowiedź uzupełniająca 7)
+Przy każdym produkcie pełna lista alergenów.
+
+| Produkt | Alergeny |
+|---|---|
+| Chleb żytni na zakwasie | gluten |
+| Chleb pszenny, bagietka, kajzerka | gluten |
+| Grahamka | gluten, sezam |
+| Chleb orkiszowy | gluten |
+| Chleb bezglutenowy | jaja |
+| Focaccia | gluten |
+| Chałka | gluten, jaja, mleko |
+| Pączek z różą | gluten, jaja, mleko |
+| Drożdżówka z serem | gluten, jaja, mleko |
+| Drożdżówka bez laktozy | gluten, jaja |
+| Rogal świętomarciński | gluten, jaja, mleko, orzechy |
+| Szarlotka | gluten, jaja, mleko |
+| Pierniki | gluten, jaja, mleko, orzechy |
+| Mazurek kajmakowy | gluten, jaja, mleko, orzechy |
+| Kanapka z pastą jajeczną | gluten, jaja, gorczyca |
+| Zapiekanka | gluten, mleko |
+| Torty | zależnie od zamówienia, informacja przy składaniu |
+
+Dopisek na stronie (dosłownie): „w piekarni pracujemy z orzechami i sezamem, więc możliwe są śladowe ilości.”
+
+Z odpowiedzi 27 (dosłownie): „W ofercie mamy też kilka wypieków bez laktozy i chleb bezglutenowy (pieczony w osobnej strefie).”
 
 ### Godziny otwarcia (dosłownie)
-a) pon.–pt. 6:00–19:00, sob. 6:30–15:00, niedz. 7:00–13:00. Świeże pieczywo codziennie od otwarcia, druga dostawa ok. 12:00.
+pon.–pt. 6:00–19:00, sob. 6:30–15:00, niedz. 7:00–13:00. Świeże pieczywo codziennie od otwarcia, druga dostawa ok. 12:00.
 
 ### Zamówienia z wyprzedzeniem (dosłownie)
 a) + b) + c) Zamówienia telefonicznie (+48 512 345 678) lub przez formularz na stronie, najpóźniej dzień wcześniej do 14:00. Torty okolicznościowe przyjmujemy z minimum 3-dniowym wyprzedzeniem.
@@ -63,47 +117,27 @@ b) + c) + d) Odbiór osobisty zamówień w piekarni. Dostawa w promieniu 10 km (
 ### Specjalność (dosłownie)
 Chleb żytni na naturalnym zakwasie, wypiekany według tej samej receptury od 1987 roku, fermentowany przez 18 godzin. Klienci pokochali też nasze pączki z domową konfiturą z róży oraz maślane chałki z kruszonką.
 
-### Alergeny (dosłownie)
-a) Przy każdym produkcie podajemy pełną listę alergenów (gluten, jaja, mleko, orzechy, sezam itp.). W ofercie mamy też kilka wypieków bez laktozy i chleb bezglutenowy (pieczony w osobnej strefie).
-
 ### Historia (dosłownie)
 a) Piekarnię założył w 1987 roku pan Józef Kowalczyk, który przez lata doskonalił przepisy przywiezione z rodzinnej wsi. Dziś prowadzą ją jego syn i wnuczka, wciąż wypiekając chleb ręcznie, w tradycyjny sposób i bez sztucznych polepszaczy.
 
-### Aktualności / oferta dnia (dosłownie)
-a) + b) Codziennie publikujemy „wypiek dnia" (np. w poniedziałki chleb orkiszowy, w piątki focaccia z rozmarynem). Sezonowo: tłusty czwartek, rogale na 11 listopada, pierniki w grudniu i mazurki na Wielkanoc.
+### Aktualności / oferta dnia
+Z odpowiedzi 29 (dosłownie): a) + b) Codziennie publikujemy „wypiek dnia". Sezonowo: tłusty czwartek, rogale na 11 listopada, pierniki w grudniu i mazurki na Wielkanoc.
+
+„Wypiek dnia”, cały tydzień (odpowiedź uzupełniająca 8):
+- Poniedziałek: chleb orkiszowy
+- Wtorek: bułki z ziarnami
+- Środa: chleb z żurawiną i orzechami
+- Czwartek: pączki z różą
+- Piątek: focaccia z rozmarynem
+- Sobota: chałka maślana z kruszonką
+- Niedziela: drożdżowe z kruszonką
 
 ## Otwarte pytania (tylko przy statusie QUESTIONS)
 
-1. **Nazwa.** Podałeś „Piekarynka nad zegrza”. Jak dokładnie ma być zapisana na stronie?
-   a) „Piekarynka nad Zegrzem”
-   b) „Piekarynka nad Zegrza” (dokładnie tak, jak napisałeś, z wielką literą Z)
-   c) inaczej (napisz dokładną pisownię)
-2. **Lokalizacja i punkty sprzedaży.** Wybrałeś „kilka punktów w jednym mieście”, ale nie podałeś miasta. W innych odpowiedziach piszesz o „piekarni” w liczbie pojedynczej (np. „odbiór osobisty zamówień w piekarni”).
-   a) jedna piekarnia (podaj miejscowość albo użyjcie przykładowej)
-   b) kilka punktów: podaj miasto i liczbę punktów (np. 2 lub 3). Czy wszystkie mają te same godziny otwarcia?
-   c) wymyślcie przykładowe miasto i punkty sami
-3. **Najważniejsza akcja.** Jako główny cel wybrałeś zbieranie zamówień, a jako najważniejszą akcję „napisać wiadomość (e-mail / Messenger)”. Który przycisk ma być najbardziej widoczny?
-   a) „Napisz do nas” (wiadomość / Messenger)
-   b) „Zamów” (formularz zamówień)
-   c) „Zadzwoń” (telefon)
-   d) dwa równorzędne: „Zamów” + „Napisz”
-4. **Dane kontaktowe.** Wybrałeś „użyjcie przykładowych danych”, a w odpowiedzi 24 podałeś numer +48 512 345 678.
-   a) użyjcie tego numeru, a resztę danych (adres, e-mail, linki do Facebooka i Instagrama) wymyślcie przykładowo
-   b) wszystko przykładowe, ten numer też jest tylko przykładem
-   c) podam prawdziwe dane (adres, e-mail, linki do profili)
-5. **„Nie obiecuj niczego”.** W odpowiedziach sam podałeś kilka konkretnych deklaracji: „bez sztucznych polepszaczy”, chleb bezglutenowy „pieczony w osobnej strefie”, „fermentowany przez 18 godzin”, dostawa „gratis od 80 zł”, codzienne poranne dostawy B2B. Jak to rozumieć?
-   a) to, co podałem, można pisać, tylko nie dodawajcie żadnych własnych obietnic
-   b) nie piszcie żadnych obietnic, nawet tych, które podałem (podaj, które usunąć)
-   c) inaczej (opisz)
-6. **Produkty spoza cennika.** W odpowiedziach pojawiają się produkty, których nie ma w cenniku: maślana chałka z kruszonką, chleb bezglutenowy, wypieki bez laktozy, chleb orkiszowy, focaccia z rozmarynem, sezonowe pierniki i mazurki.
-   a) dodajcie je do oferty (podam ceny)
-   b) dodajcie je do oferty bez cen (np. „cena w sklepie”)
-   c) nie dodawajcie ich do cennika, mają być tylko w opisach / aktualnościach
-7. **Alergeny.** Chcesz pełną listę alergenów przy każdym produkcie, ale nie ma jej w odpowiedziach.
-   a) podam listę alergenów dla każdego produktu
-   b) przygotujcie przykładowe listy, z dopiskiem, że są przykładowe
-   c) przy produktach dajcie ogólną notkę „skład i alergeny: zapytaj w sklepie”
-8. **„Wypiek dnia”.** Podałeś przykłady na poniedziałek i piątek.
-   a) podam pełny tygodniowy plan (pon.–niedz.)
-   b) wymyślcie pozostałe dni sami
-   c) wystarczą te dwa przykłady
+1. **Wypieki dnia spoza cennika i listy alergenów.** Trzy pozycje z tygodniowego „wypieku dnia” nie mają ceny ani alergenów: **bułki z ziarnami** (wtorek), **chleb z żurawiną i orzechami** (środa) i **drożdżowe z kruszonką** (niedziela). To ważne, bo miała być pełna lista alergenów przy każdym produkcie, a chleb z orzechami może dotyczyć alergików.
+   a) podam cenę i alergeny dla tych trzech wypieków (oraz napiszę, czym dokładnie jest „drożdżowe z kruszonką”, np. drożdżówka czy ciasto drożdżowe na kawałki)
+   b) podam tylko alergeny, bez cen (wypiek dnia bez ceny na stronie)
+   c) zamieńcie je na produkty, które już są w cenniku (napisz, na które)
+2. **„Mąki ekologiczne” a zakaz słowa „ekologiczne”.** W pierwszej rundzie wybrałeś typ „c) piekarnia rzemieślnicza (chleb na zakwasie, długa fermentacja, mąki ekologiczne)”, a teraz prosisz, żeby nie pisać „ekologiczne”.
+   a) piekarnia rzemieślnicza: zakwas i długa fermentacja tak, o mąkach ekologicznych nie piszemy
+   b) mąki naprawdę są ekologiczne i można to napisać
